@@ -7,6 +7,10 @@ import owl from "../assets/digital/owl.png";
 import Sidebar from "../Components/Sidebar";
 import Zoom from "../Components/Curriculum/prePrimary/Zoom";
 import Step from "../Components/Digital/Step";
+import Primo from "../Components/Digital/Primo";
+import Robo_garden from "../Components/Digital/Robo_garden";
+import Fiction_express from "../Components/Digital/Fiction_express";
+import Pickatale from "../Components/Digital/Pickatale";
 
 const Digital = () => {
   const [sOpen, setSopen] = useState(true);
@@ -45,6 +49,18 @@ const Digital = () => {
         break;
       case "step":
         return <Step sOpen={sOpen} />;
+        break;
+      case "primo":
+        return <Primo sOpen={sOpen} />;
+        break;
+      case "robo_garden":
+        return <Robo_garden sOpen={sOpen} />;
+        break;
+      case "reading_prog":
+        return <Fiction_express sOpen={sOpen} />;
+        break;
+      case "pickatale":
+        return <Pickatale sOpen={sOpen} />;
         break;
 
       default:
