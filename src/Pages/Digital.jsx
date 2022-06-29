@@ -11,6 +11,18 @@ import Primo from "../Components/Digital/Primo";
 import Robo_garden from "../Components/Digital/Robo_garden";
 import Fiction_express from "../Components/Digital/Fiction_express";
 import Pickatale from "../Components/Digital/Pickatale";
+import Enpower from "../Components/Digital/Enpower";
+import Mykensho from "../Components/Digital/Mykensho";
+import Enpower_Two from "../Components/Digital/Enpower_Two";
+import Worldbook from "../Components/Digital/Worldbook";
+import Worldebook from "../Components/Digital/Worldebook";
+import Sanak from "../Components/Digital/Sanak";
+import Enounce from "../Components/Digital/Enounce";
+import Muzzy from "../Components/Digital/Muzzy";
+import Radiant_ly from "../Components/Digital/Radiant_ly";
+import Vantage from "../Components/Digital/Vantage";
+import Target from "../Components/Digital/Target";
+import Escavel from "../Components/Digital/Escavel";
 
 const Digital = () => {
   const [sOpen, setSopen] = useState(true);
@@ -61,6 +73,42 @@ const Digital = () => {
         break;
       case "pickatale":
         return <Pickatale sOpen={sOpen} />;
+        break;
+      case "enpower":
+        return <Enpower sOpen={sOpen} />;
+        break;
+      case "mykensho":
+        return <Mykensho sOpen={sOpen} />;
+        break;
+      case "enpower_two":
+        return <Enpower_Two sOpen={sOpen} />;
+        break;
+      case "worldbook":
+        return <Worldbook sOpen={sOpen} />;
+        break;
+      case "worldebook":
+        return <Worldebook sOpen={sOpen} />;
+        break;
+      case "sanak":
+        return <Sanak sOpen={sOpen} />;
+        break;
+      case "enounce":
+        return <Enounce sOpen={sOpen} />;
+        break;
+      case "muzzy":
+        return <Muzzy sOpen={sOpen} />;
+        break;
+      case "radiant_ly":
+        return <Radiant_ly sOpen={sOpen} />;
+        break;
+      case "vantage":
+        return <Vantage sOpen={sOpen} />;
+        break;
+      case "target":
+        return <Target sOpen={sOpen} />;
+        break;
+      case "escavel":
+        return <Escavel sOpen={sOpen} />;
         break;
 
       default:

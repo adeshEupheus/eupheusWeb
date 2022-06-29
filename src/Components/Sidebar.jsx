@@ -827,6 +827,138 @@ const Sidebar = ({ sOpen, setSopen, type, setPage }) => {
                     Pickatale
                   </h1>
                 </div>
+                <div
+                  className={`flex items-center hover:translate-x-3 transition-all ease-linear duration-100 mr-8 ml-6 group opacity-100`}
+                >
+                  <Circle className={`!text-[.7rem] text-[#c96161]`} />
+                  <h1
+                    onClick={() => handleChangePage("enpower")}
+                    className={`pl-9 text-[#c96161] transition-all font-bold ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
+                  >
+                    Enpower
+                  </h1>
+                </div>
+                <div
+                  className={`flex items-center hover:translate-x-3 transition-all ease-linear duration-100 mr-8 ml-6 group opacity-100`}
+                >
+                  <Circle className={`!text-[.7rem] text-[#c96161]`} />
+                  <h1
+                    onClick={() => handleChangePage("mykensho")}
+                    className={`pl-9 text-[#c96161] transition-all font-bold ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
+                  >
+                    Mykensho
+                  </h1>
+                </div>
+                <div
+                  className={`flex items-center hover:translate-x-3 transition-all ease-linear duration-100 mr-8 ml-6 group opacity-100`}
+                >
+                  <Circle className={`!text-[.7rem] text-[#c96161]`} />
+                  <h1
+                    onClick={() => handleChangePage("enpower_two")}
+                    className={`pl-9 text-[#c96161] transition-all font-bold ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
+                  >
+                    Enpower
+                  </h1>
+                </div>
+                <div
+                  className={`flex items-center hover:translate-x-3 transition-all ease-linear duration-100 mr-8 ml-6 group opacity-100`}
+                >
+                  <Circle className={`!text-[.7rem] text-[#c96161]`} />
+                  <h1
+                    onClick={() => handleChangePage("worldbook")}
+                    className={`pl-9 text-[#c96161] transition-all font-bold ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
+                  >
+                    Worldbook
+                  </h1>
+                </div>
+                <div
+                  className={`flex items-center hover:translate-x-3 transition-all ease-linear duration-100 mr-8 ml-6 group opacity-100`}
+                >
+                  <Circle className={`!text-[.7rem] text-[#c96161]`} />
+                  <h1
+                    onClick={() => handleChangePage("worldebook")}
+                    className={`pl-9 text-[#c96161] transition-all font-bold ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
+                  >
+                    Worldebook
+                  </h1>
+                </div>
+                <div
+                  className={`flex items-center hover:translate-x-3 transition-all ease-linear duration-100 mr-8 ml-6 group opacity-100`}
+                >
+                  <Circle className={`!text-[.7rem] text-[#c96161]`} />
+                  <h1
+                    onClick={() => handleChangePage("sanak")}
+                    className={`pl-9 text-[#c96161] transition-all font-bold ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
+                  >
+                    Sanak
+                  </h1>
+                </div>
+                <div
+                  className={`flex items-center hover:translate-x-3 transition-all ease-linear duration-100 mr-8 ml-6 group opacity-100`}
+                >
+                  <Circle className={`!text-[.7rem] text-[#c96161]`} />
+                  <h1
+                    onClick={() => handleChangePage("enounce")}
+                    className={`pl-9 text-[#c96161] transition-all font-bold ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
+                  >
+                    Enounce
+                  </h1>
+                </div>
+                <div
+                  className={`flex items-center hover:translate-x-3 transition-all ease-linear duration-100 mr-8 ml-6 group opacity-100`}
+                >
+                  <Circle className={`!text-[.7rem] text-[#c96161]`} />
+                  <h1
+                    onClick={() => handleChangePage("muzzy")}
+                    className={`pl-9 text-[#c96161] transition-all font-bold ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
+                  >
+                    Muzzy
+                  </h1>
+                </div>
+                <div
+                  className={`flex items-center hover:translate-x-3 transition-all ease-linear duration-100 mr-8 ml-6 group opacity-100`}
+                >
+                  <Circle className={`!text-[.7rem] text-[#c96161]`} />
+                  <h1
+                    onClick={() => handleChangePage("radiant_ly")}
+                    className={`pl-9 text-[#c96161] transition-all font-bold ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
+                  >
+                    Radiant-ly
+                  </h1>
+                </div>
+                <div
+                  className={`flex items-center hover:translate-x-3 transition-all ease-linear duration-100 mr-8 ml-6 group opacity-100`}
+                >
+                  <Circle className={`!text-[.7rem] text-[#c96161]`} />
+                  <h1
+                    onClick={() => handleChangePage("vantage")}
+                    className={`pl-9 text-[#c96161] transition-all font-bold ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
+                  >
+                    Vantage
+                  </h1>
+                </div>
+                <div
+                  className={`flex items-center hover:translate-x-3 transition-all ease-linear duration-100 mr-8 ml-6 group opacity-100`}
+                >
+                  <Circle className={`!text-[.7rem] text-[#c96161]`} />
+                  <h1
+                    onClick={() => handleChangePage("target")}
+                    className={`pl-9 text-[#c96161] transition-all font-bold ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
+                  >
+                    Target
+                  </h1>
+                </div>
+                <div
+                  className={`flex items-center hover:translate-x-3 transition-all ease-linear duration-100 mr-8 ml-6 group opacity-100`}
+                >
+                  <Circle className={`!text-[.7rem] text-[#c96161]`} />
+                  <h1
+                    onClick={() => handleChangePage("escavel")}
+                    className={`pl-9 text-[#c96161] transition-all font-bold ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
+                  >
+                    Escavel
+                  </h1>
+                </div>
 
                 {/* </Link> */}
               </div>

@@ -16,6 +16,7 @@ import img14 from "../../assets/digital/pickatale/9.png";
 import img15 from "../../assets/digital/pickatale/10.png";
 import img16 from "../../assets/digital/pickatale/12.png";
 import img17 from "../../assets/digital/pickatale/13.png";
+import img18 from "../../assets/digital/pickatale/15.png";
 
 const Pickatale = ({ sOpen }) => {
   return (
@@ -106,6 +107,17 @@ const Pickatale = ({ sOpen }) => {
           <img src={img15} className="w-[15%]  h-auto p-1" alt="" />
           <img src={img16} className="w-[15%]  h-auto p-1" alt="" />
           <img src={img17} className="w-[15%]  h-auto p-1" alt="" />
+        </div>
+      </div>
+      <div className="flex flex-col sm:flex-row w-full items-center ">
+        <div className="flex flex-col sm:w-1/2 items-center w-full">
+          <span className="bg-blue-400 p-4 rounded-lg m-5">
+            <span>Choose from three options</span> <br />
+            Read Myself | Read to Me | Auto Play
+          </span>
+        </div>
+        <div className="flex sm:w-1/2 w-full">
+          <img src={img18} className="w-full  h-auto p-1" alt="" />
         </div>
       </div>
       <div className="flex w-full bg-[skyblue] p-4 rounded-lg">
