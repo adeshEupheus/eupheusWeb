@@ -30,7 +30,7 @@ const New_radiant_reader = ({ sOpen }) => {
             syllabus and all required themes and skills have been fully covered
             in an interesting manner.
           </span>
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ffa463] py-2">
+          {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ffa463] py-2">
             <div className="flex flex-col gap-[2px] ">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book 1</span>
@@ -53,7 +53,7 @@ const New_radiant_reader = ({ sOpen }) => {
               <span className="text-black font-semibold">310</span>
               <span className="text-black font-semibold">325</span>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
           <div className="flex flex-col sm:w-[50%] w-full m-4">

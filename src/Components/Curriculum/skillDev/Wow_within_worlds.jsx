@@ -25,7 +25,7 @@ const Wow_within_worlds = ({ sOpen }) => {
             content and keeps the learners engaged, excited and deeply involved
             in the intricacies of fine writing.
           </span>
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ff9ed6] py-2">
+          {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ff9ed6] py-2">
             <div className="flex flex-col gap-[2px] ">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book A</span>
@@ -48,7 +48,7 @@ const Wow_within_worlds = ({ sOpen }) => {
               <span className="text-black font-semibold">185</span>
               <span className="text-black font-semibold">190</span>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-col px-4 sm:px-0 w-full ">
           <span className="px-3 ml-3 py-1 bg-[#ed008c] rounded-t-lg w-fit text-white">

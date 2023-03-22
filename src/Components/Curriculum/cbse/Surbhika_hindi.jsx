@@ -30,7 +30,7 @@ export const Surbhika_hindi = ({ sOpen }) => {
             जिससे सम्बंदित पाठ के ज्ञान का समुच्य आकलन किया जा सके, कोई प्रश्
             छूटे नहीं।
           </span>
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#72b2e7] py-2">
+          {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#72b2e7] py-2">
             <div className="flex flex-col gap-[2px] ">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book 1</span>
@@ -55,7 +55,7 @@ export const Surbhika_hindi = ({ sOpen }) => {
               <span className="text-black font-semibold">460</span>
               <span className="text-black font-semibold">485</span>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
           <div className="flex flex-col sm:w-6/12 w-[50%]">

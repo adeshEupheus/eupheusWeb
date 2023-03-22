@@ -29,7 +29,7 @@ const New_radiant_literature = ({ sOpen }) => {
             supplement to English Readers and Workbooks based on the
             communicative approach.
           </span>
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#f2b3bd] py-2">
+          {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#f2b3bd] py-2">
             <div className="flex flex-col gap-[2px] ">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book 1</span>
@@ -42,7 +42,7 @@ const New_radiant_literature = ({ sOpen }) => {
               <span className="text-black font-semibold">Book 8</span>
             </div>
             <div className="flex flex-col gap-[2px]">
-              <span className="text-white font-semibold">Price</span>
+              
               <span className="text-black font-semibold">150</span>
               <span className="text-black font-semibold">150</span>
               <span className="text-black font-semibold">150</span>
@@ -52,7 +52,7 @@ const New_radiant_literature = ({ sOpen }) => {
               <span className="text-black font-semibold">180</span>
               <span className="text-black font-semibold">180</span>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
           <div className="flex flex-col sm:w-[50%] w-full">
