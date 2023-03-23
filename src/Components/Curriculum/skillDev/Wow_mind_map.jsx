@@ -22,7 +22,7 @@ const Wow_mind_map = ({ sOpen }) => {
             are being used by millions of students today.
           </span>
           <div className="sm:w-6/12 w-full flex flex-row">
-            <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ffb1d8] py-2 m-4">
+            {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ffb1d8] py-2 m-4">
               <table className="">
                 <tr>
                   <td
@@ -57,8 +57,8 @@ const Wow_mind_map = ({ sOpen }) => {
                   <td className="p-2">319</td>
                 </tr>
               </table>
-            </div>
-            <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ffb1d8] py-2 m-4">
+            </div> */}
+            {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ffb1d8] py-2 m-4">
               <table className="">
                 <tr>
                   <td
@@ -93,7 +93,7 @@ const Wow_mind_map = ({ sOpen }) => {
                   <td className="p-2">205</td>
                 </tr>
               </table>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="flex flex-col px-4 sm:px-0 w-full ">

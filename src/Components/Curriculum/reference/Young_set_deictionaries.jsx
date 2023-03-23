@@ -47,7 +47,7 @@ const Young_set_deictionaries = ({ sOpen }) => {
           </span>
 
           <div className="sm:w-6/12 w-full flex lg:flex-col md:flex-col">
-            <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ff7579] py-2 m-4">
+            {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ff7579] py-2 m-4">
               <table className="">
                 <tr>
                   <td
@@ -74,7 +74,7 @@ const Young_set_deictionaries = ({ sOpen }) => {
                   <td className="p-2">215</td>
                 </tr>
               </table>
-            </div>
+            </div> */}
             <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ff7579] py-2 m-4">
               <ul className="px-2 py-1 w-full rounded-md  text-black">
                 <li>
