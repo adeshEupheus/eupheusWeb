@@ -168,8 +168,8 @@ export default function About() {
       </div>
 
       <div className="flex w-[100vw] flex-col gap-4 px-[5vw] py-[11vw]">
-        <div className="flex sm:flex-row flex-col gap-3 w-[100vw]">
-          <div className="flex flex-col gap-7 pr-4 sm:w-[30vw] w-full items-start">
+        <div className="flex sm:flex-row flex-col justify-center items-center gap-[5rem] w-[100vw]">
+          {/* <div className="flex flex-col gap-7 pr-4 sm:w-[30vw] w-full items-start">
             <div className="flex flex-col gap-12 relative">
               <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
                 <span className="text-gray-800 font-bold">
@@ -220,63 +220,14 @@ export default function About() {
                 {first ? "Read More" : "Read Less"}
               </button>
             </div>
-          </div>
-          <div className="flex flex-col gap-7 pr-4 sm:w-[30vw] w-full items-start">
-            <div className="flex flex-col gap-12 relative">
-              <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
-                <span className="text-gray-800 font-bold">
-                  VED PRAKASH KHATTRI,
-                </span>
-                <br />
-                <span className="text-gray-600 font-semibold">
-                  CO-FOUNDER AND DIRECTOR
-                </span>
-              </div>
-
-              <img
-                src={img5}
-                className="sm:w-[20vw] w-[60vw] shadow-2xl h-auto"
-                alt=""
-              />
-            </div>
-            <div
-              className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm"
-              style={{
-                display: "-webkit-box",
-                WebkitBoxOrient: "vertical",
-                WebkitLineClamp: `${second ? "5" : "100"}`,
-              }}
-            >
-              Ved has about 28 years’ sales experience in the K12 publishing
-              industry space. He has held progressive positions with Suman
-              Prakashan, Ratna Sagar, Oxford University Press and Encyclopaedia
-              Britannica with credentials of successfully opening new
-              territories and grown the business in his tenures at each company.
-              Ved in his last assignment was Vice President – K12 at
-              Encyclopaedia Britannica South Asia. He holds a bachelor’s degree
-              in commerce.
-            </div>
-            <div className="flex gap-3 w-full pr-8 justify-end items-center">
-              <a href="https://www.linkedin.com/in/ved-prakash-khatri-3a588220/">
-                <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
-                  <LinkedIn /> <span>Linkedin</span>
-                </button>
-              </a>
-              <button
-                className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
-                onClick={() => setSecond(!second)}
-              >
-                {second ? "Read More" : "Read Less"}
-              </button>
-            </div>
-          </div>
-          <div className="flex flex-col gap-7 sm:w-[30vw] w-full items-start">
+          </div> */}
+          <div className="flex flex-col gap-7 sm:w-[40vw] w-full items-start">
             <div className="flex flex-col gap-12 relative">
               <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
                 <span className="text-gray-800 font-bold">AMIT KAPOOR,</span>
                 <br />
                 <span className="text-gray-600 font-semibold">
-                  CO-FOUNDER AND DIRECTOR
+                  CO-FOUNDER AND CHIEF EXECUTIVE OFFICER
                 </span>
               </div>
 
@@ -287,7 +238,7 @@ export default function About() {
               />
             </div>
             <div
-              className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm"
+              className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm pr-4"
               style={{
                 display: "-webkit-box",
                 WebkitBoxOrient: "vertical",
@@ -315,6 +266,55 @@ export default function About() {
                 onClick={() => setThird(!third)}
               >
                 {third ? "Read More" : "Read Less"}
+              </button>
+            </div>
+          </div>
+          <div className="flex flex-col gap-7 pr-4 sm:w-[40vw] w-full items-start">
+            <div className="flex flex-col gap-12 relative">
+              <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
+                <span className="text-gray-800 font-bold">
+                  VED PRAKASH KHATRI,
+                </span>
+                <br />
+                <span className="text-gray-600 font-semibold">
+                  CO-FOUNDER AND CHIEF OPERATING OFFICER
+                </span>
+              </div>
+
+              <img
+                src={img5}
+                className="sm:w-[20vw] w-[60vw] shadow-2xl h-auto"
+                alt=""
+              />
+            </div>
+            <div
+              className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm pr-4"
+              style={{
+                display: "-webkit-box",
+                WebkitBoxOrient: "vertical",
+                WebkitLineClamp: `${second ? "5" : "100"}`,
+              }}
+            >
+              Ved has about 28 years’ sales experience in the K12 publishing
+              industry space. He has held progressive positions with Suman
+              Prakashan, Ratna Sagar, Oxford University Press and Encyclopaedia
+              Britannica with credentials of successfully opening new
+              territories and grown the business in his tenures at each company.
+              Ved in his last assignment was Vice President – K12 at
+              Encyclopaedia Britannica South Asia. He holds a bachelor’s degree
+              in commerce.
+            </div>
+            <div className="flex gap-3 w-full pr-8 justify-end items-center">
+              <a href="https://www.linkedin.com/in/ved-prakash-khatri-3a588220/">
+                <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+                  <LinkedIn /> <span>Linkedin</span>
+                </button>
+              </a>
+              <button
+                className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
+                onClick={() => setSecond(!second)}
+              >
+                {second ? "Read More" : "Read Less"}
               </button>
             </div>
           </div>
