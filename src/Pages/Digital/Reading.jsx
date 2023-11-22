@@ -26,13 +26,21 @@ const Reading = () => {
         return (
           <div className=" flex flex-col  sm:grid-row-3 grid-row-4 sm:grid-cols-3 grid-cols-2 sm:gap-[3rem] gap-[1rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[14rem] lg:mt-[20vh] md:mt-[15vh] sm:mt-[21vh]">
             <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
-              <span
-                onClick={() => setPage("fiction")}
-                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={img1} className="h-[70%] w-[70%]" alt="" />
-              </span>
-              <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+              <div className="w-full ">
+                <span
+                  onClick={() => setPage("fiction")}
+                  className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+                >
+                  <img src={img1} className="h-[70%] w-[70%]" alt="" />
+                </span>
+                <div
+                  className="text-red-500 cursor-pointer font-bold flex justify-center"
+                  onClick={() => setPage("fiction")}
+                >
+                  Click Here
+                </div>
+              </div>
+              <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw] ">
                 <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
                   Fiction Express: Reading plays a central role in a child’s
                   education and keeping this need in mind, we have collaborated
@@ -43,12 +51,20 @@ const Reading = () => {
               </div>
             </div>
             <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
-              <span
-                onClick={() => setPage("pickatale")}
-                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={img2} className="h-[70%] w-[70%]" alt="" />
-              </span>
+              <div className="w-full">
+                <span
+                  onClick={() => setPage("pickatale")}
+                  className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+                >
+                  <img src={img2} className="h-[70%] w-[70%]" alt="" />
+                </span>
+                <div
+                  className="text-red-500 cursor-pointer font-bold flex justify-center"
+                  onClick={() => setPage("pickatale")}
+                >
+                  Click Here
+                </div>
+              </div>
               <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
                 <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
                   Pickatale: Pickatale is a library of digitized books that you

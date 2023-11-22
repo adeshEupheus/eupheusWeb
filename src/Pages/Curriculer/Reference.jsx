@@ -27,24 +27,40 @@ const Reference = () => {
       case "default":
         return (
           <div className="w-full grid sm:grid-rows-5 grid-rows-7 sm:grid-cols-3 grid-cols-2 sm:gap-[4rem] gap-[2rem] sm:px-[3rem] px-4 pb-8 sm:pt-20 pt-[13rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
-            <span
-              onClick={() => setPage("atlas")}
-              className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={atlasIcon} className="w-[60%] h-auto" alt="" />
-            </span>
+            <div>
+              <span
+                onClick={() => setPage("atlas")}
+                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={atlasIcon} className="w-[60%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("atlas")}
+              >
+                Click Here
+              </div>
+            </div>
             {/* <span
               onClick={() => setPage("atlas")}
               className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
               <img src={atlasIcon} className="w-[60%] h-auto" alt="" />
             </span> */}
-            <span
-              onClick={() => setPage("young_set")}
-              className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={chamberIcon} className="w-[90%] h-auto" alt="" />
-            </span>
+            <div>
+              <span
+                onClick={() => setPage("young_set")}
+                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={chamberIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("young_set")}
+              >
+                Click Here
+              </div>
+            </div>
           </div>
         );
         break;

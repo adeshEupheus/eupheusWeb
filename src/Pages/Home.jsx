@@ -144,7 +144,7 @@ const Home = () => {
           <div className="mt-[4rem] text-red-700 md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
             <span>INDIA’S LARGEST SCHOOL FOCUSED</span>
             <span style={{ color: "black", fontWeight: "500" }}>
-              2 DISTRIBUTION PLATFORM
+              DISTRIBUTION PLATFORM
             </span>
           </div>
         </Tween>
@@ -278,8 +278,8 @@ const Home = () => {
                 </div>
                 <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] h-auto sm:w-[15rem] w-[10rem] pr-2 ">
                   Widest catalogue of course book solutions and learning aids
-                  for K-12, mapped to CBSE and ICSE boards. Most updated with
-                  NEP 2020 mandates.
+                  for K-12, mapped to CBSE and ICSE boards and aligned to the
+                  key mandates of NEP 2020 and most updated with NCF 2023.
                   <br />
                   India’s First “personalised remedial solutions” for students
                   now available.
@@ -323,9 +323,10 @@ const Home = () => {
                   21st Century School OS
                 </div>
                 <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] h-auto sm:w-[15rem]  w-[10rem] pr-2 ">
-                  Unique School operating system offering Content, Learning
-                  Management System and ERP on a single sign-on. A powerful tool
-                  for Schools to Implement key mandates of NEP 2020
+                  Unique School Operating System offering Content, Learning
+                  Management System (LMS) and ERP on a single sign-on. A
+                  powerful tool for Schools to implement key mandates of NCF
+                  2023.​
                 </div>
               </div>
             </div>
@@ -425,7 +426,7 @@ const Home = () => {
                 21st Century School OS
               </h1>
               <h1 className="text-black-500 text-base lg:text-xl 2xl:text-4xl font-semibold">
-                Unique and Single Signon School Management Software
+                Unique and Single Sign-on School Management Software
               </h1>
             </span>
           </Tween>

@@ -31,12 +31,20 @@ const Language = () => {
         return (
           <div className="w-full flex flex-col sm:gap-[3rem] gap-[2rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
             <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
-              <span
-                onClick={() => setPage("muzzy")}
-                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={img1} className="h-[70%] w-[70%]" alt="" />
-              </span>
+              <div className="w-full">
+                <span
+                  onClick={() => setPage("muzzy")}
+                  className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+                >
+                  <img src={img1} className="h-[70%] w-[70%]" alt="" />
+                </span>
+                <div
+                  className="text-red-500 cursor-pointer font-bold flex justify-center"
+                  onClick={() => setPage("muzzy")}
+                >
+                  Click Here
+                </div>
+              </div>
               <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
                 <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
                   BBC MUZZY: World’s # 1 multimedia, multilingual,
@@ -61,12 +69,20 @@ const Language = () => {
               </div>
             </span> */}
             <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
-              <span
-                onClick={() => setPage("sanako")}
-                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={img2} className="h-[70%] w-[70%]" alt="" />
-              </span>
+              <div className="w-full">
+                <span
+                  onClick={() => setPage("sanako")}
+                  className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+                >
+                  <img src={img2} className="h-[70%] w-[70%]" alt="" />
+                </span>
+                <div
+                  className="text-red-500 cursor-pointer font-bold flex justify-center"
+                  onClick={() => setPage("sanako")}
+                >
+                  Click Here
+                </div>
+              </div>
               <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
                 <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
                   SANAKO: Language Learning Solution.
@@ -94,12 +110,21 @@ const Language = () => {
               </div>
             </span> */}
             <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
-              <span
-                onClick={() => setPage("radiant")}
-                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={img3} className="h-[70%] w-[70%]" alt="" />
-              </span>
+              <div className="w-full">
+                <span
+                  // onClick={() => setPage("radiant")}
+                  onClick={() => setPage("enounce")}
+                  className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+                >
+                  <img src={img4} className="h-[70%] w-[70%]" alt="" />
+                </span>
+                <div
+                  className="text-red-500 cursor-pointer font-bold flex justify-center"
+                  onClick={() => setPage("enounce")}
+                >
+                  Click Here
+                </div>
+              </div>
               <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
                 <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
                   Enounce: Language Learning Solution.
@@ -127,12 +152,20 @@ const Language = () => {
               </div>
             </span> */}
             <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
-              <span
-                onClick={() => setPage("enounce")}
-                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={img4} className="h-[70%] w-[70%]" alt="" />
-              </span>
+              <div className="w-full">
+                <span
+                  onClick={() => setPage("radiant")}
+                  className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+                >
+                  <img src={img3} className="h-[70%] w-[70%]" alt="" />
+                </span>
+                <div
+                  className="text-red-500 cursor-pointer font-bold flex justify-center"
+                  onClick={() => setPage("radiant")}
+                >
+                  Click Here
+                </div>
+              </div>
               <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
                 <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
                   Radiant-Ly: A.I.-Powered Adaptive App to improve your grammar

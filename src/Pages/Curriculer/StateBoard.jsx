@@ -35,18 +35,34 @@ const StateBoard = () => {
       case "default":
         return (
           <div className="w-full grid sm:grid-rows-5 grid-rows-7 sm:grid-cols-3 grid-cols-2 sm:gap-[4rem] gap-[2rem] sm:px-[3rem] px-4 pb-8 sm:pt-8 pt-[14rem] lg:mt-[18vh] md:mt-[20vh] sm:mt-[21vh]">
-            <span
-              onClick={() => setPage("nector1")}
-              className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={nectorIcon} className="w-[90%] h-auto" alt="" />
-            </span>
-            <span
-              onClick={() => setPage("nector2")}
-              className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={nector2Icon} className="w-[90%] h-auto" alt="" />
-            </span>
+            <div>
+              <span
+                onClick={() => setPage("nector1")}
+                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={nectorIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("nector1")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("nector2")}
+                className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={nector2Icon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("nector2")}
+              >
+                Click Here
+              </div>
+            </div>
             {/* <span
               onClick={() => setPage("dot_dash")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"

@@ -149,7 +149,7 @@ export default function About() {
         <div className=" text-gray-700 lg:w-[50vw] md:w-[50vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
           The brand of Proficiency Learning Solutions Private Limited, Eupheus
           Learning started its operations in June 2017. Based in New Delhi, it
-          was bootstrapped by about 40 members who joined the 3 founding members
+          was bootstrapped by about 40 members who joined the 3-founding members
           team to create a new category in the Indian education market.
           <br />
           <br />
@@ -346,7 +346,7 @@ export default function About() {
         </div>
         <div className="flex sm:flex-row flex-col justify-around">
           <div
-            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[64rem] 2xl:h-[78rem] h-[60rem]"
+            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[77.5rem]  2xl:h-[84.5rem] h-[70.5rem] "
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
@@ -360,7 +360,7 @@ export default function About() {
               </span>
 
               <img src={img11} className="w-[50%] h-auto" alt="" />
-              <div className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-full">
+              <div className="text-gray-700 lg:text-lg 2xl:text-2xl text-lg sm:text-sm w-full text-[10px]">
                 Lightrock provides patient capital and business-building support
                 to world-class entrepreneurs across three key themes - Unlocking
                 human potential, equitably; Building resource efficiency,
@@ -382,7 +382,7 @@ export default function About() {
             </div>
           </div>
           <div
-            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[58rem] 2xl:h-[75rem] h-[54rem]"
+            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[77.5rem]  2xl:h-[84.5rem] h-[70.5rem]"
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
@@ -395,7 +395,7 @@ export default function About() {
                 (2021)
               </div>
               <img src={img10} className="w-[50%] h-auto" alt="" />
-              <div className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-full">
+              <div className="text-gray-700 lg:text-lg 2xl:text-2xl text-lg sm:text-sm w-full text-[10px]">
                 United Education Company is a Kuwaiti shareholding company
                 registered and incorporated in Kuwait on 18th February 2003 with
                 a paid-up capital of KD 10 million to capitalize on
@@ -415,7 +415,7 @@ export default function About() {
         <div className="flex sm:flex-row flex-col justify-around">
           {/* <div className="box"></div> */}
           <div
-            className="sm:py-[7rem] py-[3rem] h-[37rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[48rem] 2xl:h-[53rem]"
+            className="sm:py-[7rem] py-[3rem] h-[42rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[52rem] 2xl:h-[60rem] sm:h-[47rem]"
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
@@ -428,7 +428,7 @@ export default function About() {
                 (2020)
               </div>
               <img src={img9} className="w-[50%] h-auto" alt="" />
-              <div className="text-gray-700 lg:text-lg pl-6 2xl:text-2xl text-sm w-full">
+              <div className="text-gray-700 lg:text-lg pl-6 2xl:text-2xl text-lg sm:text-sm w-full text-[9.8px]">
                 Yuj Ventures is the private investing arm of the Yuj platform.
                 Backed by the family office of Sid Yog, Founding Partner of a
                 global investment firm, The Xander Group Inc., Yuj Ventures
@@ -442,7 +442,7 @@ export default function About() {
             </div>
           </div>
           <div
-            className="sm:py-[7rem] py-[4rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[47rem] 2xl:h-[53rem] h-[36rem]"
+            className="sm:py-[7rem] py-[4rem] px-[2rem] bg-no-repeat  sm:w-[50rem]  w-full lg:h-[52rem] 2xl:h-[60rem] h-[47rem]"
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
@@ -455,7 +455,7 @@ export default function About() {
                 (2018)
               </div>
               <img src={img8} className="w-[50%] h-auto" alt="" />
-              <div className="text-gray-700 pl-6 lg:text-lg 2xl:text-2xl text-sm w-full">
+              <div className="text-gray-700 pl-6 lg:text-lg 2xl:text-2xl text-lg sm:text-sm w-full text-[10px]">
                 Sixth Sense Ventures is India’s first domestic, consumer-centric
                 venture fund, founded by Nikhil Vora (Ex-Managing Director of
                 IDFC Securities), who is regarded as one of the strongest
