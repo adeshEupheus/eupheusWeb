@@ -88,7 +88,7 @@ const Curriculum = () => {
             />
             <span>Reading</span>
           </span>
-          <span
+          {/* <span
             ref={myRef}
             onClick={() => navigate("/digital/life_skill")}
             className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
@@ -99,8 +99,8 @@ const Curriculum = () => {
               alt=""
             />
             <span>Life Skills</span>
-          </span>
-          <span
+          </span> */}
+          {/* <span
             onClick={() => navigate("/digital/entrepreneurship")}
             className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
@@ -110,7 +110,7 @@ const Curriculum = () => {
               alt=""
             />
             <span>Entrepreneurship</span>
-          </span>
+          </span> */}
           <span
             onClick={() => navigate("/digital/reference")}
             className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"

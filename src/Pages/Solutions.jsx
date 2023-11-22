@@ -60,7 +60,7 @@ const Solutions = () => {
         The brand is focused on transforming schools into a 21st Century School
         enabling them with digital library, 21st Century Skills oriented
         programs and offering them tools and techniques to comply to the key
-        mandates of NEP 2020.
+        mandates of NEP 2020 and NCF 2023.​
       </div>
 
       <div className=" sm:mt-[8rem] mt-[2rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col text-4xl g:text-xl 2xl:text-4xl">
