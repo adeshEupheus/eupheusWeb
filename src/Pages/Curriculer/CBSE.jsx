@@ -24,20 +24,42 @@ import Wow_science from "../../Components/Curriculum/cbse/Wow_science";
 // icons
 import wowEnglishIcon from "../../assets/curriculum/cbse/wowEnglish/Icon.png";
 import EnglishVibesIcon from "../../assets/curriculum/cbse/englishVibes/Icon.png";
-import GComIcon from "../../assets/curriculum/cbse/G&Com/Icon.png";
+// import GComIcon from "../../assets/curriculum/cbse/G&Com/Icon.png";
+import GComIcon from "../../assets/curriculum/zoom/wowGram&Comm.png";
 import GComVibesIcom from "../../assets/curriculum/cbse/G&comVibes/Icon.png";
-import newRLRIcon from "../../assets/curriculum/cbse/newRLR/Icon.png";
-import newRwayIcon from "../../assets/curriculum/cbse/radiantWay2/Icon.png";
-import myWorldMyEarthIcon from "../../assets/curriculum/cbse/myWorldMyEarth/Icon.png";
-import WMIcon from "../../assets/curriculum/cbse/wowMath/Icon.png";
-import WowMMIcon from "../../assets/curriculum/cbse/wowMM/Icon.png";
-import WowScienceIcon from "../../assets/curriculum/cbse/wowScience/Icon.png";
+// import newRLRIcon from "../../assets/curriculum/cbse/newRLR/Icon.png";
+import newRLRIcon from "../../assets/curriculum/zoom/TheRadiantReader.png";
+// import newRwayIcon from "../../assets/curriculum/cbse/radiantWay2/Icon.png";
+import newRwayIcon from "../../assets/curriculum/zoom/TheRadiantWay-firstStep.png";
+// import myWorldMyEarthIcon from "../../assets/curriculum/cbse/myWorldMyEarth/Icon.png";\
+import myWorldMyEarthIcon from "../../assets/curriculum/zoom/EnvStudies.png";
+// import WMIcon from "../../assets/curriculum/cbse/wowMath/Icon.png";
+import WMIcon from "../../assets/curriculum/zoom/MathsWeave.png";
+// import WowMMIcon from "../../assets/curriculum/cbse/wowMM/Icon.png";
+import WowMMIcon from "../../assets/curriculum/zoom/MathTree.png";
+// import WowScienceIcon from "../../assets/curriculum/cbse/wowScience/Icon.png";
+import WowScienceIcon from "../../assets/curriculum/zoom/wowScience678.png";
 import WowComBytesIcon from "../../assets/curriculum/cbse/wowComBytes/Icon.png";
 import ComAppIcon from "../../assets/curriculum/cbse/comApplication/Icon.png";
-import vallariIcon from "../../assets/curriculum/cbse/vallari/Icon.png";
+// import vallariIcon from "../../assets/curriculum/cbse/vallari/Icon.png";
+import vallariIcon from "../../assets/curriculum/zoom/vallariHindi123.png";
 import subhrikaIcon from "../../assets/curriculum/cbse/surbhika/Icon.png";
-import SilverbellIcon from "../../assets/curriculum/cbse/silverbell/Icon.png";
+// import SilverbellIcon from "../../assets/curriculum/cbse/silverbell/Icon.png";
+import SilverbellIcon from "../../assets/curriculum/zoom/silverbells123.png";
 import { useNavigate } from "react-router-dom";
+import EnglishWeaves from "../../assets/curriculum/zoom/englishWeaves.png";
+import EnglishTree from "../../assets/curriculum/zoom/englishTree.png";
+// import WowEnglish from "../../assets/curriculum/zoom/wowEnglish.png";
+import wowEnglish from "../../assets/curriculum/zoom/wowEnglish1.png";
+import ChitChat from "../../assets/curriculum/zoom/chitChat.png";
+import gram from "../../assets/curriculum/zoom/gram&comp.png";
+import wowMaths from "../../assets/curriculum/zoom/wowMaths.png";
+import WowMentalMathsIcon from "../../assets/curriculum/zoom/WowMentalMaths.png";
+import WMathsLabIcon from "../../assets/curriculum/zoom/WowMathLab.png";
+import ScienceTree from "../../assets/curriculum/zoom/sciencetree123.png";
+import WowScienceLabIcon from "../../assets/curriculum/zoom/wowScienceLab678.png";
+import envConnectIcon from "../../assets/curriculum/zoom/EnvConenct.png";
+import socialStudiesIcon from "../../assets/curriculum/zoom/socialStudiesVibes.png";
 
 const Cbse = () => {
   //   const navigate = useNavigate();
@@ -57,7 +79,8 @@ const Cbse = () => {
                 onClick={() => setPage("english")}
                 className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={wowEnglishIcon} className="w-[90%] h-auto" alt="" />
+                {/* <img src={wowEnglishIcon} className="w-[90%] h-auto" alt="" /> */}
+                <img src={EnglishWeaves} className="w-[90%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
@@ -71,7 +94,8 @@ const Cbse = () => {
                 onClick={() => setPage("english_vibes")}
                 className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={EnglishVibesIcon} className="w-[90%] h-auto" alt="" />
+                {/* <img src={EnglishVibesIcon} className="w-[90%] h-auto" alt="" /> */}
+                <img src={EnglishTree} className="w-[90%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
@@ -82,155 +106,30 @@ const Cbse = () => {
             </div>
             <div>
               <span
-                onClick={() => setPage("grammer_com")}
-                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+                onClick={() => setPage("english")}
+                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={GComIcon} className="w-[90%] h-auto" alt="" />
+                <img src={wowEnglish} className="w-[90%] h-auto" alt="" />
+                {/* <img src={EnglishWeaves} className="w-[90%] h-auto" alt="" /> */}
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("grammer_com")}
+                onClick={() => setPage("english")}
               >
                 Click Here
               </div>
             </div>
             <div>
               <span
-                onClick={() => setPage("grammer_com_vibes")}
-                className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+                onClick={() => setPage("english")}
+                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={GComVibesIcom} className="w-[90%] h-auto" alt="" />
+                <img src={ChitChat} className="w-[90%] h-auto" alt="" />
+                {/* <img src={EnglishWeaves} className="w-[90%] h-auto" alt="" /> */}
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("grammer_com_vibes")}
-              >
-                Click Here
-              </div>
-            </div>
-            <div>
-              <span
-                onClick={() => setPage("new_radiant_literature")}
-                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={newRLRIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("new_radiant_literature")}
-              >
-                Click Here
-              </div>
-            </div>
-            <div>
-              <span
-                onClick={() => setPage("the_radiant_way")}
-                className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={newRwayIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("the_radiant_way")}
-              >
-                Click Here
-              </div>
-            </div>
-            <div>
-              <span
-                onClick={() => setPage("maths")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={WMIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("maths")}
-              >
-                Click Here
-              </div>
-            </div>
-            <div>
-              <span
-                onClick={() => setPage("mental_maths")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={WowMMIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("mental_maths")}
-              >
-                Click Here
-              </div>
-            </div>
-            <div>
-              <span
-                onClick={() => setPage("science")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={WowScienceIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("mental_maths")}
-              >
-                Click Here
-              </div>
-            </div>
-            <div>
-              <span
-                onClick={() => setPage("compu_bytes")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={WowComBytesIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("compu_bytes")}
-              >
-                Click Here
-              </div>
-            </div>
-
-            <div>
-              <span
-                onClick={() => setPage("compu_app")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={ComAppIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("compu_bytes")}
-              >
-                Click Here
-              </div>
-            </div>
-            <div>
-              <span
-                onClick={() => setPage("vallari_hindi")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={vallariIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("vallari_hindi")}
-              >
-                Click Here
-              </div>
-            </div>
-            <div>
-              <span
-                onClick={() => setPage("surbhika")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={subhrikaIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("surbhika")}
+                onClick={() => setPage("english")}
               >
                 Click Here
               </div>
@@ -251,11 +150,346 @@ const Cbse = () => {
             </div>
             <div>
               <span
+                onClick={() => setPage("new_radiant_literature")}
+                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={newRLRIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("new_radiant_literature")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("new_radiant_literature")}
+                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={gram} className="w-[100%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("new_radiant_literature")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("grammer_com")}
+                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                {/* <img src={GComIcon} className="w-[90%] h-auto" alt="" /> */}
+                <img src={GComIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("grammer_com")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("the_radiant_way")}
+                className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={newRwayIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("the_radiant_way")}
+              >
+                Click Here
+              </div>
+            </div>
+            {/* <div>
+              <span
+                onClick={() => setPage("grammer_com_vibes")}
+                className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={GComVibesIcom} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("grammer_com_vibes")}
+              >
+                Click Here
+              </div>
+            </div> */}
+            {/* <div>
+              <span
+                onClick={() => setPage("new_radiant_literature")}
+                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={newRLRIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("new_radiant_literature")}
+              >
+                Click Here
+              </div>
+            </div> */}
+            {/* <div>
+              <span
+                onClick={() => setPage("the_radiant_way")}
+                className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={newRwayIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("the_radiant_way")}
+              >
+                Click Here
+              </div>
+            </div> */}
+            <div>
+              <span
+                onClick={() => setPage("maths")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={WMIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("maths")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("maths")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={WowMMIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("maths")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("maths")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={wowMaths} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("maths")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("mental_maths")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img
+                  src={WowMentalMathsIcon}
+                  className="w-[90%] h-auto"
+                  alt=""
+                />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("mental_maths")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("maths")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={WMathsLabIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("maths")}
+              >
+                Click Here
+              </div>
+            </div>
+            {/* <div>
+              <span
+                onClick={() => setPage("mental_maths")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={WowMMIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("mental_maths")}
+              >
+                Click Here
+              </div>
+            </div> */}
+            <div>
+              <span
+                onClick={() => setPage("science")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={ScienceTree} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("science")}
+              >
+                Click Here
+              </div>
+            </div>{" "}
+            <div>
+              <span
+                onClick={() => setPage("science")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={WowScienceIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("science")}
+              >
+                Click Here
+              </div>
+            </div>{" "}
+            <div>
+              <span
+                onClick={() => setPage("science")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img
+                  src={WowScienceLabIcon}
+                  className="w-[90%] h-auto"
+                  alt=""
+                />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("science")}
+              >
+                Click Here
+              </div>
+            </div>{" "}
+            <div>
+              <span
+                onClick={() => setPage("compu_bytes")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={WowComBytesIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("compu_bytes")}
+              >
+                Click Here
+              </div>
+            </div>
+            {/* <div>
+              <span
+                onClick={() => setPage("compu_app")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={ComAppIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("compu_bytes")}
+              >
+                Click Here
+              </div>
+            </div> */}
+            {/* <div>
+              <span
+                onClick={() => setPage("vallari_hindi")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={vallariIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("vallari_hindi")}
+              >
+                Click Here
+              </div>
+            </div> */}
+            {/* <div>
+              <span
+                onClick={() => setPage("surbhika")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={subhrikaIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("surbhika")}
+              >
+                Click Here
+              </div>
+            </div> */}
+            {/* <div>
+              <span
+                onClick={() => setPage("silver_bells")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={SilverbellIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("silver_bells")}
+              >
+                Click Here
+              </div>
+            </div> */}
+            <div>
+              <span
+                onClick={() => setPage("my_world_my_earth")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={envConnectIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("my_world_my_earth")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
                 onClick={() => setPage("my_world_my_earth")}
                 className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
                 <img
                   src={myWorldMyEarthIcon}
+                  className="w-[90%] h-auto"
+                  alt=""
+                />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("my_world_my_earth")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("my_world_my_earth")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img
+                  src={socialStudiesIcon}
                   className="w-[90%] h-auto"
                   alt=""
                 />

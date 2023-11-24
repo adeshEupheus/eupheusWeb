@@ -282,7 +282,7 @@ const Home = () => {
                   key mandates of NEP 2020 and most updated with NCF 2023.
                   <br />
                   India’s First “personalised remedial solutions” for students
-                  now available.
+                  now available.​
                 </div>
               </div>
             </div>
