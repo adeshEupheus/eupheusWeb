@@ -74,12 +74,12 @@ export default function AwardTimeline() {
                     />
                     <img
                       src={cer8}
-                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      className="sm:w-[17rem] w-[6rem] h-auto object-cover"
                       alt=""
                     />
                     <img
                       src={cer9}
-                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      className="sm:w-[21rem] w-[6rem] h-auto object-cover"
                       alt=""
                     />
 

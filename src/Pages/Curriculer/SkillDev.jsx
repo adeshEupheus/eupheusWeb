@@ -14,13 +14,15 @@ import Wow_mind_map from "../../Components/Curriculum/skillDev/Wow_mind_map";
 import Wow_within_worlds from "../../Components/Curriculum/skillDev/Wow_within_worlds";
 
 // icons
-import artIcon from "../../assets/curriculum/skillDev/artIcon.png";
+import artIcon from "../../assets/curriculum/zoom/Its-time-to-learn-art.png";
 import gkIcon from "../../assets/curriculum/skillDev/gkIcon.png";
-import handwritingIcon from "../../assets/curriculum/skillDev/handwritingIcon.png";
-import merrygoIcon from "../../assets/curriculum/skillDev/merrygoIcon.png";
+import handwritingIcon from "../../assets/curriculum/zoom/zanerbloser-handwriting.png";
+import merrygoIcon from "../../assets/curriculum/zoom/merrygoround123.png";
+import arthandwritingIcon from "../../assets/curriculum/zoom/artofhandwriting-cursiveWriting.png";
 import mindmapIcon from "../../assets/curriculum/skillDev/mindmapIcon.png";
-import valueIcon from "../../assets/curriculum/skillDev/valueIcon.png";
+import valueIcon from "../../assets/curriculum/zoom/valuesFirst123.png";
 import wowartIcon from "../../assets/curriculum/skillDev/wowartIcon.png";
+import gkvibesIcon from "../../assets/curriculum/zoom/GKvibes14.png";
 import { useNavigate } from "react-router-dom";
 
 const SkillDev = () => {
@@ -54,12 +56,28 @@ const SkillDev = () => {
             </div>
             <div>
               <span
+                // onClick={() => setPage("art")}
+                onClick={() => setPage("gk")}
+                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                {/* <img src={artIcon} className="w-[90%] h-auto" alt="" /> */}
+                <img src={gkvibesIcon} className="w-[100%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("gk")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
                 // onClick={() => setPage("artCraft")}
                 onClick={() => setPage("value")}
                 className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
                 {/* <img src={wowartIcon} className="w-[90%] h-auto" alt="" /> */}
-                <img src={valueIcon} className="w-[90%] h-auto" alt="" />
+                <img src={valueIcon} className="w-[100%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
@@ -74,7 +92,7 @@ const SkillDev = () => {
                 onClick={() => setPage("art")}
                 className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={artIcon} className="w-[90%] h-auto" alt="" />
+                <img src={artIcon} className="w-[100%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
@@ -88,7 +106,7 @@ const SkillDev = () => {
                 onClick={() => setPage("handwriting")}
                 className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={handwritingIcon} className="w-[90%] h-auto" alt="" />
+                <img src={handwritingIcon} className="w-[100%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
@@ -102,7 +120,25 @@ const SkillDev = () => {
                 onClick={() => setPage("merrygo")}
                 className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={merrygoIcon} className="w-[90%] h-auto" alt="" />
+                <img src={merrygoIcon} className="w-[100%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("merrygo")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("merrygo")}
+                className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img
+                  src={arthandwritingIcon}
+                  className="w-[100%] h-auto"
+                  alt=""
+                />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
