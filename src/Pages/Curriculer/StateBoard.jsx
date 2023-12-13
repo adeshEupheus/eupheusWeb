@@ -11,6 +11,7 @@ import Nector_second from "../../Components/Curriculum/stateBoard/Nector_second"
 // icons
 import nectorIcon from "../../assets/curriculum/stateBoard/nectarIcon.png";
 import nector2Icon from "../../assets/curriculum/stateBoard/nectar2Icon.png";
+import concordIcon from "../../assets/curriculum/zoom/concord14.png";
 // import balalIcon from "../../assets/curriculum/stateBoard/balalIcon.png";
 // import iniyalIcon from "../../assets/curriculum/stateBoard/iniyalIcon.png";
 // import kalikaIcon from "../../assets/curriculum/stateBoard/kalikaIcon.png";
@@ -35,7 +36,7 @@ const StateBoard = () => {
       case "default":
         return (
           <div className="w-full grid sm:grid-rows-5 grid-rows-7 sm:grid-cols-3 grid-cols-2 sm:gap-[4rem] gap-[2rem] sm:px-[3rem] px-4 pb-8 sm:pt-8 pt-[14rem] lg:mt-[18vh] md:mt-[20vh] sm:mt-[21vh]">
-            <div>
+            {/* <div>
               <span
                 onClick={() => setPage("nector1")}
                 className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
@@ -48,8 +49,23 @@ const StateBoard = () => {
               >
                 Click Here
               </div>
-            </div>
+            </div> */}
+
             <div>
+              <span
+                onClick={() => setPage("nector1")}
+                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={concordIcon} className="w-[100%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("nector1")}
+              >
+                Click Here
+              </div>
+            </div>
+            {/* <div>
               <span
                 onClick={() => setPage("nector2")}
                 className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
@@ -62,7 +78,7 @@ const StateBoard = () => {
               >
                 Click Here
               </div>
-            </div>
+            </div> */}
             {/* <span
               onClick={() => setPage("dot_dash")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"

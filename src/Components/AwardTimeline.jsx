@@ -17,6 +17,8 @@ import cer4 from "../assets/media/new2022/cer4.png";
 import cer5 from "../assets/media/new2022/cer5.png";
 import cer6 from "../assets/media/new2022/cer6.png";
 import cer7 from "../assets/media/new2022/cer7.png";
+import cer8 from "../assets/media/HolonIQ.png";
+import cer9 from "../assets/media/forbes.png";
 
 export default function AwardTimeline() {
   const [first, setFirst] = useState(true);
@@ -70,6 +72,17 @@ export default function AwardTimeline() {
                       className="sm:w-[16rem] w-[6rem] h-auto object-cover"
                       alt=""
                     />
+                    <img
+                      src={cer8}
+                      className="sm:w-[17rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
+                    <img
+                      src={cer9}
+                      className="sm:w-[21rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
+
                     {/* <img
                       src={cer1}
                       className="sm:w-[16rem] w-[6rem] h-auto object-cover"
