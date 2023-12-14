@@ -29,7 +29,7 @@ const Handwriting = ({ sOpen }) => {
             <b> Zaner-Bloser Handwriting Practice Masters </b> for classes K to
             6 that help students to further practice their writing skills
           </span>
-          <div className="sm:w-5/12 w-full bg-[#9dd9ff] rounded-lg  p-4">
+          {/* <div className="sm:w-5/12 w-full bg-[#9dd9ff] rounded-lg  p-4">
             <table className="">
               <tr>
                 <th className="text-white text-center">Title</th>
@@ -88,7 +88,7 @@ const Handwriting = ({ sOpen }) => {
                 <td className="text-center">130</td>
               </tr>
             </table>
-          </div>
+          </div> */}
         </div>
         <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
           <div className="flex flex-col sm:w-9/12 w-full m-4">

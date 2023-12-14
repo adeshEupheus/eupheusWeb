@@ -37,18 +37,18 @@ export const Compu_app = ({ sOpen }) => {
             book will provide students a completely different reading experience
             while making learning a pleasure.
           </span>
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center h-24 bg-[#ff8080] py-2">
-            <div className="flex flex-col gap-[2px] ">
-              <span className="text-white font-semibold">Title</span>
-              <span className="text-black font-semibold">Book 1</span>
-              <span className="text-black font-semibold">Book 2</span>
-            </div>
-            <div className="flex flex-col gap-[2px]">
-              <span className="text-white font-semibold">Price</span>
-              <span className="text-black font-semibold">535</span>
-              <span className="text-black font-semibold">535</span>
-            </div>
-          </div>
+            {/* `<div className="flex gap-4 rounded-md w-fit px-3 justify-center h-24 bg-[#ff8080] py-2">
+              <div className="flex flex-col gap-[2px] ">
+                <span className="text-white font-semibold">Title</span>
+                <span className="text-black font-semibold">Book 1</span>
+                <span className="text-black font-semibold">Book 2</span>
+              </div>
+              <div className="flex flex-col gap-[2px]">
+                <span className="text-white font-semibold">Price</span>
+                <span className="text-black font-semibold">535</span>
+                <span className="text-black font-semibold">535</span>
+              </div>
+            </div>` */}
         </div>
         <div className="flex flex-col px-4 sm:px-0 w-full ">
           <span className="px-3  py-1 ml-2 bg-[#a22c2c] rounded-t-lg w-fit text-white">

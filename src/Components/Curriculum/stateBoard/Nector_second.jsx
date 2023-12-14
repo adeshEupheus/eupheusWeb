@@ -32,7 +32,7 @@ const Nector_second = ({ sOpen }) => {
             Environmental Studies for levels 1 and 2 and English, Mathematics,
             Social Studies, and Science for levels 3 to 5
           </span>
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#77ae5a] py-2">
+          {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#77ae5a] py-2">
             <table className="">
               <tr>
                 <th className="text-white flex justify-start">Title</th>
@@ -79,7 +79,7 @@ const Nector_second = ({ sOpen }) => {
                 <td className="text-center">540</td>
               </tr>
             </table>
-          </div>
+          </div> */}
         </div>
         <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
           <div className="flex flex-col sm:w-6/12 w-full">

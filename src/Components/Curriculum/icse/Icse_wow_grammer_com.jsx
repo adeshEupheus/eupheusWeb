@@ -1,7 +1,7 @@
 import React from "react";
 import { Circle } from "@mui/icons-material";
 
-import book2 from "../../../assets/curriculum/cbse/wow_grammer_com/book1.png";
+// import book2 from "../../../assets/curriculum/cbse/wow_grammer_com/book1.png";
 import wow_com from "../../../assets/curriculum/cbse/wow_grammer_com/Curriculum Catalogue_2021-22_Page_44.jpg";
 import girl from "../../../assets/curriculum/cbse/wow_grammer_com/girl.png";
 import fiction from "../../../assets/curriculum/cbse/wow_grammer_com/fiction.png";
@@ -39,7 +39,7 @@ const Icse_wow_grammer_com = ({ sOpen }) => {
             Composition makes learning grammar unusually engaging
           </span>
 
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#7bc4ff] py-2">
+          {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#7bc4ff] py-2">
             <div className="flex flex-col gap-[2px] ">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book 1</span>
@@ -62,7 +62,7 @@ const Icse_wow_grammer_com = ({ sOpen }) => {
               <span className="text-black font-semibold">400</span>
               <span className="text-black font-semibold">405</span>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex sm:flex-row flex-col px-4 sm:px-0 gap-4 items-center w-full">

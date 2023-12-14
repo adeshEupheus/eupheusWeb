@@ -21,7 +21,7 @@ export const Vallari_hindi = () => {
             इसवेफ निर्माण में राष्ट्रय पाठ्यचर्या वेफ दिशानिर्देशों का परिपालन
             किया गया है। ‘वल्लरी’ पाठमाला की वुफछ विशेषताएँ इस प्रकार हैं।-
           </span>
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#eded9d] py-2">
+          {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#eded9d] py-2">
             <div className="flex flex-col gap-[2px] ">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book 1</span>
@@ -44,7 +44,7 @@ export const Vallari_hindi = () => {
               <span className="text-black font-semibold">325</span>
               <span className="text-black font-semibold">325</span>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
           <div className="flex flex-col sm:w-9/12 w-full">

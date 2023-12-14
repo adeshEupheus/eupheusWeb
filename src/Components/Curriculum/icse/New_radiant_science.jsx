@@ -27,7 +27,7 @@ const New_radiant_science = ({ sOpen }) => {
             organised text woven around simple activities and exercises which
             help learners to explore and understand the world around them.
           </span>
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ffd175] py-2">
+          {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ffd175] py-2">
             <div className="flex flex-col gap-[2px] ">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book 1</span>
@@ -40,7 +40,7 @@ const New_radiant_science = ({ sOpen }) => {
               <span className="text-black font-semibold">265</span>
               <span className="text-black font-semibold">300</span>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-col px-4 sm:px-0 w-full ">
           <span className="px-3 ml-3 py-1 bg-[#a47036] rounded-t-lg w-fit text-white">

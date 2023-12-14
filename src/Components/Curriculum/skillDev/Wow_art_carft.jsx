@@ -24,7 +24,7 @@ const Wow_art_carft = ({ sOpen }) => {
             psychomotor and communication skills.
           </span>
           <div className="sm:w-2/5 w-full">
-            <div className="flex  gap-4 rounded-md w-fit h-fit px-3 justify-center bg-[#a0e58f] py-2">
+            {/* <div className="flex  gap-4 rounded-md w-fit h-fit px-3 justify-center bg-[#a0e58f] py-2">
               <div className="flex flex-col gap-[2px] ">
                 <span className="text-white font-semibold">Title</span>
                 <span className="text-black font-semibold">Book A</span>
@@ -47,7 +47,7 @@ const Wow_art_carft = ({ sOpen }) => {
                 <span className="text-black font-semibold">415</span>
                 <span className="text-black font-semibold">415</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
