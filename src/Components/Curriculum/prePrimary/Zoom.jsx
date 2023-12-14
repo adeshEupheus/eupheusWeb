@@ -24,20 +24,20 @@ const Zoom = ({ sOpen }) => {
           extensively planned Teachers’ Manual, a robotic coding game, and an
           app for learning at home.
         </span>
-        <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-orange-400 py-2">
-          <div className="flex flex-col gap-2">
+        {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-orange-400 py-2">
+          {/* <div className="flex flex-col gap-2">
             <span className="text-white font-semibold">Title</span>
             <span className="text-black font-semibold">Preschool 1</span>
             <span className="text-black font-semibold">Preschool 2</span>
             <span className="text-black font-semibold">Preschool 3</span>
-          </div>
-          <div className="flex flex-col gap-2">
+          </div> */}
+          {/* <div className="flex flex-col gap-2">
             <span className="text-white font-semibold">Price</span>
             <span className="text-black font-semibold">1430</span>
             <span className="text-black font-semibold">1430</span>
             <span className="text-black font-semibold">1430</span>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
         <div className="flex flex-col sm:w-8/12 w-full">

@@ -22,7 +22,7 @@ const Icsebiology = ({ sOpen }) => {
             curriculum framework coverage for classes 9 and 10. It has been
             written by an experienced and renowned author of Biology.
           </span>
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#68b2eb] py-2">
+          {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#68b2eb] py-2">
             <div className="flex flex-col gap-[2px] ">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book 1</span>
@@ -33,7 +33,7 @@ const Icsebiology = ({ sOpen }) => {
               <span className="text-black font-semibold">385</span>
               <span className="text-black font-semibold">415</span>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-col px-4 sm:px-0 w-full ">
           <span className="px-3 ml-3 py-1 bg-[#0065b3] rounded-t-lg w-fit text-white">

@@ -31,7 +31,7 @@ const Grammer_com_vibes = ({ sOpen }) => {
             learning by providing core, supplemental, and home learning
             solutions on the same platform.
           </span>
-          <div className="flex gap-4 rounded-md w-fit ml-4 px-3 justify-center bg-[#ec92bd] py-2">
+          {/* <div className="flex gap-4 rounded-md w-fit ml-4 px-3 justify-center bg-[#ec92bd] py-2">
             <div className="flex flex-col gap-[2px] ">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book 1</span>
@@ -54,7 +54,7 @@ const Grammer_com_vibes = ({ sOpen }) => {
               <span className="text-black font-semibold">300</span>
               <span className="text-black font-semibold">315</span>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex sm:flex-row flex-col px-4 sm:px-0 gap-4 items-center w-full">

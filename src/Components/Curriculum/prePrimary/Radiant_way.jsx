@@ -6,7 +6,7 @@ import book2 from "../../../assets/curriculum/radiantWay/12.png";
 import book3 from "../../../assets/curriculum/radiantWay/13.png";
 import book4 from "../../../assets/curriculum/radiantWay/14.png";
 import numbermaxx from "../../../assets/curriculum/radiantWay/Curriculum Catalogue_2021-22_Page_17.jpg";
-import flower from "../../../assets/curriculum/alphaFun/5.png";
+// import flower from "../../../assets/curriculum/alphaFun/5.png";
 const Radiant_way = ({ sOpen }) => {
   return (
     <>
@@ -28,7 +28,7 @@ const Radiant_way = ({ sOpen }) => {
             has been planned to be used as independent introductory English
             readers.
           </span>
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#e1ec7a] py-2">
+          {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#e1ec7a] py-2">
             <div className="flex flex-col gap-2">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book 1</span>
@@ -39,7 +39,7 @@ const Radiant_way = ({ sOpen }) => {
               <span className="text-black font-semibold">155</span>
               <span className="text-black font-semibold">150</span>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
           <div className="flex flex-col sm:w-4/12 w-full">

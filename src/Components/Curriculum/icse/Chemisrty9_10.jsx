@@ -49,7 +49,7 @@ const Chemisrty9_10 = ({ sOpen }) => {
               </li>
             </ul>
           </div>
-          <div className="flex text-sm flex-col sm:w-6/12 w-full p-5 m-4 bg-[#87a1ed] rounded-lg">
+          {/* <div className="flex text-sm flex-col sm:w-6/12 w-full p-5 m-4 bg-[#87a1ed] rounded-lg">
             <table className="">
               <tr>
                 <th className="text-white flex justify-start">Title</th>
@@ -97,7 +97,7 @@ const Chemisrty9_10 = ({ sOpen }) => {
                 <td>385</td>
               </tr>
             </table>
-          </div>
+          </div> */}
         </div>
         <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
           <div className="flex flex-col sm:w-6/12 w-full">

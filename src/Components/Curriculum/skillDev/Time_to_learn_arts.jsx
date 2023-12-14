@@ -25,7 +25,7 @@ const Time_to_learn_arts = ({ sOpen }) => {
             of life skills like patience, perseverance, creativity,
             problem-solving, anger management, tolerance, peace, etc.
           </span>
-          <div className="flex  gap-4 rounded-md w-fit h-fit px-3 justify-center bg-[#77787c] py-2">
+          {/* <div className="flex  gap-4 rounded-md w-fit h-fit px-3 justify-center bg-[#77787c] py-2">
             <div className="flex flex-col gap-[2px] ">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book 1</span>
@@ -48,7 +48,7 @@ const Time_to_learn_arts = ({ sOpen }) => {
               <span className="text-black font-semibold">370</span>
               <span className="text-black font-semibold">370</span>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
           <div className="flex flex-col sm:w-7/12 w-full m-4">
