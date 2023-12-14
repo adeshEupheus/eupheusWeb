@@ -149,7 +149,7 @@ export default function About() {
         <div className=" text-gray-700 lg:w-[50vw] md:w-[50vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
           The brand of Proficiency Learning Solutions Private Limited, Eupheus
           Learning started its operations in June 2017. Based in New Delhi, it
-          was bootstrapped by about 40 members who joined the 3 founding members
+          was bootstrapped by about 40 members who joined the 3-founding members
           team to create a new category in the Indian education market.
           <br />
           <br />
@@ -168,8 +168,8 @@ export default function About() {
       </div>
 
       <div className="flex w-[100vw] flex-col gap-4 px-[5vw] py-[11vw]">
-        <div className="flex sm:flex-row flex-col gap-3 w-[100vw]">
-          <div className="flex flex-col gap-7 pr-4 sm:w-[30vw] w-full items-start">
+        <div className="flex sm:flex-row flex-col justify-center items-center gap-[5rem] w-[100vw]">
+          {/* <div className="flex flex-col gap-7 pr-4 sm:w-[30vw] w-full items-start">
             <div className="flex flex-col gap-12 relative">
               <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
                 <span className="text-gray-800 font-bold">
@@ -220,63 +220,14 @@ export default function About() {
                 {first ? "Read More" : "Read Less"}
               </button>
             </div>
-          </div>
-          <div className="flex flex-col gap-7 pr-4 sm:w-[30vw] w-full items-start">
-            <div className="flex flex-col gap-12 relative">
-              <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
-                <span className="text-gray-800 font-bold">
-                  VED PRAKASH KHATTRI,
-                </span>
-                <br />
-                <span className="text-gray-600 font-semibold">
-                  CO-FOUNDER AND DIRECTOR
-                </span>
-              </div>
-
-              <img
-                src={img5}
-                className="sm:w-[20vw] w-[60vw] shadow-2xl h-auto"
-                alt=""
-              />
-            </div>
-            <div
-              className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm"
-              style={{
-                display: "-webkit-box",
-                WebkitBoxOrient: "vertical",
-                WebkitLineClamp: `${second ? "5" : "100"}`,
-              }}
-            >
-              Ved has about 28 years’ sales experience in the K12 publishing
-              industry space. He has held progressive positions with Suman
-              Prakashan, Ratna Sagar, Oxford University Press and Encyclopaedia
-              Britannica with credentials of successfully opening new
-              territories and grown the business in his tenures at each company.
-              Ved in his last assignment was Vice President – K12 at
-              Encyclopaedia Britannica South Asia. He holds a bachelor’s degree
-              in commerce.
-            </div>
-            <div className="flex gap-3 w-full pr-8 justify-end items-center">
-              <a href="https://www.linkedin.com/in/ved-prakash-khatri-3a588220/">
-                <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
-                  <LinkedIn /> <span>Linkedin</span>
-                </button>
-              </a>
-              <button
-                className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
-                onClick={() => setSecond(!second)}
-              >
-                {second ? "Read More" : "Read Less"}
-              </button>
-            </div>
-          </div>
-          <div className="flex flex-col gap-7 sm:w-[30vw] w-full items-start">
+          </div> */}
+          <div className="flex flex-col gap-7 sm:w-[40vw] w-full items-start">
             <div className="flex flex-col gap-12 relative">
               <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
                 <span className="text-gray-800 font-bold">AMIT KAPOOR,</span>
                 <br />
                 <span className="text-gray-600 font-semibold">
-                  CO-FOUNDER AND DIRECTOR
+                  CO-FOUNDER AND CHIEF EXECUTIVE OFFICER
                 </span>
               </div>
 
@@ -287,7 +238,7 @@ export default function About() {
               />
             </div>
             <div
-              className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm"
+              className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm pr-4"
               style={{
                 display: "-webkit-box",
                 WebkitBoxOrient: "vertical",
@@ -315,6 +266,55 @@ export default function About() {
                 onClick={() => setThird(!third)}
               >
                 {third ? "Read More" : "Read Less"}
+              </button>
+            </div>
+          </div>
+          <div className="flex flex-col gap-7 pr-4 sm:w-[40vw] w-full items-start">
+            <div className="flex flex-col gap-12 relative">
+              <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
+                <span className="text-gray-800 font-bold">
+                  VED PRAKASH KHATRI,
+                </span>
+                <br />
+                <span className="text-gray-600 font-semibold">
+                  CO-FOUNDER AND CHIEF OPERATING OFFICER
+                </span>
+              </div>
+
+              <img
+                src={img5}
+                className="sm:w-[20vw] w-[60vw] shadow-2xl h-auto"
+                alt=""
+              />
+            </div>
+            <div
+              className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm pr-4"
+              style={{
+                display: "-webkit-box",
+                WebkitBoxOrient: "vertical",
+                WebkitLineClamp: `${second ? "5" : "100"}`,
+              }}
+            >
+              Ved has about 28 years’ sales experience in the K12 publishing
+              industry space. He has held progressive positions with Suman
+              Prakashan, Ratna Sagar, Oxford University Press and Encyclopaedia
+              Britannica with credentials of successfully opening new
+              territories and grown the business in his tenures at each company.
+              Ved in his last assignment was Vice President – K12 at
+              Encyclopaedia Britannica South Asia. He holds a bachelor’s degree
+              in commerce.
+            </div>
+            <div className="flex gap-3 w-full pr-8 justify-end items-center">
+              <a href="https://www.linkedin.com/in/ved-prakash-khatri-3a588220/">
+                <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+                  <LinkedIn /> <span>Linkedin</span>
+                </button>
+              </a>
+              <button
+                className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
+                onClick={() => setSecond(!second)}
+              >
+                {second ? "Read More" : "Read Less"}
               </button>
             </div>
           </div>
@@ -346,7 +346,7 @@ export default function About() {
         </div>
         <div className="flex sm:flex-row flex-col justify-around">
           <div
-            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[64rem] 2xl:h-[78rem] h-[60rem]"
+            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[77.5rem]  2xl:h-[84.5rem] h-[70.5rem] "
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
@@ -360,7 +360,7 @@ export default function About() {
               </span>
 
               <img src={img11} className="w-[50%] h-auto" alt="" />
-              <div className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-full">
+              <div className="text-gray-700 lg:text-lg 2xl:text-2xl text-lg sm:text-sm w-full text-[10px]">
                 Lightrock provides patient capital and business-building support
                 to world-class entrepreneurs across three key themes - Unlocking
                 human potential, equitably; Building resource efficiency,
@@ -382,7 +382,7 @@ export default function About() {
             </div>
           </div>
           <div
-            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[58rem] 2xl:h-[75rem] h-[54rem]"
+            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[77.5rem]  2xl:h-[84.5rem] h-[70.5rem]"
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
@@ -395,7 +395,7 @@ export default function About() {
                 (2021)
               </div>
               <img src={img10} className="w-[50%] h-auto" alt="" />
-              <div className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-full">
+              <div className="text-gray-700 lg:text-lg 2xl:text-2xl text-lg sm:text-sm w-full text-[10px]">
                 United Education Company is a Kuwaiti shareholding company
                 registered and incorporated in Kuwait on 18th February 2003 with
                 a paid-up capital of KD 10 million to capitalize on
@@ -415,7 +415,7 @@ export default function About() {
         <div className="flex sm:flex-row flex-col justify-around">
           {/* <div className="box"></div> */}
           <div
-            className="sm:py-[7rem] py-[3rem] h-[37rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[48rem] 2xl:h-[53rem]"
+            className="sm:py-[7rem] py-[3rem] h-[42rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[52rem] 2xl:h-[60rem] sm:h-[47rem]"
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
@@ -428,7 +428,7 @@ export default function About() {
                 (2020)
               </div>
               <img src={img9} className="w-[50%] h-auto" alt="" />
-              <div className="text-gray-700 lg:text-lg pl-6 2xl:text-2xl text-sm w-full">
+              <div className="text-gray-700 lg:text-lg pl-6 2xl:text-2xl text-lg sm:text-sm w-full text-[9.8px]">
                 Yuj Ventures is the private investing arm of the Yuj platform.
                 Backed by the family office of Sid Yog, Founding Partner of a
                 global investment firm, The Xander Group Inc., Yuj Ventures
@@ -442,7 +442,7 @@ export default function About() {
             </div>
           </div>
           <div
-            className="sm:py-[7rem] py-[4rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[47rem] 2xl:h-[53rem] h-[36rem]"
+            className="sm:py-[7rem] py-[4rem] px-[2rem] bg-no-repeat  sm:w-[50rem]  w-full lg:h-[52rem] 2xl:h-[60rem] h-[47rem]"
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
@@ -455,7 +455,7 @@ export default function About() {
                 (2018)
               </div>
               <img src={img8} className="w-[50%] h-auto" alt="" />
-              <div className="text-gray-700 pl-6 lg:text-lg 2xl:text-2xl text-sm w-full">
+              <div className="text-gray-700 pl-6 lg:text-lg 2xl:text-2xl text-lg sm:text-sm w-full text-[10px]">
                 Sixth Sense Ventures is India’s first domestic, consumer-centric
                 venture fund, founded by Nikhil Vora (Ex-Managing Director of
                 IDFC Securities), who is regarded as one of the strongest

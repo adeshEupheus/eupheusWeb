@@ -97,7 +97,7 @@ const PeopleSlider = () => {
                     Vice President - SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs text-center">
-                    ( WEST BENGAL, NEPAL )
+                    (WEST BENGAL, NEPAL)
                   </span>
                   <a
                     href="https://www.linkedin.com/in/abhijit-sen-57010537/"
@@ -119,7 +119,7 @@ const PeopleSlider = () => {
                     Vice President - SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs text-center">
-                    ( MAHARASHTRA, CHHATTISGARH, KARNATAKA )
+                    (MAHARASHTRA, CHHATTISGARH, KARNATAKA)
                   </span>
 
                   <a
@@ -161,7 +161,7 @@ const PeopleSlider = () => {
                     AVP SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    ( East Delhi, Kerala )
+                    (East Delhi, Kerala)
                   </span>
                   <a
                     href="https://www.linkedin.com/in/lalit-sharma-9807b520/"
@@ -202,7 +202,7 @@ const PeopleSlider = () => {
                     AVP SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    ( AP & TELANGANA )
+                    (AP & TELANGANA)
                   </span>
                   <a
                     href="https://www.linkedin.com/in/nehal-ather-97284981/"
@@ -292,7 +292,7 @@ const PeopleSlider = () => {
                     VP SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs text-center">
-                    ( NORTH INDIA & MIDDLE EAST )
+                    (NORTH INDIA & MIDDLE EAST)
                   </span>
 
                   <a
@@ -318,7 +318,7 @@ const PeopleSlider = () => {
                     AVP SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    ( NORTHEAST )
+                    (NORTHEAST)
                   </span>
                   <a
                     href="https://www.linkedin.com/in/ramesh-choudhury-3b886b8/"
@@ -340,7 +340,7 @@ const PeopleSlider = () => {
                     AVP SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    ( ODISHA )
+                    (ODISHA)
                   </span>
                   <a
                     href="https://www.linkedin.com/in/ranjan-samal-061105151/"
@@ -405,7 +405,7 @@ const PeopleSlider = () => {
                     AVP SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs text-center">
-                    ( UP, UK, BIHAR, JH )
+                    (UP, UK, BIHAR, JH)
                   </span>
                   <a
                     href="https://www.linkedin.com/in/sanjeetmukherjee/"

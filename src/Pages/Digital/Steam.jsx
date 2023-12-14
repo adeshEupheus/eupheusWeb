@@ -11,6 +11,7 @@ import img2 from "../../assets/digital/Steam/mathbuddy/1.png";
 import Escavel from "../../Components/Digital/steam/Escavel";
 import MathBuddy from "../../Components/Digital/steam/MathBuddy";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../../Components/Solutions/BackButton";
 
 const Steam = () => {
   const [page, setPage] = useState("default");
@@ -31,12 +32,20 @@ const Steam = () => {
               <img src={img1} className="h-[70%] w-auto" alt="" />
             </span> */}
             <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
-              <span
-                onClick={() => setPage("MathBuddy")}
-                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={img2} className="h-[70%] w-[70%]" alt="" />
-              </span>
+              <div className="w-full">
+                <span
+                  onClick={() => setPage("MathBuddy")}
+                  className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+                >
+                  <img src={img2} className="h-[70%] w-[70%]" alt="" />
+                </span>
+                <div
+                  className="text-red-500 cursor-pointer font-bold flex justify-center"
+                  onClick={() => setPage("MathBuddy")}
+                >
+                  Click Here
+                </div>
+              </div>
               <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
                 <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
                   MathBuddy: Transforming Math Teaching and Learning.
@@ -100,14 +109,7 @@ const Steam = () => {
         <Navbar highlight={"solutions"} />
         <div className="w-[100vw] flex flex-col gap-[2rem]">
           {page === "default" ? (
-            <button
-              onClick={() => navigate(-1)}
-              className="pr-4 pl-1 py-1 sm:pr-6 sm:pl-4 sm:py-2 font-semibold bg-gray-600 flex z-10 text-base sm:text-lg gap-1 items-center !text-gray-200 active:scale-90 transition-all duration-200 ease-linear fixed md:top-[9rem] sm:top-[10rem] lg:top-[8rem] top-[11rem] sm:left-[2rem] left-[0.4rem] rounded-3xl"
-              // className="pr-4 pl-1 py-1 sm:pr-8 sm:pl-6 sm:py-2 font-semibold bg-[#d13131] flex  text-base sm:text-lg gap-1 items-center !text-gray-200 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[10rem] lg:top-[5rem] top-[10rem] sm:left-[4rem] left-[0.4rem] rounded-md"
-            >
-              <ArrowBackIosNew className="!text-[1.2rem] sm:!text-[1.5rem]" />{" "}
-              <span className="mb-[0.1rem]">Back</span>
-            </button>
+            <BackButton />
           ) : (
             <button
               onClick={() => setPage("default")}

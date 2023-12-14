@@ -37,6 +37,7 @@ import SplashIcon from "../../assets/curriculum/splash/Icon.png";
 import PitaraIcon from "../../assets/curriculum/pitara/Icon.png";
 import RadiantIcon from "../../assets/curriculum/radiantWay/Icon.png";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../../Components/Solutions/BackButton";
 
 const PrePrimary = () => {
   //   const navigate = useNavigate();
@@ -51,48 +52,105 @@ const PrePrimary = () => {
       case "default":
         return (
           <div className="w-full grid sm:grid-rows-3 grid-rows-4 sm:grid-cols-3 grid-cols-2 sm:gap-[3rem] gap-[1rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[12rem] lg:mt-[13vh] md:mt-[21vh] sm:mt-[33vh]">
-            <span
-              onClick={() => setPage("zoom")}
-              className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={zoomIcon} className="w-[90%] h-auto" alt="" />
-            </span>
-            <span
-              onClick={() => setPage("alpha_fun")}
-              className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={AlphaIcon} className="w-[90%] h-auto" alt="" />
-            </span>
-            <span
-              onClick={() => setPage("dot_dash")}
-              className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={DotIcon} className="w-[90%] h-auto" alt="" />
-            </span>
-            <span
-              onClick={() => setPage("number_max")}
-              className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={NumberMaxIcon} className="w-[90%] h-auto" alt="" />
-            </span>
-            <span
-              onClick={() => setPage("splash")}
-              className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={SplashIcon} className="w-[90%] h-auto" alt="" />
-            </span>
-            <span
-              onClick={() => setPage("pitara")}
-              className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={PitaraIcon} className="w-[90%] h-auto" alt="" />
-            </span>
-            <span
-              onClick={() => setPage("radiant_way")}
-              className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={RadiantIcon} className="w-[90%] h-auto" alt="" />
-            </span>
+            <div>
+              <span
+                onClick={() => setPage("zoom")}
+                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={zoomIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("zoom")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("alpha_fun")}
+                className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={AlphaIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("alpha_fun")}
+              >
+                Click Here
+              </div>
+            </div>
+
+            <div>
+              <span
+                onClick={() => setPage("dot_dash")}
+                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={DotIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("dot_dash")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("number_max")}
+                className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={NumberMaxIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("number_max")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("splash")}
+                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={SplashIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("splash")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("pitara")}
+                className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={PitaraIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("pitara")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("radiant_way")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={RadiantIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("radiant_way")}
+              >
+                Click Here
+              </div>
+            </div>
           </div>
           // <div className="w-full h-[100vh] flex justify-center items-center">
           //   <div className="w-[2rem] h-[2rem] relative rounded-full bg-red-800">
@@ -146,6 +204,7 @@ const PrePrimary = () => {
         return (
           <div className="sm:mt-4">
             <Zoom />
+
             <GoToTop />
           </div>
         );
@@ -210,19 +269,11 @@ const PrePrimary = () => {
       <Navbar highlight={"solutions"} />
       <div className="w-[100vw] flex flex-col gap-[2rem]">
         {page === "default" ? (
-          <button
-            onClick={() => navigate(-1)}
-            className="pr-4 pl-1 py-1 sm:pr-6 sm:pl-4 sm:py-2 font-semibold bg-gray-600 flex z-10 text-base sm:text-lg gap-1 items-center !text-gray-200 active:scale-90 transition-all duration-200 ease-linear fixed md:top-[6rem] sm:top-[9rem] lg:top-[6rem] top-[10rem] sm:left-[2rem] left-[0.4rem] rounded-3xl"
-            // className="pr-4 pl-1 py-1 sm:pr-8 sm:pl-6 sm:py-2 font-semibold bg-[#d13131] flex  text-base sm:text-lg gap-1 items-center !text-gray-200 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[10rem] lg:top-[5rem] top-[10rem] sm:left-[4rem] left-[0.4rem] rounded-md"
-          >
-            <ArrowBackIosNew className="!text-[1.2rem] sm:!text-[1.5rem]" />{" "}
-            <span className="mb-[0.1rem]">Back</span>
-          </button>
+          <BackButton />
         ) : (
           <button
             onClick={() => setPage("default")}
             className="pr-4 pl-1 py-1 sm:pr-6 sm:pl-4 sm:py-2 font-semibold bg-[#dbdbdb] flex  text-base sm:text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[15rem] lg:top-[11rem] top-[10rem] sm:left-[1rem] left-[0.4rem] rounded-md"
-            // className="pr-4 pl-1 py-1 sm:pr-8 sm:pl-6 sm:py-2 font-semibold bg-[#dbdbdb] flex  text-base sm:text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[15rem] lg:top-[11rem] top-[10rem] sm:left-[1rem] left-[0.4rem] rounded-md"
           >
             <ArrowBackIosNew className="!text-[1.2rem] sm:!text-[1.5rem]" />{" "}
             <span className="mb-[0.1rem]">Back</span>

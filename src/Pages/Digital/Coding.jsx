@@ -12,6 +12,7 @@ import Robo_garden from "../../Components/Digital/coding/Robo_garden";
 import img1 from "../../assets/digital/primo/14.png";
 import img2 from "../../assets/digital/roboGarden/13.png";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../../Components/Solutions/BackButton";
 
 const Coding = () => {
   const [page, setPage] = useState("default");
@@ -27,12 +28,21 @@ const Coding = () => {
           // <div className="w-full grid sm:grid-rows-3 grid-rows-4 sm:grid-cols-3 grid-cols-2 sm:gap-[3rem] gap-[1rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
           <div className=" w-full flex flex-col sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
             <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
-              <span
-                onClick={() => setPage("primo")}
-                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={img1} className="h-[70%] w-[70%]" alt="" />
-              </span>
+              <div className="w-full">
+                <span
+                  onClick={() => setPage("primo")}
+                  className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+                >
+                  <img src={img1} className="h-[70%] w-[70%]" alt="" />
+                </span>
+                <div
+                  className="text-red-500 cursor-pointer font-bold flex justify-center"
+                  onClick={() => setPage("primo")}
+                >
+                  Click Here
+                </div>
+              </div>
+
               <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
                 <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
                   PRIMO: Screenless coding toy for girls and boys Cubetto is a
@@ -74,12 +84,20 @@ const Coding = () => {
             </div>
 </span> */}
             <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
-              <span
-                onClick={() => setPage("roboGarden")}
-                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={img2} className="h-[70%] w-[70%]" alt="" />
-              </span>
+              <div className="w-full">
+                <span
+                  onClick={() => setPage("roboGarden")}
+                  className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+                >
+                  <img src={img2} className="h-[70%] w-[70%]" alt="" />
+                </span>
+                <div
+                  className="text-red-500 cursor-pointer font-bold flex justify-center"
+                  onClick={() => setPage("roboGarden")}
+                >
+                  Click Here
+                </div>
+              </div>
               <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
                 <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
                   RoboGarden: RoboGarden is an easy-to-understand, hands-on
@@ -125,14 +143,7 @@ const Coding = () => {
         <Navbar highlight={"solutions"} />
         <div className="w-[100vw] flex flex-col gap-[2rem]">
           {page === "default" ? (
-            <button
-              onClick={() => navigate(-1)}
-              className="pr-4 pl-1 py-1 sm:pr-6 sm:pl-4 sm:py-2 font-semibold bg-gray-600 flex z-10 text-base sm:text-lg gap-1 items-center !text-gray-200 active:scale-90 transition-all duration-200 ease-linear fixed md:top-[9rem] sm:top-[10rem] lg:top-[8rem] top-[11rem] sm:left-[2rem] left-[0.4rem] rounded-3xl"
-              // className="pr-4 pl-1 py-1 sm:pr-8 sm:pl-6 sm:py-2 font-semibold bg-[#d13131] flex  text-base sm:text-lg gap-1 items-center !text-gray-200 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[10rem] lg:top-[5rem] top-[10rem] sm:left-[4rem] left-[0.4rem] rounded-md"
-            >
-              <ArrowBackIosNew className="!text-[1.2rem] sm:!text-[1.5rem]" />{" "}
-              <span className="mb-[0.1rem]">Back</span>
-            </button>
+            <BackButton />
           ) : (
             <button
               onClick={() => setPage("default")}

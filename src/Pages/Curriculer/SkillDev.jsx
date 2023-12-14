@@ -22,6 +22,7 @@ import mindmapIcon from "../../assets/curriculum/skillDev/mindmapIcon.png";
 import valueIcon from "../../assets/curriculum/skillDev/valueIcon.png";
 import wowartIcon from "../../assets/curriculum/skillDev/wowartIcon.png";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../../Components/Solutions/BackButton";
 
 const SkillDev = () => {
   //   const navigate = useNavigate();
@@ -36,37 +37,88 @@ const SkillDev = () => {
       case "default":
         return (
           <div className="w-full grid sm:grid-rows-5 grid-rows-7 sm:grid-cols-3 grid-cols-2 sm:gap-[4rem] gap-[2rem] sm:px-[3rem] px-4 pb-8 sm:pt-8 pt-[13rem] lg:mt-[16vh] md:mt-[18vh] sm:mt-[21vh]">
-            <span
-              onClick={() => setPage("art")}
-              className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={artIcon} className="w-[90%] h-auto" alt="" />
-            </span>
-            <span
-              onClick={() => setPage("artCraft")}
-              className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={wowartIcon} className="w-[90%] h-auto" alt="" />
-            </span>
-            <span
-              onClick={() => setPage("handwriting")}
-              className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={handwritingIcon} className="w-[90%] h-auto" alt="" />
-            </span>
-            <span
-              onClick={() => setPage("merrygo")}
-              className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={merrygoIcon} className="w-[90%] h-auto" alt="" />
-            </span>
-            <span
+            <div>
+              <span
+                // onClick={() => setPage("art")}
+                onClick={() => setPage("gk")}
+                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                {/* <img src={artIcon} className="w-[90%] h-auto" alt="" /> */}
+                <img src={gkIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("gk")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                // onClick={() => setPage("artCraft")}
+                onClick={() => setPage("value")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                {/* <img src={wowartIcon} className="w-[90%] h-auto" alt="" /> */}
+                <img src={valueIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("value")}
+              >
+                Click Here
+              </div>
+            </div>
+
+            <div>
+              <span
+                onClick={() => setPage("art")}
+                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={artIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("art")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("handwriting")}
+                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={handwritingIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("handwriting")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("merrygo")}
+                className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={merrygoIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("merrygo")}
+              >
+                Click Here
+              </div>
+            </div>
+            {/* <span
               onClick={() => setPage("mindmap")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
               <img src={mindmapIcon} className="w-[90%] h-auto" alt="" />
-            </span>
-            <span
+            </span> */}
+            {/* <span
               onClick={() => setPage("value")}
               className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
@@ -77,7 +129,7 @@ const SkillDev = () => {
               className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
               <img src={gkIcon} className="w-[90%] h-auto" alt="" />
-            </span>
+            </span> */}
           </div>
         );
         break;
@@ -149,14 +201,7 @@ const SkillDev = () => {
       <Navbar highlight={"solutions"} />
       <div className="w-[100vw] flex flex-col gap-[2rem]">
         {page === "default" ? (
-          <button
-            onClick={() => navigate(-1)}
-            className="pr-4 pl-1 py-1 sm:pr-6 sm:pl-4 sm:py-2 font-semibold bg-gray-600 flex z-10 text-base sm:text-lg gap-1 items-center !text-gray-200 active:scale-90 transition-all duration-200 ease-linear fixed md:top-[9rem] sm:top-[10rem] lg:top-[8rem] top-[11rem] sm:left-[2rem] left-[0.4rem] rounded-3xl"
-            // className="pr-4 pl-1 py-1 sm:pr-8 sm:pl-6 sm:py-2 font-semibold bg-[#d13131] flex  text-base sm:text-lg gap-1 items-center !text-gray-200 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[10rem] lg:top-[5rem] top-[10rem] sm:left-[4rem] left-[0.4rem] rounded-md"
-          >
-            <ArrowBackIosNew className="!text-[1.2rem] sm:!text-[1.5rem]" />{" "}
-            <span className="mb-[0.1rem]">Back</span>
-          </button>
+          <BackButton />
         ) : (
           <button
             onClick={() => setPage("default")}
