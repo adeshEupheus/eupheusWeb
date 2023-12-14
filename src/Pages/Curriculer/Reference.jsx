@@ -10,6 +10,7 @@ import Young_set_deictionaries from "../../Components/Curriculum/reference/Young
 
 // icons
 import atlasIcon from "../../assets/curriculum/Reference/atlasIcon.png";
+import atlasCompaniomIcon from "../../assets/curriculum/zoom/eupehusAltasCompanion.png";
 import chamberIcon from "../../assets/curriculum/Reference/chamberIcon.png";
 import { useNavigate } from "react-router-dom";
 import BackButton from "../../Components/Solutions/BackButton";
@@ -48,7 +49,26 @@ const Reference = () => {
             >
               <img src={atlasIcon} className="w-[60%] h-auto" alt="" />
             </span> */}
+
             <div>
+              <span
+                onClick={() => setPage("atlas")}
+                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img
+                  src={atlasCompaniomIcon}
+                  className="w-[100%] h-auto"
+                  alt=""
+                />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("atlas")}
+              >
+                Click Here
+              </div>
+            </div>
+            {/* <div>
               <span
                 onClick={() => setPage("young_set")}
                 className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
@@ -61,7 +81,7 @@ const Reference = () => {
               >
                 Click Here
               </div>
-            </div>
+            </div> */}
           </div>
         );
         break;

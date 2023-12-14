@@ -29,15 +29,22 @@ import Radiant_way from "../../Components/Curriculum/prePrimary/Radiant_way";
 // import  Silver_bells  from "../../Components/Curriculum/prePrimary/Silver_bells";
 
 // icons
-import zoomIcon from "../../assets/curriculum/zoom/Icon.png";
-import AlphaIcon from "../../assets/curriculum/alphaFun/Icon.png";
-import DotIcon from "../../assets/curriculum/dotDash/Icon.png";
-import NumberMaxIcon from "../../assets/curriculum/numberMax/Icon.png";
-import SplashIcon from "../../assets/curriculum/splash/Icon.png";
-import PitaraIcon from "../../assets/curriculum/pitara/Icon.png";
-import RadiantIcon from "../../assets/curriculum/radiantWay/Icon.png";
+// import zoomIcon from "../../assets/curriculum/zoom/Icon.png";
+import zoomIcon from "../../assets/curriculum/zoom/ZoomPlus.png";
+// import AlphaIcon from "../../assets/curriculum/alphaFun/Icon.png";
+import AlphaIcon from "../../assets/curriculum/zoom/AlphaFun.png";
+// import DotIcon from "../../assets/curriculum/dotDash/Icon.png";
+import DotIcon from "../../assets/curriculum/zoom/dot&dash.png";
+// import NumberMaxIcon from "../../assets/curriculum/numberMax/Icon.png";
+import NumberMaxIcon from "../../assets/curriculum/zoom/numberMax.png";
+// import SplashIcon from "../../assets/curriculum/splash/Icon.png";
+import SplashIcon from "../../assets/curriculum/zoom/splash.png";
+// import PitaraIcon from "../../assets/curriculum/pitara/Icon.png";
+import PitaraIcon from "../../assets/curriculum/zoom/Pitara.png";
+// import RadiantIcon from "../../assets/curriculum/radiantWay/Icon.png";
+import RadiantIcon from "../../assets/curriculum/zoom/TheRadiantWay-pre.png";
 import { useNavigate } from "react-router-dom";
-import BackButton from "../../Components/Solutions/BackButton";
+import AksharIcon from "../../assets/curriculum/zoom/aksharSagar.png";
 
 const PrePrimary = () => {
   //   const navigate = useNavigate();
@@ -62,6 +69,20 @@ const PrePrimary = () => {
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
                 onClick={() => setPage("zoom")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("pitara")}
+                className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={PitaraIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("pitara")}
               >
                 Click Here
               </div>
@@ -125,6 +146,20 @@ const PrePrimary = () => {
             </div>
             <div>
               <span
+                onClick={() => setPage("aksharSagar")}
+                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={AksharIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("aksharSagar")}
+              >
+                Click Here
+              </div>
+            </div>
+            {/* <div>
+              <span
                 onClick={() => setPage("pitara")}
                 className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
@@ -136,7 +171,7 @@ const PrePrimary = () => {
               >
                 Click Here
               </div>
-            </div>
+            </div> */}
             <div>
               <span
                 onClick={() => setPage("radiant_way")}
@@ -250,6 +285,14 @@ const PrePrimary = () => {
         );
         break;
       case "radiant_way":
+        return (
+          <div className="sm:mt-4">
+            <Radiant_way />
+            <GoToTop />
+          </div>
+        );
+        break;
+      case "aksharSagar":
         return (
           <div className="sm:mt-4">
             <Radiant_way />

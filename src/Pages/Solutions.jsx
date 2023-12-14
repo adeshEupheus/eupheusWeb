@@ -7,6 +7,7 @@ import solImg2 from "../assets/sol-img2.png";
 import solMap from "../assets/sol-map.png";
 import Footer from "../Components/Footer";
 import img3 from "../assets/sol-img3.png";
+import worldMap from "../assets/world map.png";
 // import { Parallax } from "react-scroll-parallax";
 // import gsap from "gsap";
 import { useNavigate } from "react-router-dom";
@@ -91,7 +92,7 @@ const Solutions = () => {
         <img
           onClick={() => navigate("/digital")}
           className=" h-auto cursor-pointer hover:scale-90 transition-all duration-150 ease-linear w-[70vw]"
-          src={solMap}
+          src={worldMap}
           alt=""
         />
       </div>

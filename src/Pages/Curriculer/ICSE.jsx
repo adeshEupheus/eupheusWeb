@@ -25,21 +25,29 @@ import { Silver_bells } from "../../Components/Curriculum/cbse/Silver_bells";
 import chemistryIcon from "../../assets/curriculum/icse/chemistryIcon.png";
 import GrCompVibesIcon from "../../assets/curriculum/cbse/G&comVibes/Icon.png";
 import icsebiologyIcon from "../../assets/curriculum/icse/icsebiologyIcon.png";
-import icsemathIcon from "../../assets/curriculum/icse/icsemathIcon.png";
+import icsemathIcon from "../../assets/curriculum/zoom/ICSEmathematics678.png";
+import EnglishTreeIcon from "../../assets/curriculum/zoom/englishTree.png";
 import icsephysicsIcon from "../../assets/curriculum/icse/icsephysicsIcon.png";
-import NRRIcon from "../../assets/curriculum/icse/NRRIcon.png";
+import NRRworkbookIcon from "../../assets/curriculum/zoom/ICSEnewRadiantReaders123.png";
+import NRRIcon from "../../assets/curriculum/zoom/ICSEnewRadiantReaders123.png";
+
 import NRRscienceIcon from "../../assets/curriculum/icse/NRRscienceIcon.png";
 import radiantEVSIcon from "../../assets/curriculum/icse/radiantEVSIcon.png";
-import radiantwayIcon from "../../assets/curriculum/cbse/radiantWay2/Icon.png";
-import silverbellIcon from "../../assets/curriculum/cbse/silverbell/Icon.png";
+// import radiantwayIcon from "../../assets/curriculum/cbse/radiantWay2/Icon.png";
+import radiantwayIcon from "../../assets/curriculum/zoom/TheRadiantWay-firstStep.png";
+// import silverbellIcon from "../../assets/curriculum/cbse/silverbell/Icon.png";
+import silverbellIcon from "../../assets/curriculum/zoom/silverbells123.png";
 import simplifiedchemistryIcon from "../../assets/curriculum/icse/simplifiedchemistryIcon.png";
 import vibesengIcon from "../../assets/curriculum/cbse/englishVibes/Icon.png";
-import wowcompubyteIcon from "../../assets/curriculum/icse/wowcompubyteIcon.png";
+import wowcompubyteIcon from "../../assets/curriculum/zoom/ICSEwowCompuByte123.png";
 import wowenglish from "../../assets/curriculum/cbse/wowEnglish/Icon.png";
 import wowmathIcon from "../../assets/curriculum/icse/wowmathIcon.png";
-import GramComIcon from "../../assets/curriculum/icse/gram&com.png";
+// import GramComIcon from "../../assets/curriculum/icse/gram&com.png";
+import GramComIcon from "../../assets/curriculum/zoom/wowGram&Comm.png";
 import { useNavigate } from "react-router-dom";
-import BackButton from "../../Components/Solutions/BackButton";
+import Icse10 from "../../assets/curriculum/zoom/ICSEdalalChemistry-X.png";
+import Icsedalal6_8 from "../../assets/curriculum/zoom/ICSEdalalChemistry678.png";
+import sstvibeIcon from "../../assets/curriculum/zoom/socialStudiesVibes.png";
 
 const Icse = () => {
   //   const navigate = useNavigate();
@@ -59,7 +67,35 @@ const Icse = () => {
                 onClick={() => setPage("chemistry9_10")}
                 className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={chemistryIcon} className="w-[90%] h-auto" alt="" />
+                <img src={chemistryIcon} className="w-[70%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("chemistry9_10")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div className="">
+              <span
+                onClick={() => setPage("chemistry9_10")}
+                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={Icse10} className="w-[100%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("chemistry9_10")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div className="">
+              <span
+                onClick={() => setPage("chemistry9_10")}
+                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={Icsedalal6_8} className="w-[100%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
@@ -75,7 +111,7 @@ const Icse = () => {
               >
                 <img
                   src={simplifiedchemistryIcon}
-                  className="w-[90%] h-auto"
+                  className="w-[70%] h-auto"
                   alt=""
                 />
               </span>
@@ -92,7 +128,7 @@ const Icse = () => {
                 onClick={() => setPage("biology")}
                 className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={icsebiologyIcon} className="w-[90%] h-auto" alt="" />
+                <img src={icsebiologyIcon} className="w-[70%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
@@ -120,7 +156,21 @@ const Icse = () => {
                 onClick={() => setPage("physics")}
                 className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={icsephysicsIcon} className="w-[90%] h-auto" alt="" />
+                <img src={icsephysicsIcon} className="w-[75%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("physics")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("physics")}
+                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={EnglishTreeIcon} className="w-[100%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
@@ -134,7 +184,7 @@ const Icse = () => {
                 onClick={() => setPage("nrr")}
                 className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={NRRIcon} className="w-[90%] h-auto" alt="" />
+                <img src={NRRIcon} className="w-[100%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
@@ -144,6 +194,20 @@ const Icse = () => {
               </div>
             </div>
             <div>
+              <span
+                onClick={() => setPage("nrr")}
+                className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={NRRworkbookIcon} className="w-[100%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("nrr")}
+              >
+                Click Here
+              </div>
+            </div>
+            {/* <div>
               <span
                 onClick={() => setPage("radiant_science")}
                 className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
@@ -156,8 +220,8 @@ const Icse = () => {
               >
                 Click Here
               </div>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <span
                 onClick={() => setPage("radiant_es")}
                 className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
@@ -170,13 +234,13 @@ const Icse = () => {
               >
                 Click Here
               </div>
-            </div>
+            </div> */}
             <div>
               <span
                 onClick={() => setPage("radiant_way")}
                 className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={radiantwayIcon} className="w-[90%] h-auto" alt="" />
+                <img src={radiantwayIcon} className="w-[100%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
@@ -187,10 +251,24 @@ const Icse = () => {
             </div>
             <div>
               <span
+                onClick={() => setPage("grammer_com")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={GramComIcon} className="w-[100%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("grammer_com")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
                 onClick={() => setPage("silverbells")}
                 className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={silverbellIcon} className="w-[90%] h-auto" alt="" />
+                <img src={silverbellIcon} className="w-[100%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
@@ -199,7 +277,7 @@ const Icse = () => {
                 Click Here
               </div>
             </div>
-            <div>
+            {/* <div>
               <span
                 onClick={() => setPage("grammer_com_vibes")}
                 className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
@@ -212,9 +290,9 @@ const Icse = () => {
               >
                 Click Here
               </div>
-            </div>
+            </div> */}
 
-            <div>
+            {/* <div>
               <span
                 onClick={() => setPage("eng_vibes")}
                 className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
@@ -227,13 +305,17 @@ const Icse = () => {
               >
                 Click Here
               </div>
-            </div>
+            </div> */}
             <div>
               <span
                 onClick={() => setPage("compu_bytes")}
                 className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={wowcompubyteIcon} className="w-[90%] h-auto" alt="" />
+                <img
+                  src={wowcompubyteIcon}
+                  className="w-[100%] h-auto"
+                  alt=""
+                />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
@@ -243,6 +325,20 @@ const Icse = () => {
               </div>
             </div>
             <div>
+              <span
+                onClick={() => setPage("compu_bytes")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={sstvibeIcon} className="w-[100%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("compu_bytes")}
+              >
+                Click Here
+              </div>
+            </div>
+            {/* <div>
               <span
                 onClick={() => setPage("english")}
                 className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
@@ -255,8 +351,8 @@ const Icse = () => {
               >
                 Click Here
               </div>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <span
                 onClick={() => setPage("maths")}
                 className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
@@ -269,8 +365,8 @@ const Icse = () => {
               >
                 Click Here
               </div>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <span
                 onClick={() => setPage("grammer_com")}
                 className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
@@ -283,7 +379,7 @@ const Icse = () => {
               >
                 Click Here
               </div>
-            </div>
+            </div> */}
           </div>
         );
         break;
