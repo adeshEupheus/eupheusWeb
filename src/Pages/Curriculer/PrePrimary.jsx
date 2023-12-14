@@ -45,6 +45,7 @@ import PitaraIcon from "../../assets/curriculum/zoom/Pitara.png";
 import RadiantIcon from "../../assets/curriculum/zoom/TheRadiantWay-pre.png";
 import { useNavigate } from "react-router-dom";
 import AksharIcon from "../../assets/curriculum/zoom/aksharSagar.png";
+import BackButton from "../../Components/Solutions/BackButton";
 
 const PrePrimary = () => {
   //   const navigate = useNavigate();

@@ -48,6 +48,7 @@ import { useNavigate } from "react-router-dom";
 import Icse10 from "../../assets/curriculum/zoom/ICSEdalalChemistry-X.png";
 import Icsedalal6_8 from "../../assets/curriculum/zoom/ICSEdalalChemistry678.png";
 import sstvibeIcon from "../../assets/curriculum/zoom/socialStudiesVibes.png";
+import BackButton from "../../Components/Solutions/BackButton";
 
 const Icse = () => {
   //   const navigate = useNavigate();

@@ -60,6 +60,7 @@ import ScienceTree from "../../assets/curriculum/zoom/sciencetree123.png";
 import WowScienceLabIcon from "../../assets/curriculum/zoom/wowScienceLab678.png";
 import envConnectIcon from "../../assets/curriculum/zoom/EnvConenct.png";
 import socialStudiesIcon from "../../assets/curriculum/zoom/socialStudiesVibes.png";
+import BackButton from "../../Components/Solutions/BackButton";
 
 const Cbse = () => {
   //   const navigate = useNavigate();
