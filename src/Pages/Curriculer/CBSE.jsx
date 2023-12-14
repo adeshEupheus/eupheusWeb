@@ -407,7 +407,7 @@ const Cbse = () => {
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
                 onClick={() => setPage("compu_bytes")}
               >
-                Click Here
+                // Click Here
               </div>
             </div> */}
             {/* <div>
