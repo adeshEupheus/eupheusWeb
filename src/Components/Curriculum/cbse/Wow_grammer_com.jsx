@@ -26,7 +26,7 @@ const Wow_grammer_com = ({ sOpen }) => {
             curriculum design that recycles grammar points at every level and
             builds on previous understanding.
           </span>
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#8972ac] py-2">
+          {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#8972ac] py-2">
             <div className="flex flex-col gap-[2px] ">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book 1</span>
@@ -47,7 +47,7 @@ const Wow_grammer_com = ({ sOpen }) => {
               <span className="text-black font-semibold">405</span>
               <span className="text-black font-semibold">415</span>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex sm:flex-row flex-col px-4 sm:px-0 gap-4 items-center w-full">

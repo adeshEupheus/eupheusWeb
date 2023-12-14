@@ -26,7 +26,7 @@ const My_world_my_earth = ({ sOpen }) => {
               concepts of social interaction, encourage scientific thoughts, and
               make students aware of the diversity in the world at large.
             </span>
-            <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ffa463] py-2">
+            {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ffa463] py-2">
               <div className="flex flex-col gap-[2px] ">
                 <span className="text-white font-semibold">Title</span>
                 <span className="text-black font-semibold">Book 1</span>
@@ -43,7 +43,7 @@ const My_world_my_earth = ({ sOpen }) => {
                 <span className="text-black font-semibold">355</span>
                 <span className="text-black font-semibold">370</span>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
             <div className="flex flex-col sm:w-6/12 w-full">
