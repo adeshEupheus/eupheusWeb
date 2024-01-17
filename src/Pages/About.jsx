@@ -11,7 +11,7 @@ import img1 from "../assets/about/Asset 35@3x.png";
 import img2 from "../assets/about/Asset 34@3x.png";
 import img3 from "../assets/about/Asset 3@3x.png";
 import img3_1 from "../assets/about/Asset 2@3.1x.png";
-import img4 from "../assets/about/Asset 15@3x.png";
+// import img4 from "../assets/about/Asset 15@3x.png";
 import img5 from "../assets/about/Asset 16@3x.png";
 import img6 from "../assets/about/Asset 17@3x.png";
 import img7 from "../assets/about/Asset 37@3x.png";

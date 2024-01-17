@@ -40,7 +40,7 @@ import silverbellIcon from "../../assets/curriculum/zoom/silverbells123.png";
 import simplifiedchemistryIcon from "../../assets/curriculum/icse/simplifiedchemistryIcon.png";
 import vibesengIcon from "../../assets/curriculum/cbse/englishVibes/Icon.png";
 import wowcompubyteIcon from "../../assets/curriculum/zoom/ICSEwowCompuByte123.png";
-import wowenglish from "../../assets/curriculum/cbse/wowEnglish/Icon.png";
+// import wowenglish from "../../assets/curriculum/cbse/wowEnglish/Icon.png";
 import wowmathIcon from "../../assets/curriculum/icse/wowmathIcon.png";
 // import GramComIcon from "../../assets/curriculum/icse/gram&com.png";
 import GramComIcon from "../../assets/curriculum/zoom/wowGram&Comm.png";
