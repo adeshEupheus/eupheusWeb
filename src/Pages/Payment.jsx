@@ -135,6 +135,7 @@ const Payment = () => {
       image: logo,
       order_id: data.data.id,
       handler: async function (response) {
+        console.log(response, "payment successful");
         setOpen(true);
 
         const res = await instance({
@@ -169,6 +170,11 @@ const Payment = () => {
     };
 
     const paymentObject = new window.Razorpay(options);
+
+    paymentObject.on("payment.failed", function (response) {
+      console.log("payment failed", response);
+    });
+
     paymentObject.open();
   };
 
