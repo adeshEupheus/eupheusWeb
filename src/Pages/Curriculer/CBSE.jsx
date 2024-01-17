@@ -22,11 +22,11 @@ import Wow_menta_maths from "../../Components/Curriculum/cbse/Wow_menta_maths";
 import Wow_science from "../../Components/Curriculum/cbse/Wow_science";
 
 // icons
-import wowEnglishIcon from "../../assets/curriculum/cbse/wowEnglish/Icon.png";
-import EnglishVibesIcon from "../../assets/curriculum/cbse/englishVibes/Icon.png";
+// import wowEnglishIcon from "../../assets/curriculum/cbse/wowEnglish/Icon.png";
+// import EnglishVibesIcon from "../../assets/curriculum/cbse/englishVibes/Icon.png";
 // import GComIcon from "../../assets/curriculum/cbse/G&Com/Icon.png";
 import GComIcon from "../../assets/curriculum/zoom/wowGram&Comm.png";
-import GComVibesIcom from "../../assets/curriculum/cbse/G&comVibes/Icon.png";
+// import GComVibesIcom from "../../assets/curriculum/cbse/G&comVibes/Icon.png";
 // import newRLRIcon from "../../assets/curriculum/cbse/newRLR/Icon.png";
 import newRLRIcon from "../../assets/curriculum/zoom/TheRadiantReader.png";
 // import newRwayIcon from "../../assets/curriculum/cbse/radiantWay2/Icon.png";

@@ -67,6 +67,7 @@ function App() {
             <Route path="/privacy_policy" element={<PrivacyPolicy />} />
             <Route path="/term_and_condition" element={<TermAndCondition />} />
             <Route path="/unsubscribe" element={<Unsubscribe />} />
+            <Route path="/teachtech" element={<TeachTech />} />
             <Route path="/toefl_payment" element={<Payment />} />
             {/* <Route path="/toefl_payment" element={<SchoolsDetails />} />  */}
             {/* curriculer */}
