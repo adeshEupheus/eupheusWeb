@@ -2,18 +2,17 @@ import React, { useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import GoToTop from "../Components/Top";
-import Banner_1 from "../assets/eventBanner.png";
-import power from "../assets/power.png";
+// import Banner_1 from "../assets/eventBanner.png";
+// import power from "../assets/power.png";
 import grayBg from "../assets/grayBg.png";
 import isfo from "../assets/iso.png";
-import c2w from "../assets/code2win.png";
+// import c2w from "../assets/code2win.png";
 import eventLast from "../assets/img01.png";
 import winner from "../assets/wiiner.png";
-import java from "../assets/java.png";
-import python from "../assets/python.png";
-import class1 from "../assets/class1.png";
-import img1 from "../assets/eventAsset1.png";
-import img2 from "../assets/eventAsset2.png";
+// import python from "../assets/python.png";
+// import class1 from "../assets/class1.png";
+// import img1 from "../assets/eventAsset1.png";
+// import img2 from "../assets/eventAsset2.png";
 
 export default function IFSO() {
   useEffect(() => {

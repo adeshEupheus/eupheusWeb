@@ -40,6 +40,7 @@ import AdminDashBoard from "./Pages/Admin/AdminDashBoard";
 import Oslite from "./Pages/Oslite";
 import Unsubscribe from "./Pages/Unsubscribe";
 import Redirect from "./Pages/Redirect";
+import TeachTech from "./Pages/TeachTech";
 
 function App() {
   const Admin = useSelector((state) => state.auth.admin);
@@ -65,6 +66,7 @@ function App() {
             <Route path="/privacy_policy" element={<PrivacyPolicy />} />
             <Route path="/term_and_condition" element={<TermAndCondition />} />
             <Route path="/unsubscribe" element={<Unsubscribe />} />
+            <Route path="/teachtech" element={<TeachTech />} />
             <Route path="/toefl_payment" element={<Payment />} />
             {/* <Route path="/toefl_payment" element={<SchoolsDetails />} />  */}
             {/* curriculer */}

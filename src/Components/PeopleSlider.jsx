@@ -136,7 +136,7 @@ const PeopleSlider = () => {
                     <img src={p17} className="p-2 grayscale" alt="" />
                   </div>
                   <span className=" font-bold sm:text-base text-xs text-gray-800">
-                    Kapil Chanana
+                    KAPIL CHANANA
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
                     Chief Growth Officer
