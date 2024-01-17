@@ -12,7 +12,7 @@ function SectionThree({}) {
             "NCF for Schools",
             "Key Mandates of Foundational Stage",
             "Introducing Foundational Stage Solution – Zoom! Plus",
-            "Cultural/artistic development",
+            "Google Workspace immersion",
           ]}
         />
         <Content
@@ -22,7 +22,6 @@ function SectionThree({}) {
             "Time: 11:30 am to 3.30 pm",
             "Event Address: Google Office, Signature Tower-D, Sector-15, Part-2, Gurugram, Haryana, 122001",
             "Event Hall: Meerut Hall, 7th Floor, Signature Tower-D",
-            "Register At: https://shorturl.at/xFNW6",
           ]}
         />
         <Content

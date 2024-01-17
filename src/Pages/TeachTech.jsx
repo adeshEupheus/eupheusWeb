@@ -11,20 +11,20 @@ import Footer from "../Components/Footer";
 function TeachTech() {
   return (
     <div
-      className={`w-full flex flex-col bg-white sm:pt-0 transition-all duration-200 ease-linear gap-4 overflow-hidden`}
+      className={`w-full flex flex-col sm:pt-0 transition-all duration-200 ease-linear overflow-hidden`}
     >
       <div>
-        <img src={img1} alt="" />
-        <div className="m-0 p-0 mb-8 sm:text-left ">
+        <img src={img1} alt="" className="w-full" />
+        <div className="sm:text-left ">
           <Content2
             para={
-              "Welcome to Teach-Tech, an initiated by Eupheus Learning and powered by Google Workspace, to empower Schools through pedagogy and innovations. A series of seminars being organized under this initiative to decode NCF more carefully and discover tools and techniques to implement its key mandates."
+              "Welcome to Teach-Tech, an initiative of Eupheus Learning and powered by Google Workspace, to empower Schools through pedagogy and innovations. A series of seminars being organized under this initiative to decode NCF more carefully and discover tools and techniques to implement its key mandates."
             }
             bgColor={"rgb(250 204 21)"}
           />
           <div className="bg-gray-600">
             <span className="flex flex-col justify-center items-center py-4 font-bold text-4xl text-white">
-              Upcoming Events
+              Upcoming Event
             </span>
             <div className="flex flex-row justify-center items-center gap-3">
               <CardSecond
@@ -54,8 +54,8 @@ function TeachTech() {
             textColor={"black"} 
           />*/}
             </div>
-            <div className="flex flex-col justify-center items-center bg-gray-300 p-5">
-              <h2 className="text-xl font-normal">
+            <div className="flex flex-col justify-center items-center bg-gray-300 px-5">
+              <h2 className="text-xl font-normal mt-5">
                 We welcome you to the session on
               </h2>
               <h1 className="text-3xl font-bold text-red-600">Decoding NCF</h1>
@@ -71,8 +71,8 @@ function TeachTech() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center bg-gray-300 p-5 mt-5">
-            <h1 className="text-3xl font-bold text-black">FAQs</h1>
+          <div className="flex flex-col justify-center items-center bg-gray-300 px-5">
+            <h1 className="text-3xl font-bold text-black mt-5">FAQs</h1>
             <span className="flex flex-col justify-center items-center py-4 font-normal w-[60%] ">
               Welcome to the second of its series of Sessions being organized
               under the banner of Teach-Tech powered by Google and Eupheus. An
