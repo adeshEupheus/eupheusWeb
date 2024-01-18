@@ -11,7 +11,7 @@ function TeachTech() {
       className={`w-full flex flex-col bg-white transition-all duration-200 ease-linear overflow-hidden`}
     >
       <div>
-        <img src={img1} alt="" />
+        <img src={img1} alt="" className="w-full" />
         <div>
           <Content2
             para={
