@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import img1 from "../assets/TeachTech/banner@3x.png";
 import Content2 from "../Components/BookTemplate/Content2";
 import img2 from "../assets/TeachTech/Asset 8@3x.png";
@@ -6,6 +6,51 @@ import Content from "../Components/BookTemplate/Content";
 import Footer from "../Components/Footer";
 
 function TeachTech() {
+  const [active, setActive] = useState(0);
+
+  const data = [
+    {
+      id: 0,
+      date: "January 23rd,2024 (Tuesday)",
+      link: "https://shorturl.at/xFNW6",
+      topic: [
+        "NCF for Schools",
+        "Key Mandates of Foundational Stage",
+        "Introducing Foundational Stage Solution – Zoom! Plus",
+        "Google Workspace immersion",
+      ],
+      contact: [
+        "Sumit Goyal +91 98999 99241, sumitg@eupheus.in",
+        "Prabhat Sinha +91 95600 11396, prabhats@eupheus.in",
+        "Naresh Vashishth +91 98910 17188, nareshv@eupheus.in",
+        "Chhitiz Sisodia +91 93111 05718, chhitizs@eupheus.in",
+        "Surinder Singh +91 96505 90228, surinders@eupheus.in",
+      ],
+    },
+    {
+      id: 1,
+      date: `February 8th, 2024 (Thursday)`,
+      link: "https://forms.gle/hcz7H7EvbGE5azLu8",
+      topic: [
+        "NCF for Schools",
+        "Key Mandates of Foundational Stage",
+        "Introducing Foundational Stage Solution – Zoom! Plus",
+        "Google Workspace immersion",
+      ],
+      contact: [
+        "Abhay Dubey +91 99106 98385, abhayd@eupheus.in",
+        "Gaurav Jha +91 97177 09336, gauravjha@eupheus.in",
+        "Sumit Goyal +91 98999 99241, sumitg@eupheus.in",
+        "Prabhat Sinha +91 95600 11396 prabhats@eupheus.in",
+        "Naresh Vashishth +91 98910 17188, nareshv@eupheus.in",
+        "Chhitiz Sisodia +91 93111 05718, chhitizs@eupheus.in",
+        "Surinder Singh +91 96505 90228, surinders@eupheus.in",
+      ],
+    },
+  ];
+
+  console.log(data[active].contact[0].split("+91"));
+
   return (
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200 ease-linear overflow-hidden`}
@@ -24,20 +69,32 @@ function TeachTech() {
             <span className="flex flex-col justify-center items-center py-4 font-bold lg:text-4xl md:text-3xl sm:text-xl text-lg text-white">
               Upcoming Events
             </span>
-            <div className="flex flex-row justify-center items-center gap-3 sm:w-[100%] p-3">
-              <div className="flex flex-col justify-center items-center box-content border rounded-lg bg-yellow-400 p-6 m-4 w-36 text-lg">
-                <img src={img2} alt="" className="w-20 h-20" />
-                <p>January 23rd,</p>
-                <span>2024</span>
-              </div>
+            <div className="flex flex-row justify-center items-center gap-2 sm:w-[100%] p-3">
+              {data.map((item, index) => (
+                <div className="flex flex-col justify-center items-center gap-2 cursor-pointer ">
+                  <div
+                    onClick={() => setActive(index)}
+                    className={`flex flex-col justify-center items-center box-content border transition-all duration-150 ease-linear hover:bg-yellow-400 rounded-lg ${
+                      index === active ? "bg-yellow-400" : "bg-gray-100"
+                    } p-6 m-4 w-36 text-lg`}
+                  >
+                    <img src={img2} alt="" className="w-20 h-20" />
+                    <p>{item.date.split(",")[0]}</p>
+                    <span>2024</span>
+                  </div>
+                  <a href={item.link} target="_blank">
+                    <button
+                      className={`flex flex-col justify-center transition-all duration-150 ease-linear hover:bg-yellow-400 items-center ${
+                        index === active ? "bg-yellow-400" : "bg-gray-100"
+                      } border rounded-full px-3`}
+                    >
+                      Book Your Slot
+                    </button>
+                  </a>
+                </div>
+              ))}
             </div>
-            <div className="flex flex-row justify-center items-center mb-4">
-              <a href=" https://shorturl.at/xFNW6" target="_blank">
-                <button className="flex flex-col justify-center items-center bg-yellow-400 border rounded-full px-3">
-                  Book Your Slot
-                </button>
-              </a>
-            </div>
+
             <div className="flex flex-col justify-center items-center bg-gray-300 p-5">
               <h2 className="lg:text-4xl md:text-3xl sm:text-xl text-lg font-light">
                 We welcome you to the session on
@@ -66,8 +123,8 @@ function TeachTech() {
                 <hr className="h-px flex-grow bg-yellow-500 border-3 border-yellow-500" />
                 <ul className="flex flex-col justify-center items-center p-2">
                   <li className=" py-2">
-                    <span className="font-semibold">Date: </span>January 23rd,
-                    2024 (Tuesday)
+                    <span className="font-semibold">Date: </span>
+                    {data[active].date}
                   </li>
                   <li className="py-2">
                     <span className="font-semibold">Time: </span> 11:30 am to
@@ -88,7 +145,7 @@ function TeachTech() {
                   Contact Person for RSVP:
                 </span>
                 <ul className="flex flex-col justify-center items-center p-2">
-                  <li className=" py-2">
+                  {/* <li className=" py-2">
                     <span className="font-semibold">Sumit Goyal</span> +91 98999
                     99241, sumitg@eupheus.in
                   </li>
@@ -107,11 +164,21 @@ function TeachTech() {
                   <li className="py-2">
                     <span className="font-semibold">Surinder Singh</span>
                     +91 96505 90228, surinders@eupheus.in
-                  </li>
+                  </li> */}
+                  {data[active].contact.map((item) => {
+                    return (
+                      <li className="py-2">
+                        <span className="font-semibold">
+                          {item.split("+91")[0]}
+                        </span>
+                        +91 {item.split("+91")[1]}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
               <div className="flex items-center justify-center mb-3">
-                <a href=" https://shorturl.at/xFNW6" target="_blank">
+                <a href={data[active].link} target="_blank">
                   <button className="flex flex-col justify-center items-center bg-red-600 text-white border-white drop-shadow-xl rounded-full px-3">
                     Book Your Slot
                   </button>
