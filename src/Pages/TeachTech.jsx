@@ -9,6 +9,7 @@ function TeachTech() {
   return (
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200 ease-linear overflow-hidden`}
+      style={{ fontFamily: "Poppins" }}
     >
       <div>
         <img src={img1} alt="" className="w-full" />
