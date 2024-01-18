@@ -47,7 +47,9 @@ const Zoom = ({ sOpen }) => {
           para={
             "Zoom! Plus: The most pioneering indicator of a paradigm shift in learning and teaching, as stated by the National Curriculum Framework 2022, is the combining of Grades 1 and 2 with the pre-primary years. It is not merely a juxtaposition of academic years; it comes with fresh perspectives on how children experience and learn. More importantly, it comes with a wellplanned bridging of pre-primary years with grades 1 and 2. In Zoom! Plus we have imbibed all the sterling features of the NCF in letter and spirit. It is a course centered around music, movement, play, and learning through doing and experience."
           }
-          bgColor={"rgb(209 213 219)"}
+          bgColor={"rgb(250 204 21)"}
+          listOne={"Preschool 1, 2, 3"}
+          listTwo={"Grade 1, 2"}
         />
         {/* <div className="gap-4 m-3">
           <img src={logo} className="w-56 h-auto" alt="" />
