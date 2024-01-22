@@ -121,6 +121,23 @@ const Payment = () => {
       method: "POST",
     });
 
+    console.log(data);
+    const payment = await instance({
+      url: "payment/addPayment",
+      method: "POST",
+      data: {
+        userName: formik2.values.userName,
+        email: formik2.values.email,
+        parentName: formik2.values.parentName,
+        section: formik2.values.section,
+        class: formik2.values.class,
+        phone: formik2.values.phone.toString(),
+        SchoolId: schoolInfo.id,
+        orderid: data.data.id,
+        paymentID: "payment_id",
+      },
+    });
+
     const razorpayKey = await instance({
       url: "keys/razorpay",
       method: "GET",
@@ -135,23 +152,17 @@ const Payment = () => {
       image: logo,
       order_id: data.data.id,
       handler: async function (response) {
-        setOpen(true);
+        // console.log(response);
+        // setOpen(true);
 
-        const res = await instance({
-          url: "payment/addPayment",
-          method: "POST",
-          data: {
-            userName: formik2.values.userName,
-            email: formik2.values.email,
-            parentName: formik2.values.parentName,
-            section: formik2.values.section,
-            class: formik2.values.class,
-            phone: formik2.values.phone.toString(),
-            SchoolId: schoolInfo.id,
-            paymentID: response.razorpay_payment_id,
-          },
-        });
-        setOpen(false);
+        // const res = await instance({
+        //   url: `payment/${payment.data.id}`,
+        //   method: "PUT",
+        //   data: {
+        //     paymentID: response.razorpay_payment_id,
+        //   },
+        // });
+        // setOpen(false);
         if (response.razorpay_payment_id) {
           modelRef.current.openModel();
         } else {
