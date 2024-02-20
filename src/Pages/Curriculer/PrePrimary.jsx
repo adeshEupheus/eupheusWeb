@@ -12,6 +12,7 @@ import Number_maxx from "../../Components/Curriculum/prePrimary/Number_maxx";
 import Splash from "../../Components/Curriculum/prePrimary/Splash";
 import Pitara from "../../Components/Curriculum/prePrimary/Pitara";
 import Radiant_way from "../../Components/Curriculum/prePrimary/Radiant_way";
+import AksharSagar from "../../Components/Curriculum/prePrimary/AksharSagar";
 // import Wow_english from "../../Components/Curriculum/prePrimary/Wow_english";
 // import English_vibes from "../../Components/Curriculum/prePrimary/English_vibes";
 // import Wow_grammer_com from "../../Components/Curriculum/prePrimary/Wow_grammer_com";
@@ -44,7 +45,7 @@ import PitaraIcon from "../../assets/curriculum/zoom/Pitara.png";
 // import RadiantIcon from "../../assets/curriculum/radiantWay/Icon.png";
 import RadiantIcon from "../../assets/curriculum/zoom/TheRadiantWay-pre.png";
 import { useNavigate } from "react-router-dom";
-import AksharIcon from "../../assets/curriculum/zoom/aksharSagar.png";
+import AksharIcon from "../../assets/curriculum/shabdSagar/aksharSagar.png";
 
 const PrePrimary = () => {
   //   const navigate = useNavigate();
@@ -146,32 +147,19 @@ const PrePrimary = () => {
             </div>
             <div>
               <span
-                onClick={() => setPage("aksharSagar")}
+                onClick={() => setPage("AksharSagar")}
                 className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
                 <img src={AksharIcon} className="w-[90%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("aksharSagar")}
+                onClick={() => setPage("AksharSagar")}
               >
                 Click Here
               </div>
             </div>
-            {/* <div>
-              <span
-                onClick={() => setPage("pitara")}
-                className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={PitaraIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("pitara")}
-              >
-                Click Here
-              </div>
-            </div> */}
+
             <div>
               <span
                 onClick={() => setPage("radiant_way")}
@@ -292,10 +280,10 @@ const PrePrimary = () => {
           </div>
         );
         break;
-      case "aksharSagar":
+      case "AksharSagar":
         return (
           <div className="sm:mt-4">
-            <Radiant_way />
+            <AksharSagar />
             <GoToTop />
           </div>
         );

@@ -4,14 +4,13 @@ import Navbar from "../../Components/Navbar";
 import GoToTop from "../../Components/Top";
 import grayBg from "../../assets/grayBg.png";
 import Footer from "../../Components/Footer";
-// import { useNavigate } from "react-router-dom";
 import Eupheus_school_atlas from "../../Components/Curriculum/reference/Eupheus_school_atlas";
-import Young_set_deictionaries from "../../Components/Curriculum/reference/Young_set_deictionaries";
+import Eupheus_atlas_icse from "../../Components/Curriculum/reference/Eupheus_atlas_icse";
 
 // icons
 import atlasIcon from "../../assets/curriculum/Reference/atlasIcon.png";
 import atlasCompaniomIcon from "../../assets/curriculum/zoom/eupehusAltasCompanion.png";
-import chamberIcon from "../../assets/curriculum/Reference/chamberIcon.png";
+// import chamberIcon from "../../assets/curriculum/Reference/chamberIcon.png";
 import { useNavigate } from "react-router-dom";
 
 const Reference = () => {
@@ -33,7 +32,7 @@ const Reference = () => {
                 onClick={() => setPage("atlas")}
                 className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={atlasIcon} className="w-[60%] h-auto" alt="" />
+                <img src={atlasIcon} className="w-[100%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
@@ -42,16 +41,9 @@ const Reference = () => {
                 Click Here
               </div>
             </div>
-            {/* <span
-              onClick={() => setPage("atlas")}
-              className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img src={atlasIcon} className="w-[60%] h-auto" alt="" />
-            </span> */}
-
             <div>
               <span
-                onClick={() => setPage("atlas")}
+                onClick={() => setPage("Eupheus_atlas_icse")}
                 className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
                 <img
@@ -62,25 +54,11 @@ const Reference = () => {
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("atlas")}
+                onClick={() => setPage("Eupheus_atlas_icse")}
               >
                 Click Here
               </div>
             </div>
-            {/* <div>
-              <span
-                onClick={() => setPage("young_set")}
-                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={chamberIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("young_set")}
-              >
-                Click Here
-              </div>
-            </div> */}
           </div>
         );
         break;
@@ -92,10 +70,10 @@ const Reference = () => {
           </div>
         );
         break;
-      case "young_set":
+      case "Eupheus_atlas_icse":
         return (
           <div className="sm:mt-4">
-            <Young_set_deictionaries />
+            <Eupheus_atlas_icse />
             <GoToTop />
           </div>
         );

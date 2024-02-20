@@ -165,6 +165,16 @@ const Sidebar = ({ sOpen, setSopen, type, setPage }) => {
                       <h1
                         className={`pl-9 text-[#c96161] font-bold transition-all ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
                       >
+                        SHABD SAGAR
+                      </h1>
+                    </div>
+                    <div
+                      className={`flex items-center hover:translate-x-3 transition-all ease-linear duration-100 mr-8 ml-6 group opacity-100`}
+                    >
+                      <Circle className={`!text-[.7rem] text-[#c96161]`} />
+                      <h1
+                        className={`pl-9 text-[#c96161] font-bold transition-all ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
+                      >
                         RADIANT WAY (PRE-PRIMER AND PRIMER)
                       </h1>
                     </div>
@@ -303,9 +313,29 @@ const Sidebar = ({ sOpen, setSopen, type, setPage }) => {
                 >
                   <Circle className={`!text-[.7rem] text-[#c96161]`} />
                   <h1
+                    className={`pl-9 text-[#c96161] font-bold transition-all ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
+                  >
+                    English Tree
+                  </h1>
+                </div>
+                <div
+                  className={`flex items-center hover:translate-x-3 transition-all ease-linear duration-100 mr-8 ml-6 group opacity-100`}
+                >
+                  <Circle className={`!text-[.7rem] text-[#c96161]`} />
+                  <h1
                     className={`pl-9 text-[#c96161] transition-all font-bold ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
                   >
                     ENGLISH VIBES!
+                  </h1>
+                </div>
+                <div
+                  className={`flex items-center hover:translate-x-3 transition-all ease-linear duration-100 mr-8 ml-6 group opacity-100`}
+                >
+                  <Circle className={`!text-[.7rem] text-[#c96161]`} />
+                  <h1
+                    className={`pl-9 text-[#c96161] transition-all font-bold ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
+                  >
+                    ENGLISH WEAVES!
                   </h1>
                 </div>
                 <div

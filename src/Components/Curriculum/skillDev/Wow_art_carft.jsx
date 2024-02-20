@@ -1,102 +1,98 @@
-import React from "react";
-import { Circle } from "@mui/icons-material";
-import book4 from "../../../assets/curriculum/skillDev/wow_art_craft/1.png";
-import book5 from "../../../assets/curriculum/skillDev/wow_art_craft/2.png";
-import englishvibes from "../../../assets/curriculum/skillDev/wow_art_craft/Curriculum Catalogue_2021-22_Page_58.jpg";
+import React, { useRef } from "react";
+import book1 from "../../../assets/curriculum/skillDev/Art/itl.png";
+import logo from "../../../assets/curriculum/skillDev/Art/logo.png";
+import img6 from "../../../assets/curriculum/zoom/key features.png";
+import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
+import BasicButton from "../../Material/Button";
+import Banner2 from "../../BookTemplate/Banner2";
+import SectionTwo from "../../BookTemplate/SectionTwo";
+import MainContent from "../../BookTemplate/MainContent";
+import Content from "../../BookTemplate/Content";
 
-const Wow_art_carft = ({ sOpen }) => {
+const Wow_art_carft = () => {
+  const keyFeatures = useRef(null);
+
   return (
-    <>
-      <div
-        className={`w-full ${
-          sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } flex flex-col sm:pl-[3rem] bg-white sm:pt-0 transition-all duration-200 ease-linear pt-[9.5rem] lg:mt-[15vh] md:mt-[14vh] sm:mt-[20vh] gap-4`}
-      >
-        <img src={englishvibes} className="w-full h-auto" alt="" />
-        <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
-          <span className="sm:w-3/5 w-full">
-            <span className="text-[#594] font-semibold">WOW! Art & Craft</span>{" "}
-            &nbsp; is an eight-book series designed to ignite creativity in
-            learners and empower them to express themselves through art. Based
-            on NEP 2020, it equips learners to use art and craft to communicate
-            their ideas to others. A variety of activities and strategies are
-            designed to keep the learners engaged and help develop their
-            psychomotor and communication skills.
-          </span>
-          <div className="sm:w-2/5 w-full">
-            {/* <div className="flex  gap-4 rounded-md w-fit h-fit px-3 justify-center bg-[#a0e58f] py-2">
-              <div className="flex flex-col gap-[2px] ">
-                <span className="text-white font-semibold">Title</span>
-                <span className="text-black font-semibold">Book A</span>
-                <span className="text-black font-semibold">Book B</span>
-                <span className="text-black font-semibold">Book C</span>
-                <span className="text-black font-semibold">Book 1</span>
-                <span className="text-black font-semibold">Book 2</span>
-                <span className="text-black font-semibold">Book 3</span>
-                <span className="text-black font-semibold">Book 4</span>
-                <span className="text-black font-semibold">Book 5</span>
-              </div>
-              <div className="flex flex-col gap-[2px]">
-                <span className="text-white font-semibold">Price</span>
-                <span className="text-black font-semibold">410</span>
-                <span className="text-black font-semibold">410</span>
-                <span className="text-black font-semibold">410</span>
-                <span className="text-black font-semibold">415</span>
-                <span className="text-black font-semibold">415</span>
-                <span className="text-black font-semibold">415</span>
-                <span className="text-black font-semibold">415</span>
-                <span className="text-black font-semibold">415</span>
-              </div>
-            </div> */}
-          </div>
-        </div>
-        <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
-          <div className="flex flex-col sm:w-9/12 w-full m-4">
-            <span className="px-3 ml-3 py-1 bg-[#594] rounded-t-lg w-fit text-white">
-              KEY FEATURES
-            </span>
-            <ul className="px-2 py-1 w-full rounded-md bg-[#a0e58f] text-black">
-              <li>
-                <Circle className="!text-[0.5rem] text-black" /> &nbsp; The
-                series fosters creativity through its drawing, colouring, and
-                art and craft activities
-              </li>
-              <li>
-                <Circle className="!text-[0.5rem] text-black" /> &nbsp; Students
-                learn basic maths by counting pieces and colours
-              </li>
-              <li>
-                <Circle className="!text-[0.5rem] text-black" /> &nbsp; Students
-                learn to use a paintbrush, which helps to improve their fine
-                motor skills
-              </li>
-              <li>
-                <Circle className="!text-[0.5rem] text-black" /> &nbsp;
-                Experimentation with materials help students to dabble in
-                science
-              </li>
-              <li>
-                <Circle className="!text-[0.5rem] text-black" /> &nbsp; Creating
-                art makes students feel good by boosting their self-confidence
-              </li>
-              <li>
-                <Circle className="!text-[0.5rem] text-black" /> &nbsp; Ensures
-                that the creating thinking abilities of the students are
-                extended, demonstrated, and applied beyond classroom walls
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="flex sm:flex-row flex-col px-4 sm:px-0  items-center w-full ">
-          <div className="flex flex-row items-center sm:w-1/2 w-full">
-            <img src={book5} className=" h-auto" alt="" />
-          </div>
-          <div className="flex flex-row items-center sm:w-1/2 w-full">
-            <img src={book4} className="rounded-md h-auto" alt="" />
-          </div>
+    <div
+      className={`w-full flex flex-col bg-white transition-all duration-200  ease-linear md:mt-[4rem] mt-[10rem]`}
+    >
+      <Banner2 image={book1} bgColor={"#757575"} />
+      <div className="flex flex-col sm:flex-row bg-o justify-center items-center gap-3 p-4">
+        <div
+          onClick={() => {
+            const ele = document.getElementById("keyFeature");
+            ele.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }}
+        >
+          <BasicButton
+            text={"KEY FEATURES"}
+            bgColor={"#757575"}
+            textColor={"black"}
+            size={"small"}
+          />
         </div>
       </div>
-    </>
+      <div className="flex sm:flex-row flex-col justify-center px-8 bg-gray-200">
+        <MainContent
+          image={logo}
+          para={
+            <span>
+              <span className="font-bold text-[#757575]">
+                It’s Time to Learn ART{" "}
+              </span>
+              is a unique series that makes a sincere effort to ‘teach art’ and
+              not just ‘do art’. It is being increasingly felt by educationists
+              that ART not only promotes an aesthetic sense but also broadens
+              knowledge. It has been proven that learning of art develops a
+              number of life skills like patience, perseverance, creativity,
+              problem-solving, anger management, tolerance, peace, etc.
+            </span>
+          }
+          bgColor={"#757575"}
+          listOne={"Grades"}
+          listTwo={"1-8"}
+          listThree={"A-C"}
+        />
+      </div>
+      <div className="flex flex-col justify-center items-center bg-[#878787]">
+        <div
+          ref={keyFeatures}
+          id="keyFeature"
+          className="flex flex-col justify-center items-center w-[60%]"
+        >
+          <SectionTwo
+            content={
+              <Content
+                headLine={"Key Features"}
+                points={[
+                  "Focus on innovation and creativity",
+                  "Introduction of folk art and craft under the aegis of heritage education",
+                  "Encourages children to explore their own ideas and concepts—this builds self-esteem and self-worth in children",
+                  "Ideas for application of concepts taught have been given so that children may use them in projects they are required to make in various subjects",
+                  "Activities that require adult supervision or guidance have been marked",
+                  "Waste material or easily available material has been used; what is not easily available has been provided",
+                  "Care taken to not use materials that are potentially hazardous to children",
+                ]}
+              />
+            }
+            bgColor={"rgb(135, 135, 135)"}
+            img={img6}
+          />
+        </div>
+      </div>
+      <div className="flex items-center justify-center m-3">
+        <a href={pdf} target="_blank" rel="noreferrer">
+          <BasicButton
+            text={"Download"}
+            bgColor={"#757575"}
+            textColor={"black"}
+          />
+        </a>
+      </div>
+    </div>
   );
 };
 

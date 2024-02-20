@@ -1,38 +1,18 @@
 import React from "react";
-import Content from "./Content";
-import img6 from "../../assets/curriculum/zoom/key features.png";
 
-const SectionTwo = ({}) => {
+const SectionTwo = ({ content, content2, img, bgColor }) => {
   return (
-    <div className="flex gap-2 w-[100%] justify-center items-center bg-yellow-400">
-      <div className="flex flex-col justify-center p-0">
-        <Content
-          bgColor={"rgb(250 204 21)"}
-          headLine={"Key Features"}
-          subHead={"Areas of focus:"}
-          points={[
-            "Physical and motor development",
-            "Cognitive development",
-            "Socio-emotional-ethical development",
-            "Cultural/artistic development",
-            "Development of communication and early language, literacy, and numeracy",
-            "Observation-based teacher assessment",
-          ]}
-        />
-        <Content
-          bgColor={"rgb(250 204 21)"}
-          subHead={"Ethos of the curriculum:"}
-          points={[
-            "Physical and motor development",
-            "Cognitive development",
-            "Socio-emotional-ethical development",
-            "Cultural/artistic development",
-            "Development of communication and early language, literacy, and numeracy",
-            "Observation-based teacher assessment",
-          ]}
-        />
+    <div
+      className="flex justify-center w-full items-center px-8 py-3 flex-col lg:flex-col xl:flex-row-reverse gap-6 md:w-full"
+      style={{ backgroundColor: bgColor }}
+    >
+      <div className="">
+        {img ? <img src={img} className="w-[10rem] h-[9rem]" alt="" /> : null}
       </div>
-      <img src={img6} className="w-auto object-cover h-[9rem]" />
+      <div className="flex flex-col justify-center items-center text-sm sm:text-base font-medium w-fit text-justify sm:text-left py-5">
+        {content}
+        {content2}
+      </div>
     </div>
   );
 };

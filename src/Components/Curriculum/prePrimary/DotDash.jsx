@@ -1,138 +1,113 @@
-import React from "react";
-import { Circle } from "@mui/icons-material";
-import book1 from "../../../assets/curriculum/dotDash/6.png";
-import book2 from "../../../assets/curriculum/dotDash/7.png";
-import alphafun from "../../../assets/curriculum/dotDash/Curriculum Catalogue_2021-22_Page_13.jpg";
-import flower from "../../../assets/curriculum/alphaFun/5.png";
+import React, { useRef } from "react";
+import book1 from "../../../assets/curriculum/dotDash/donndash.png";
+import logo from "../../../assets/curriculum/dotDash/dotdashIcon.png";
+import img6 from "../../../assets/curriculum/zoom/key features.png";
+import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
+import BasicButton from "../../Material/Button";
+import Banner2 from "../../BookTemplate/Banner2";
+import SectionTwo from "../../BookTemplate/SectionTwo";
+import MainContent from "../../BookTemplate/MainContent";
+import Content from "../../BookTemplate/Content";
+import CardThree from "../../BookTemplate/CardThree";
 
-const DotDash = ({ sOpen }) => {
+const DotDash = () => {
+  const keyFeatures = useRef(null);
+  // const UniqueAdvantages = useRef(null);
+
   return (
-    <>
-      <div
-        className={`w-full flex flex-col sm:px-[2rem] bg-white sm:pt-0 transition-all duration-200 ease-linear pt-[9.5rem] lg:mt-[15vh] md:mt-[14vh] sm:mt-[20vh] gap-4`}
-      >
-        <img src={alphafun} className="w-full h-auto" alt="" />
-        <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
-          <span className="sm:w-4/5 w-full">
-            The Early Childhood Learning Programme based on Integrated and
-            Experiential Learning promotes creative thinking in young learners.
-            It is designed by experienced teachers adhering to the elements of
-            Multiple Intelligences and Bloom's Taxonomy. Our activity-based
-            books and notebooks give children the opportunity to explore,
-            understand, and enjoy learning. They follow an interactive approach
-            and aim to build learner independence right from an early age.
-          </span>
-          {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-orange-400 py-2">
-            <div className="flex flex-col gap-2">
-              <span className="text-white font-semibold">Title</span>
-              <span className="text-black font-semibold">Book 1</span>
-              <span className="text-black font-semibold">Book 2</span>
-              <span className="text-black font-semibold">Book 3</span>
-            </div>
-            <div className="flex flex-col gap-2">
-              <span className="text-white font-semibold">Price</span>
-              <span className="text-black font-semibold">230</span>
-              <span className="text-black font-semibold">260</span>
-              <span className="text-black font-semibold">260</span>
-            </div>
-          </div> */}
-        </div>
-        <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
-          <span className="sm:w-4/5 w-full">
-            <span className="text-orange-500 font-semibold">DOT & DASH </span>
-            contains a variety of exercises that build a sound foundation for
-            developing writing skills among the young learners. It takes the
-            child through various stages of handwriting development. <br />
-            The writing exercises will help the child to:
-            <ul className="px-2 py-1 w-full rounded-md ">
-              <li>
-                <Circle className="!text-[0.5rem] " /> &nbsp; develop eye-hand
-                coordination and fine motor skills.
-              </li>
-              <li>
-                <Circle className="!text-[0.5rem] " /> &nbsp; be imaginative and
-                creative.
-              </li>
-              <li>
-                <Circle className="!text-[0.5rem] " /> &nbsp; be prepared for
-                letter-writing.
-              </li>
-            </ul>
-          </span>
-        </div>
-        <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
-          <div className="flex flex-col sm:w-5/12 w-full">
-            <img src={book1} className="w-full h-auto" alt="" />
-          </div>
-          <div className="flex flex-col sm:w-4/12 w-full">
-            <img src={book2} className="w-full h-auto" alt="" />
-          </div>
-          <div className="flex flex-col sm:w-[30%] w-full">
-            <span className="px-3 ml-3 py-1 bg-orange-300 rounded-t-lg w-fit">
-              KEY FEATURES
-            </span>
-
-            <ul className="px-2 py-1 w-full rounded-md bg-orange-500 text-white">
-              <li>
-                <Circle className="!text-[0.5rem] text-white" /> &nbsp;{" "}
-                <b> Tracing Shapes </b>
-                Helps in learning different dimensions to geometric and curved
-                shapes.
-              </li>
-              <li>
-                <Circle className="!text-[0.5rem] text-white" /> &nbsp;{" "}
-                <b>Dot to Dot</b>
-                Guides the formation of a pattern and develops spatial
-                intelligence.
-              </li>
-              <li>
-                <Circle className="!text-[0.5rem] text-white" /> &nbsp;{" "}
-                <b>Colouring</b>
-                Helps in motor skill building through artistic expression.
-              </li>
-              <li>
-                <Circle className="!text-[0.5rem] text-white" /> &nbsp;{" "}
-                <b>Pattern Writing</b>
-                Helps in building tripod grasp and wrist movement
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="flex sm:flex-row flex-col px-4 sm:px-0 gap-4 items-center w-full">
-          <div className="flex flex-col items-center sm:w-1/2 w-full">
-            <img src={flower} className="w-[40%] h-auto" alt="" />
-          </div>
-          <div className="flex flex-col sm:w-1/2 w-full">
-            <span className="px-3 ml-6 py-1 bg-orange-500 rounded-t-lg w-fit">
-              TITLES AVAILABLE FOR
-            </span>
-
-            <ul className="px-4 py-2 flex flex-col w-fit border-orange-500 border-2 gap-4 rounded-lg justify-center bg-orange-400 ">
-              <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-orange-400 py-2">
-                <div className="flex flex-col gap-2">
-                  <span className="text-white font-semibold">
-                    Age 2+ <br />
-                    Level-1
-                  </span>
-                </div>
-                <div className="flex flex-col gap-2">
-                  <span className="text-white font-semibold">
-                    Age 3+ <br />
-                    Level-2
-                  </span>
-                </div>
-                <div className="flex flex-col gap-2">
-                  <span className="text-white font-semibold">
-                    Age 4+ <br />
-                    Level-3
-                  </span>
-                </div>
-              </div>
-            </ul>
-          </div>
+    <div
+      className={`w-full flex flex-col bg-white transition-all duration-200  ease-linear md:mt-[4rem] mt-[10rem]`}
+    >
+      <Banner2 image={book1} bgColor={"#fcaa53"} />
+      <div className="flex flex-col sm:flex-row bg-o justify-center items-center gap-3 p-4">
+        <div
+          onClick={() => {
+            const ele = document.getElementById("keyFeature");
+            ele.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }}
+        >
+          <BasicButton
+            text={"KEY FEATURES"}
+            bgColor={"#fcaa53"}
+            textColor={"black"}
+            size={"small"}
+          />
         </div>
       </div>
-    </>
+      <div className="flex sm:flex-row flex-col justify-center px-8 bg-gray-200">
+        <MainContent
+          image={logo}
+          para={
+            <span>
+              The Early Childhood Learning Programme is based on the principles
+              of Integrated and Experiential Learning and promotes creative
+              thinking in young learners. It is designed by experienced teachers
+              adhering to the elements of Multiple Intelligences and Bloom's
+              Taxonomy. Our activity-based books and notebooks give children the
+              opportunity to explore, understand, and enjoy learning. The books
+              follow an interactive approach and aim to build learner
+              independence right from an early age.
+              <br />
+              <span className="font-bold text-orange-500">DOT & DASH </span>
+              contains a variety of exercises that build a sound foundation for
+              developing writing skills among the young learners. It takes the
+              child through various stages of handwriting development.The
+              writing exercises will help the child to:
+              <ul>
+                <li className="list-disc">
+                  develop eye-hand coordination and fine motor skills.
+                </li>
+                <li className="list-disc">be imaginative and creative.</li>
+                <li className="list-disc">be prepared for letter-writing.</li>
+              </ul>
+            </span>
+          }
+          bgColor={"#fcaa53"}
+          listOne={"NURSERY"}
+          listTwo={"LKG"}
+          listThree={"UKG"}
+        />
+      </div>
+      <div className="flex flex-col justify-center items-center bg-[#fcaa53]">
+        <div
+          ref={keyFeatures}
+          id="keyFeature"
+          className="flex flex-col justify-center items-center w-[60%]"
+        >
+          <SectionTwo
+            content={
+              <Content
+                bgColor={"#fcaa53"}
+                headLine={"Key Features"}
+                points={[
+                  "Tracing Shapes: Helps in learning different dimensions of geometric and curved shapes.",
+                  "Dot to Dot: Guides the formation of a pattern and develops spatial intelligence.",
+                  "Colouring: Helps in motor skill building through artistic expression.",
+                  "Pattern Writing: Helps in building tripod grasp and wrist movement.",
+                ]}
+              />
+            }
+            bgColor={"rgb(252, 170, 83)"}
+            img={img6}
+          />
+        </div>
+      </div>
+      <div className="flex flex-row justify-center items-center">
+        <CardThree bgColor={"#fcaa53"} bgColor1={"#fc9930"} />
+      </div>
+      <div className="flex items-center justify-center m-3">
+        <a href={pdf} target="_blank" rel="noreferrer">
+          <BasicButton
+            text={"Download"}
+            bgColor={"#fcaa53"}
+            textColor={"black"}
+          />
+        </a>
+      </div>
+    </div>
   );
 };
 

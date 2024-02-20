@@ -1,124 +1,152 @@
-import React from "react";
-import { Circle } from "@mui/icons-material";
-import book1 from "../../../assets/curriculum/skillDev/wow_within_worlds/1.png";
-import book2 from "../../../assets/curriculum/skillDev/wow_within_worlds/2.png";
-import book3 from "../../../assets/curriculum/skillDev/wow_within_worlds/3.png";
-import book4 from "../../../assets/curriculum/skillDev/wow_within_worlds/4.png";
-import englishvibes from "../../../assets/curriculum/skillDev/wow_within_worlds/Curriculum Catalogue_2021-22_Page_61.jpg";
+import React, { useRef } from "react";
+import book1 from "../../../assets/curriculum/skillDev/wow_within_worlds/wow gk.png";
+import logo from "../../../assets/curriculum/skillDev/wow_within_worlds/logo.png";
+import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
+import BasicButton from "../../Material/Button";
+import Banner from "../../BookTemplate/Banner";
+import MainContent from "../../BookTemplate/MainContent";
+import img4 from "../../../assets/curriculum/zoom/oslite.png";
+import CardOne from "../../BookTemplate/CardOne";
+import SectionTwo from "../../BookTemplate/SectionTwo";
+import Content from "../../BookTemplate/Content";
+import img6 from "../../../assets/curriculum/zoom/key features.png";
 
-const Wow_within_worlds = ({ sOpen }) => {
+const Wow_within_worlds = () => {
+  const keyFeatures = useRef(null);
+  const UniqueAdvantages = useRef(null);
+
   return (
-    <>
-      <div
-        className={`w-full ${
-          sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } flex flex-col sm:pl-[3rem] bg-white sm:pt-0 transition-all duration-200 ease-linear pt-[9.5rem] lg:mt-[15vh] md:mt-[14vh] sm:mt-[20vh] gap-4`}
-      >
-        <img src={englishvibes} className="w-full h-auto" alt="" />
-        <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
-          <span className="sm:w-8/12 w-full">
-            <span className="text-[#ed008c] font-semibold">
-              Wow! World Within Worlds
+    <div
+      className={`w-full flex flex-col bg-white transition-all duration-200  ease-linear md:mt-[4rem] mt-[10rem]`}
+    >
+      <Banner image={book1} bgColor={"#ed008c"} />
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
+        <div
+          onClick={() => {
+            const ele = document.getElementById("keyFeature");
+            ele.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }}
+        >
+          <BasicButton
+            text={"KEY FEATURES"}
+            bgColor={"#ed008c"}
+            textColor={"black"}
+            size={"small"}
+          />
+        </div>
+        <div
+          onClick={() => {
+            const ele = document.getElementById("UniqueAdvantages");
+            ele.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }}
+        >
+          <BasicButton
+            text={"UNIQUE ADVANTAGES"}
+            size={"small"}
+            bgColor={"#ed008c"}
+            textColor={"black"}
+          />
+        </div>{" "}
+      </div>
+      <div className="flex sm:flex-row flex-col justify-center px-4 bg-gray-200">
+        <MainContent
+          image={logo}
+          para={
+            <span>
+              <span className="font-bold text-[#e3369c]">
+                Wow! World Within Worlds{" "}
+              </span>
+              is an outstanding series of General Knowledge textbooks for Grades
+              1 to 8. The series demonstrates a cross curricula approach of
+              worlds within a world, where each topic is linked to various
+              subjects like literature, mathematics, history, geography, life
+              skills, value education, art & culture etc., moving from global to
+              India-specific content.
             </span>
-            &nbsp; is designed for the young learners to develop and gradually
-            master cursive writing. The series follows a gradual progression of
-            content and keeps the learners engaged, excited and deeply involved
-            in the intricacies of fine writing.
-          </span>
-          {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ff9ed6] py-2">
-            <div className="flex flex-col gap-[2px] ">
-              <span className="text-white font-semibold">Title</span>
-              <span className="text-black font-semibold">Book A</span>
-              <span className="text-black font-semibold">Book B</span>
-              <span className="text-black font-semibold">Book C</span>
-              <span className="text-black font-semibold">Book 1</span>
-              <span className="text-black font-semibold">Book 2</span>
-              <span className="text-black font-semibold">Book 3</span>
-              <span className="text-black font-semibold">Book 4</span>
-              <span className="text-black font-semibold">Book 5</span>
-            </div>
-            <div className="flex flex-col gap-[2px]">
-              <span className="text-white font-semibold">Price</span>
-              <span className="text-black font-semibold">180</span>
-              <span className="text-black font-semibold">190</span>
-              <span className="text-black font-semibold">215</span>
-              <span className="text-black font-semibold">170</span>
-              <span className="text-black font-semibold">175</span>
-              <span className="text-black font-semibold">180</span>
-              <span className="text-black font-semibold">185</span>
-              <span className="text-black font-semibold">190</span>
-            </div>
-          </div> */}
+          }
+          bgColor={"#ed008c"}
+          listOne={"Grades"}
+          listTwo={"1-8"}
+        />
+      </div>
+      <div className="flex flex-col justify-center items-center bg-[#e3369c]">
+        <div
+          ref={keyFeatures}
+          id="keyFeature"
+          className="flex flex-col justify-center items-center w-[60%]"
+        >
+          <SectionTwo
+            content={
+              <Content
+                headLine={"Key Features"}
+                points={[
+                  "The series has the latest and up-to-date information.",
+                  "Infographics are presented for understanding content.",
+                  "At a glance provides a bird's-eye view of the subjects covered in each chapter.",
+                  "Did You Know? provides unusual and interesting bits of information.",
+                  "Train your Brain exercises help in sharpening the numerical and linguistic abilities.",
+                  " Let’s Think! contains quotes or questions related to life skills and value education.",
+                  "Just for Fun has humorous anecdotes or riddles.",
+                  "Infochutes are current affairs of what is happening and updated periodically.",
+                  "Do-it-yourself activities for Grades 1 to 4 that are fun, engaging, and creative.",
+                  "Guided projects for Grades 5 to 8 to encourage and inculcate researching capabilities.",
+                  "Test papers at the end of each book to help reinforce learning.",
+                  "The teacher resource pack contains answer keys, and worksheets, and additional questions.",
+                  "Unique NCF 2022–23 mandated feature pages with India-centric content has been added.",
+                  "Inserts on Sustainable Development Goals (SDGs) to promote environmental awareness.",
+                  "21st Century learning skills have been highlighted along the content to make teachers cognizant of the specific learning skills.",
+                  "Art Integration has been done.",
+                ]}
+              />
+            }
+            bgColor={"rgb(227, 54, 156)"}
+            img={img6}
+          />
         </div>
-        <div className="flex flex-col px-4 sm:px-0 w-full ">
-          <span className="px-3 ml-3 py-1 bg-[#ed008c] rounded-t-lg w-fit text-white">
-            KEY FEATURES
-          </span>
-          <div className="flex flex-row  items-center w-[70%] rounded justify-center">
-            <div className="bg-[#ff9ed6] w-full sm:flex-col rounded-lg">
-              <ul className="px-2 py-1    text-black ">
-                <li>
-                  <Circle className="!text-[0.5rem] text-black" /> &nbsp; Latest
-                  and up-to-date information
-                </li>
-                <li>
-                  <Circle className="!text-[0.5rem] text-black" /> &nbsp;
-                  Infographics are presented for understanding content
-                </li>
-                <li>
-                  <Circle className="!text-[0.5rem] text-black" /> &nbsp;
-                  <b> At a glance</b> provides a bird's-eye view of the subjects
-                  covered in each chapter
-                </li>
-                <li>
-                  <Circle className="!text-[0.5rem] text-black" /> &nbsp;
-                  <b>Did You Know?</b> provides unusual and interesting bits of
-                  information
-                </li>
-                <li>
-                  <Circle className="!text-[0.5rem] text-black" /> &nbsp;
-                  <b>Train your Brain</b> exercises help in sharpening the
-                  numerical and linguistic abilities
-                </li>
-                <li>
-                  <Circle className="!text-[0.5rem] text-black" /> &nbsp;
-                  <b>Let’s Think!</b> contains quotes or questions related to
-                  life skills and value education
-                </li>
-                <li>
-                  <Circle className="!text-[0.5rem] text-black" /> &nbsp;
-                  <b>Just for Fun</b> has humorous anecdotes or riddles
-                </li>
-              </ul>
-            </div>
+      </div>
+      <div ref={UniqueAdvantages} id="UniqueAdvantages">
+        <div className="bg-gray-700">
+          <div className="flex flex-col place-items-center justify-center">
+            <img
+              src={img4}
+              className="w-40 h-auto border-2 flex gap-3 p-1 bg-white rounded-b-lg"
+              alt=""
+            />
+            <span className="lg:text-lg font-extrabold flex items-center justify-center text-white text-base">
+              21st Century School OS Lite
+            </span>
+            <span className="flex grid-col items-center justify-center text-white p-4 text-base lg:text-xl">
+              Digital Platform
+            </span>
           </div>
-        </div>
-        <div className="flex sm:flex-row flex-col px-4 sm:px-0 gap-4 items-center w-full">
-          <div className="flex flex-col items-center sm:w-1/2 w-full">
-            <img src={book1} className="w-full h-auto" alt="" />
-          </div>
-          <div className="flex flex-col items-center sm:w-1/2 w-full">
-            <img src={book2} className="w-full h-auto" alt="" />
-          </div>
-          <div className="flex flex-col items-center sm:w-1/2 w-full">
-            <div className="m-3 flex flex-col w-full bg-[#39b54a] p-4 rounded-xl">
-              <span className="text-white">(For classes 1-4)</span>
-              <span className="text-white uppercase text-lg">
-                world book <span className="text-2xl">kids</span>
-              </span>
-              <img src={book3} className="h-auto rounded-lg" alt="" />
-            </div>
-            <div className="m-3 flex flex-col w-full bg-[#f7941d] rounded-xl p-4">
-              <span className="text-white">(For classes 5-8)</span>
-              <span className="text-white uppercase text-lg">
-                world book <span className="text-2xl">student</span>
-              </span>
-              <img src={book4} className="h-auto rounded-lg" alt="" />
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 px-10 sm:px-4 justify-center items-center p-4">
+            <CardOne
+              headLine={"TEACHERS’ RESOURCES"}
+              points={["E-book", "Answer Keys", "Animations", "Worksheets"]}
+            />
+            <CardOne
+              headLine={"STUDENTS’ RESOURCES"}
+              points={["Chapter PDFs", "Animations"]}
+            />
           </div>
         </div>
       </div>
-    </>
+      <div className="flex items-center justify-center m-3">
+        <a href={pdf} target="_blank" rel="noreferrer">
+          <BasicButton
+            text={"Download"}
+            bgColor={"#ed008c"}
+            textColor={"black"}
+          />
+        </a>
+      </div>
+    </div>
   );
 };
 

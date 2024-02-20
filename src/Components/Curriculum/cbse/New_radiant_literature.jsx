@@ -1,100 +1,156 @@
-import React from "react";
-import { Circle } from "@mui/icons-material";
-import book1 from "../../../assets/curriculum/cbse/new_radiant_literature/1.png";
-import book2 from "../../../assets/curriculum/cbse/new_radiant_literature/2.png";
-import book3 from "../../../assets/curriculum/cbse/new_radiant_literature/3.png";
-import book4 from "../../../assets/curriculum/cbse/new_radiant_literature/4.png";
-import englishvibes from "../../../assets/curriculum/cbse/new_radiant_literature/Curriculum Catalogue_2021-22_Page_24.jpg";
+import React, { useRef } from "react";
+import book1 from "../../../assets/curriculum/cbse/new_radiant_literature/radiant reader.png";
+import logo from "../../../assets/curriculum/cbse/new_radiant_literature/logo.png";
+import img6 from "../../../assets/curriculum/zoom/key features.png";
+import CardSecond from "../../BookTemplate/CardSecond";
+import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
+import BasicButton from "../../Material/Button";
+import img4 from "../../../assets/curriculum/zoom/oslite.png";
+import Banner from "../../BookTemplate/Banner";
+import SectionTwo from "../../BookTemplate/SectionTwo";
+import MainContent from "../../BookTemplate/MainContent";
+import CardOne from "../../BookTemplate/CardOne";
+import Content from "../../BookTemplate/Content";
 
-const New_radiant_literature = ({ sOpen }) => {
+const New_radiant_literature = () => {
+  const keyFeatures = useRef(null);
+  const Advantages = useRef(null);
+  const UniqueAdvantages = useRef(null);
+
   return (
-    <>
-      <div
-        className={`w-full ${
-          sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } flex flex-col  sm:px-[2rem] bg-white sm:pt-0 transition-all duration-200 ease-linear pt-[9.5rem] lg:mt-[15vh] md:mt-[14vh] sm:mt-[20vh] gap-4`}
-      >
-        <img src={englishvibes} className="w-full h-auto" alt="" />
-        <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0 items-center">
-          <span className="sm:w-4/5 w-full">
-            The &nbsp;
-            <span className="text-[#fd4662] font-semibold text-justify">
-              New Radiant Readers
-            </span>
-            &nbsp; Literature Readers are literary interesting lessons taken
-            from the renowned and time-tested New Radiant Readers series. This
-            Literature series of 8 readers is for classes 1–8 of all CBSE and
-            State Board schools seeks to familiarise students with classical and
-            contemporary literary texts. It is an excellent literature
-            supplement to English Readers and Workbooks based on the
-            communicative approach.
-          </span>
-          {/* <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#f2b3bd] py-2">
-            <div className="flex flex-col gap-[2px] ">
-              <span className="text-white font-semibold">Title</span>
-              <span className="text-black font-semibold">Book 1</span>
-              <span className="text-black font-semibold">Book 2</span>
-              <span className="text-black font-semibold">Book 3</span>
-              <span className="text-black font-semibold">Book 4</span>
-              <span className="text-black font-semibold">Book 5</span>
-              <span className="text-black font-semibold">Book 6 </span>
-              <span className="text-black font-semibold">Book 7</span>
-              <span className="text-black font-semibold">Book 8</span>
-            </div>
-            <div className="flex flex-col gap-[2px]">
-              <span className="text-white font-semibold">Price</span>
-              <span className="text-black font-semibold">150</span>
-              <span className="text-black font-semibold">150</span>
-              <span className="text-black font-semibold">150</span>
-              <span className="text-black font-semibold">150</span>
-              <span className="text-black font-semibold">150</span>
-              <span className="text-black font-semibold">180</span>
-              <span className="text-black font-semibold">180</span>
-              <span className="text-black font-semibold">180</span>
-            </div>
-          </div> */}
+    <div
+      className={`w-full flex flex-col bg-white transition-all duration-200 ease-linear md:mt-[4rem] mt-[10rem]`}
+    >
+      <Banner image={book1} bgColor={"rgb(252, 101, 124)"} />
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
+        <div
+          onClick={() => {
+            const ele = document.getElementById("keyFeature");
+            ele.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }}
+        >
+          <BasicButton
+            text={"TEXTBOOK"}
+            bgColor={"rgb(252, 101, 124)"}
+            textColor={"black"}
+            size={"small"}
+          />
         </div>
-        <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
-          <div className="flex flex-col sm:w-[50%] w-full">
-            <span className="px-3 ml-3 py-1 bg-[#fd4662] rounded-t-lg w-fit text-white">
-              KEY FEATURES
-            </span>
-            <ul className="px-2 py-1 w-full rounded-md bg-[#f2b3bd] text-black">
-              <li>
-                <Circle className="!text-[0.5rem] text-black" /> &nbsp;The{" "}
-                <b>Literature Readers</b> carry stories, folktales, and
-                biographies based on the phonic pattern and poems of action and
-                rhythm. Comprehension exercises practise usage of literary
-                skills. Vocabulary exposes learners to literary devices. Grammar
-                drills are graded to match students’ mental abilities while
-                giving opportunities for sustained creative writing practice.
-              </li>
-              <li>
-                <Circle className="!text-[0.5rem] text-black" /> &nbsp;{" "}
-                <b>A.I.-Powered Adaptive App </b> to improve your grammar skills
-                in an interactive and fun way.
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col sm:w-6/12 w-full">
-            <p className="px-2 py-1 w-full rounded-md text-black">
-              <img src={book1} className="w-[80%] h-auto" alt="" />
-            </p>
-          </div>
+        {/* <div
+          onClick={() => {
+            const ele = document.getElementById("Advantages");
+            ele.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }}
+        >
+          <BasicButton
+            text={"ADVANTAGES"}
+            size={"small"}
+            bgColor={"rgb(253, 70, 98)"}
+            textColor={"black"}
+          />
+        </div> */}
+        <div
+          onClick={() => {
+            const ele = document.getElementById("UniqueAdvantages");
+            ele.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }}
+        >
+          <BasicButton
+            text={"UNIQUE ADVANTAGES"}
+            size={"small"}
+            bgColor={"rgb(252, 101, 124)"}
+            textColor={"black"}
+          />
         </div>
-        <div className="flex sm:flex-row flex-col px-4 sm:px-0 gap-4 items-center w-full">
-          <div className="flex flex-col items-center sm:w-1/2 w-full">
-            <img src={book2} className="w-full h-auto" alt="" />
+      </div>
+      <div className="flex sm:flex-row flex-col justify-center px-8 bg-gray-200">
+        <MainContent
+          image={logo}
+          para={
+            <span>
+              The{" "}
+              <span className="font-bold text-[#fd4662]">
+                New Radiant Readers
+              </span>{" "}
+              Literature Readers are literary interesting lessons taken from the
+              renowned and time-tested New Radiant Readers series. This
+              Literature series of 8 readers is for Grades 1–8 of all CBSE and
+              State Board schools seeks to familiarise students with classical
+              and contemporary literary texts. It is an excellent literature
+              supplement to English Readers and Workbooks based on the
+              communicative approach.
+            </span>
+          }
+          bgColor={"rgb(252, 101, 124)"}
+          listOne={"Grades"}
+          listTwo={"1-8"}
+        />
+      </div>
+      <div className="flex flex-col justify-center items-center bg-[#fc657c]">
+        <div ref={keyFeatures} id="keyFeature" className="w-[60%]">
+          <SectionTwo
+            content={
+              <Content
+                bgColor={"rgb(252, 101, 124)"}
+                headLine={"Key Features"}
+                points={[
+                  "It carry stories, folktales, and biographies based on the phonic pattern and poems of action and rhythm. Comprehension exercises practise usage of literary skills. Vocabulary exposes learners to literary devices. Grammar drills are graded to match students’ mental abilities while giving opportunities for sustained creative writing practice.",
+                ]}
+              />
+            }
+            bgColor={"rgb(252, 101, 124)"}
+            img={img6}
+          />
+        </div>
+      </div>
+      <div ref={UniqueAdvantages} id="UniqueAdvantages">
+        <div className="bg-gray-700">
+          <div className="flex flex-col place-items-center justify-center">
+            <img
+              src={img4}
+              className="w-40 h-auto border-2 flex gap-3 p-1 bg-white rounded-b-lg"
+              alt=""
+            />
+            <span className="lg:text-lg font-extrabold flex items-center justify-center text-white text-base">
+              21st Century School OS Lite
+            </span>
+            <span className="flex grid-col items-center justify-center text-white p-4 text-base lg:text-xl">
+              Digital Platform + TOEFL* + Enounce**
+            </span>
           </div>
-          <div className="flex flex-col items-center sm:w-1/2 w-full">
-            <img src={book3} className="w-full h-auto" alt="" />
-          </div>
-          <div className="flex flex-col items-center sm:w-1/2 w-full">
-            <img src={book4} className="w-full h-auto" alt="" />
+          <br />
+
+          <div className="flex flex-col sm:flex-row gap-4 p-5 justify-center items-center">
+            <CardOne
+              headLine={"TEACHERS’ RESOURCES"}
+              points={["E-book", "Answer Keys"]}
+            />
+            <CardOne
+              headLine={"STUDENTS’ RESOURCES"}
+              points={["Chapter PDFs"]}
+            />
           </div>
         </div>
       </div>
-    </>
+      <div className="flex items-center justify-center m-3">
+        <a href={pdf} target="_blank" rel="noreferrer">
+          <BasicButton
+            text={"Download"}
+            bgColor={"rgb(252, 101, 124)"}
+            textColor={"black"}
+          />
+        </a>
+      </div>
+    </div>
   );
 };
 
