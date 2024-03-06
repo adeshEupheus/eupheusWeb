@@ -10,7 +10,6 @@ import Eupheus_atlas_icse from "../../Components/Curriculum/reference/Eupheus_at
 // icons
 import atlasIcon from "../../assets/curriculum/Reference/atlasIcon.png";
 import atlasCompaniomIcon from "../../assets/curriculum/zoom/eupehusAltasCompanion.png";
-// import chamberIcon from "../../assets/curriculum/Reference/chamberIcon.png";
 import { useNavigate } from "react-router-dom";
 
 const Reference = () => {
