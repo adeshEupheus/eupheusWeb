@@ -46,6 +46,7 @@ import PitaraIcon from "../../assets/curriculum/zoom/Pitara.png";
 import RadiantIcon from "../../assets/curriculum/zoom/TheRadiantWay-pre.png";
 import { useNavigate } from "react-router-dom";
 import AksharIcon from "../../assets/curriculum/shabdSagar/aksharSagar.png";
+import BackButton from "../../Components/Solutions/BackButton";
 
 const PrePrimary = () => {
   //   const navigate = useNavigate();
@@ -300,19 +301,11 @@ const PrePrimary = () => {
       <Navbar highlight={"solutions"} />
       <div className="w-[100vw] flex flex-col gap-[2rem]">
         {page === "default" ? (
-          <button
-            onClick={() => navigate(-1)}
-            className="pr-4 pl-1 py-1 sm:pr-6 sm:pl-4 sm:py-2 font-semibold bg-gray-600 flex z-10 text-base sm:text-lg gap-1 items-center !text-gray-200 active:scale-90 transition-all duration-200 ease-linear fixed md:top-[6rem] sm:top-[9rem] lg:top-[6rem] top-[10rem] sm:left-[2rem] left-[0.4rem] rounded-3xl"
-            // className="pr-4 pl-1 py-1 sm:pr-8 sm:pl-6 sm:py-2 font-semibold bg-[#d13131] flex  text-base sm:text-lg gap-1 items-center !text-gray-200 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[10rem] lg:top-[5rem] top-[10rem] sm:left-[4rem] left-[0.4rem] rounded-md"
-          >
-            <ArrowBackIosNew className="!text-[1.2rem] sm:!text-[1.5rem]" />{" "}
-            <span className="mb-[0.1rem]">Back</span>
-          </button>
+          <BackButton />
         ) : (
           <button
             onClick={() => setPage("default")}
             className="pr-4 pl-1 py-1 sm:pr-6 sm:pl-4 sm:py-2 font-semibold bg-[#dbdbdb] flex  text-base sm:text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[15rem] lg:top-[11rem] top-[10rem] sm:left-[1rem] left-[0.4rem] rounded-md"
-            // className="pr-4 pl-1 py-1 sm:pr-8 sm:pl-6 sm:py-2 font-semibold bg-[#dbdbdb] flex  text-base sm:text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[15rem] lg:top-[11rem] top-[10rem] sm:left-[1rem] left-[0.4rem] rounded-md"
           >
             <ArrowBackIosNew className="!text-[1.2rem] sm:!text-[1.5rem]" />{" "}
             <span className="mb-[0.1rem]">Back</span>

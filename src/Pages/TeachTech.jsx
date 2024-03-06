@@ -11,11 +11,11 @@ function TeachTech() {
       className={`w-full flex flex-col bg-white transition-all duration-200 ease-linear overflow-hidden`}
     >
       <div>
-        <img src={img1} alt="" />
+        <img src={img1} alt="" className="w-full" />
         <div>
           <Content2
             para={
-              "Welcome to Teach-Tech, an initiated by Eupheus Learning and powered by Google Workspace, to empower Schools through pedagogy and innovations. A series of seminars being organized under this initiative to decode NCF more carefully and discover tools and techniques to implement its key mandates."
+              "Welcome to Teach-Tech, an initiative of Eupheus Learning and powered by Google Workspace, to empower Schools through pedagogy and innovations. A series of seminars being organized under this initiative to decode NCF more carefully and discover tools and techniques to implement its key mandates."
             }
             bgColor={"rgb(250 204 21)"}
           />
@@ -26,7 +26,7 @@ function TeachTech() {
             <div className="flex flex-row justify-center items-center gap-3 sm:w-[100%] p-3">
               <div className="flex flex-col justify-center items-center box-content border rounded-lg bg-yellow-400 p-6 m-4 w-36 text-lg">
                 <img src={img2} alt="" className="w-20 h-20" />
-                <p>January 23rd</p>
+                <p>January 23rd,</p>
                 <span>2024</span>
               </div>
             </div>
@@ -70,9 +70,9 @@ function TeachTech() {
                   </li>
                   <li className="py-2">
                     <span className="font-semibold">Time: </span> 11:30 am to
-                    3.30 pm
+                    3:30 pm
                   </li>
-                  <li className=" py-2 w-[70%]">
+                  <li className="py-2">
                     <span className="font-semibold">Event Address: </span>Google
                     Office, Signature Tower-D, Sector-15, Part-2, Gurugram,
                     Haryana, 122001
@@ -81,10 +81,6 @@ function TeachTech() {
                     <span className="font-semibold">Event Hall: </span>Meerut
                     Hall, 7th Floor, Signature Tower-D
                   </li>
-                  <li className=" py-2">
-                    <span className="font-semibold">Register At: </span>
-                    https://shorturl.at/xFNW6
-                  </li>
                 </ul>
                 <hr className="h-px flex-grow bg-yellow-500 border-3 border-yellow-500" />
                 <span className="font-semibold flex flex-col justify-center items-center p-2">
@@ -92,19 +88,24 @@ function TeachTech() {
                 </span>
                 <ul className="flex flex-col justify-center items-center p-2">
                   <li className=" py-2">
-                    Sumit Goyal +91 98999 99241, sumitg@eupheus.in
+                    <span className="font-semibold">Sumit Goyal</span> +91 98999
+                    99241, sumitg@eupheus.in
                   </li>
                   <li className=" py-2">
-                    Prabhat Sinha +91 95600 11396 prabhats@eupheus.in
+                    <span className="font-semibold">Prabhat Sinha</span>
+                    +91 95600 11396, prabhats@eupheus.in
                   </li>
                   <li className=" py-2">
-                    Naresh Vashishth +91 98910 17188, nareshv@eupheus.in
+                    <span className="font-semibold">Naresh Vashishth</span>
+                    +91 98910 17188, nareshv@eupheus.in
                   </li>
                   <li className="py-2">
-                    Chhitiz Sisodia +91 93111 05718, chhitizs@eupheus.in
+                    <span className="font-semibold">Chhitiz Sisodia</span>
+                    +91 93111 05718, chhitizs@eupheus.in
                   </li>
                   <li className="py-2">
-                    Surinder Singh +91 96505 90228, surinders@eupheus.in
+                    <span className="font-semibold">Surinder Singh</span>
+                    +91 96505 90228, surinders@eupheus.in
                   </li>
                 </ul>
               </div>

@@ -21,6 +21,7 @@ import arthandwritingIcon from "../../assets/curriculum/zoom/artofhandwriting-cu
 import valueIcon from "../../assets/curriculum/zoom/valuesFirst123.png";
 import gkvibesIcon from "../../assets/curriculum/zoom/GKvibes14.png";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../../Components/Solutions/BackButton";
 
 const SkillDev = () => {
   //   const navigate = useNavigate();
