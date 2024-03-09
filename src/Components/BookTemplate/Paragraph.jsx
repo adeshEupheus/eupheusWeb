@@ -1,6 +1,6 @@
 import React from "react";
 
-function Content2({ headLine, para, image, bgColor }) {
+function Paragraph({ headLine, para, image, bgColor }) {
   return (
     <div
       className="flex flex-col lg:flex-row-reverse justify-center p-8 gap-8 md:w-[80%] lg:w-[70%] items-center"
@@ -26,4 +26,4 @@ function Content2({ headLine, para, image, bgColor }) {
   );
 }
 
-export default Content2;
+export default Paragraph;

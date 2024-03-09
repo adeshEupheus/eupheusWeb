@@ -4,14 +4,14 @@ import img2 from "../../assets/curriculum/zoom/2.png";
 import img3 from "../../assets/curriculum/zoom/3.png";
 
 import img8 from "../../assets/curriculum/zoom/digital content.png";
-import CardOne from "../../Components/BookTemplate/CardOne";
-import CardSecond from "../../Components/BookTemplate/CardSecond";
+import ResourceCard from "./ResourceCard";
+import Card from "../../Components/BookTemplate/Card";
 
 const OsLite = () => {
   return (
     <div>
       <div className="flex flex-col sm:flex-row gap-4 px-10 sm:px-4 justify-center items-center">
-        <CardOne
+        <ResourceCard
           headLine={"TEACHERS’ RESOURCES"}
           points={[
             "E-book",
@@ -22,7 +22,7 @@ const OsLite = () => {
             "One month Vidyapravesh-inspired bridge plan for Grade 1",
           ]}
         />
-        <CardOne
+        <ResourceCard
           headLine={"STUDENTS’ RESOURCES"}
           points={[
             "Chapter PDFs",
@@ -33,7 +33,7 @@ const OsLite = () => {
             "Additional songs and rhymes",
           ]}
         />
-        <CardOne
+        <ResourceCard
           headLine={"PARENTS’ RESOURCES"}
           points={[
             "Parent activity booklets for Preschool 1, 2 and 3",
@@ -42,26 +42,26 @@ const OsLite = () => {
         />
       </div>
       <div className="flex flex-col md:flex-row gap-4 justify-center items-center py-6 md:p-4">
-        <CardSecond
+        <Card
           image={img8}
           headLine={"Digital Content"}
           para={
             "It includes e-books, animations, interactive e-worksheets, and e-activities."
           }
         />
-        <CardSecond
+        <Card
           image={img1}
           headLine={"Cubetto curriculum"}
           para={
             "It used to learn basic coding and problem-solving though play and adventure."
           }
         />
-        <CardSecond
+        <Card
           image={img2}
           headLine={"Pickatale App"}
           para={"It connects school learning to home learning."}
         />
-        <CardSecond
+        <Card
           image={img3}
           headLine={"Zaner-Bloser Eupheus Handwriting Book"}
           para={"It used to develop handwriting skills."}

@@ -8,11 +8,11 @@ import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
 import BasicButton from "../../Material/Button";
 import img4 from "../../../assets/curriculum/zoom/oslite.png";
 import Banner from "../../BookTemplate/Banner";
-import Content2 from "../../BookTemplate/Content2";
-import SectionTwo from "../../BookTemplate/SectionTwo";
+import Paragraph from "../../BookTemplate/Paragraph";
+import Section from "../../BookTemplate/Section";
 import MainContent from "../../BookTemplate/MainContent";
 import OsLite from "../../BookTemplate/OsLite";
-import Content from "../../BookTemplate/Content";
+import KeyPoints from "../../BookTemplate/KeyPoints";
 
 const Zoom = () => {
   const keyFeatures = useRef(null);
@@ -23,7 +23,7 @@ const Zoom = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200 ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner image={book1} bgColor={"rgb(250 204 21)"} />
+      <Banner image={book1} bgColor={"rgb(250 204 21)"} Ncficon={true} />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -98,9 +98,9 @@ const Zoom = () => {
         />
       </div>
       <div ref={keyFeatures} id="keyFeature">
-        <SectionTwo
+        <Section
           content={
-            <Content
+            <KeyPoints
               bgColor={"rgb(250 204 21)"}
               headLine={"Key Features"}
               subHead={"Areas of focus:"}
@@ -115,7 +115,7 @@ const Zoom = () => {
             />
           }
           content2={
-            <Content
+            <KeyPoints
               bgColor={"rgb(250 204 21)"}
               subHead={"Ethos of the curriculum:"}
               points={[
@@ -138,7 +138,7 @@ const Zoom = () => {
         style={{ backgroundColor: "rgb(209 213 219)" }}
         id="Advantages"
       >
-        <Content2
+        <Paragraph
           bgColor={"rgb(209 213 219)"}
           headLine={"COMPONENTS"}
           para={
@@ -147,7 +147,7 @@ const Zoom = () => {
         />
       </div>
       <div className="flex flex-row justify-center w-full bg-yellow-400">
-        <Content2
+        <Paragraph
           image={img7}
           headLine={"TEACHERS’ RESOURCE PACKAGE"}
           para={

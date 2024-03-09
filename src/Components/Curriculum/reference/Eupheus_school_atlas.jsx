@@ -4,12 +4,12 @@ import logo from "../../../assets/curriculum/Reference/eupheus_school_atals/logo
 import img6 from "../../../assets/curriculum/zoom/key features.png";
 import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
 import BasicButton from "../../Material/Button";
-import Banner2 from "../../BookTemplate/Banner2";
-import SectionTwo from "../../BookTemplate/SectionTwo";
+import Banner from "../../BookTemplate/Banner";
+import Section from "../../BookTemplate/Section";
 import MainContent from "../../BookTemplate/MainContent";
-import Content from "../../BookTemplate/Content";
+import KeyPoints from "../../BookTemplate/KeyPoints";
 import img4 from "../../../assets/curriculum/zoom/oslite.png";
-import CardOne from "../../BookTemplate/CardOne";
+import ResourceCard from "../../BookTemplate/ResourceCard";
 
 const Eupheus_school_atlas = () => {
   const keyFeatures = useRef(null);
@@ -19,7 +19,12 @@ const Eupheus_school_atlas = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200  ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner2 image={book1} bgColor={"#c9474b"} />
+      <Banner
+        image={book1}
+        bgColor={"#c9474b"}
+        Ncficon={false}
+        flexprop={"flex flex-col justify-center items-center pt-3"}
+      />
       <div className="flex flex-col sm:flex-row bg-o justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -71,9 +76,9 @@ const Eupheus_school_atlas = () => {
           id="keyFeature"
           className="flex flex-col justify-center items-center w-[60%]"
         >
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 headLine={"Key Features"}
                 points={[
                   "Contour-based maps as required by the CBSE Board",
@@ -110,11 +115,11 @@ const Eupheus_school_atlas = () => {
             </span>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 px-10 sm:px-4 justify-center items-center p-4">
-            <CardOne
+            <ResourceCard
               headLine={"TEACHERS’ RESOURCES"}
               points={["Animations", "Interactive Digital Atlas"]}
             />
-            <CardOne
+            <ResourceCard
               headLine={"STUDENTS’ RESOURCES"}
               points={["Animations", "Map PDFs"]}
             />

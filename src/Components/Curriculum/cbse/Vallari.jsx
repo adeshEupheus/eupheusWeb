@@ -5,11 +5,11 @@ import img6 from "../../../assets/curriculum/zoom/key features.png";
 import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
 import BasicButton from "../../Material/Button";
 import Banner from "../../BookTemplate/Banner";
-import SectionTwo from "../../BookTemplate/SectionTwo";
+import Section from "../../BookTemplate/Section";
 import MainContent from "../../BookTemplate/MainContent";
-import Content from "../../BookTemplate/Content";
+import KeyPoints from "../../BookTemplate/KeyPoints";
 import img4 from "../../../assets/curriculum/zoom/oslite.png";
-import CardOne from "../../BookTemplate/CardOne";
+import ResourceCard from "../../BookTemplate/ResourceCard";
 
 const Vallari = () => {
   const keyFeatures = useRef(null);
@@ -19,7 +19,7 @@ const Vallari = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200  ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner image={book1} bgColor={"#d17a32"} />
+      <Banner image={book1} bgColor={"#d17a32"} Ncficon={true} />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -76,9 +76,9 @@ const Vallari = () => {
           id="keyFeature"
           className="flex flex-col justify-center items-center w-[60%]"
         >
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 headLine={"प्रमुख विशेषताऐं"}
                 points={[
                   "वल्लरी को नया रूप-रंग दिया गया है।",
@@ -112,7 +112,7 @@ const Vallari = () => {
             </span>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 px-10 sm:px-4 justify-center items-center p-4">
-            <CardOne
+            <ResourceCard
               headLine={"TEACHERS’ RESOURCES"}
               points={[
                 "E-book",
@@ -122,7 +122,7 @@ const Vallari = () => {
                 "Test Generator",
               ]}
             />
-            <CardOne
+            <ResourceCard
               headLine={"STUDENTS’ RESOURCES"}
               points={["Chapter PDFs", "Animations"]}
             />

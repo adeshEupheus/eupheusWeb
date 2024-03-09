@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import book1 from "../../../assets/curriculum/cbse/English_Tree/english tree.png";
 import logo from "../../../assets/curriculum/cbse/English_Tree/logo.png";
 import img6 from "../../../assets/curriculum/zoom/key features.png";
-import CardSecond from "../../BookTemplate/CardSecond";
+import Card from "../../BookTemplate/Card";
 import img8 from "../../../assets/curriculum/cbse/english_weaves/digital content.png";
 import img1 from "../../../assets/curriculum/cbse/english_weaves/enounce.png";
 import img2 from "../../../assets/curriculum/cbse/english_weaves/toeflprimary.png";
@@ -11,21 +11,21 @@ import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
 import BasicButton from "../../Material/Button";
 import img4 from "../../../assets/curriculum/zoom/oslite.png";
 import Banner from "../../BookTemplate/Banner";
-import SectionTwo from "../../BookTemplate/SectionTwo";
+import Section from "../../BookTemplate/Section";
 import MainContent from "../../BookTemplate/MainContent";
-import CardOne from "../../BookTemplate/CardOne";
-import Content from "../../BookTemplate/Content";
+import ResourceCard from "../../BookTemplate/ResourceCard";
+import KeyPoints from "../../BookTemplate/KeyPoints";
 
 const English_Tree = () => {
   const keyFeatures = useRef(null);
-  const Advantages = useRef(null);
+  // const Advantages = useRef(null);
   const UniqueAdvantages = useRef(null);
 
   return (
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200 ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner image={book1} bgColor={"rgb(158, 176, 79)"} />
+      <Banner image={book1} bgColor={"rgb(158, 176, 79)"} Ncficon={true} />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -100,9 +100,9 @@ const English_Tree = () => {
       </div>
       <div className="flex flex-col justify-center items-center bg-[#9eb04f]">
         <div ref={keyFeatures} id="keyFeature" className="w-[60%]">
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 bgColor={"rgb(158, 176, 79)"}
                 headLine={"Key features"}
                 points={[
@@ -142,7 +142,7 @@ const English_Tree = () => {
           <br />
 
           <div className="flex flex-col sm:flex-row gap-4 px-5 justify-center items-center">
-            <CardOne
+            <ResourceCard
               headLine={"TEACHERS’ RESOURCES"}
               points={[
                 "E-book",
@@ -154,7 +154,7 @@ const English_Tree = () => {
                 "Test Generators",
               ]}
             />
-            <CardOne
+            <ResourceCard
               headLine={"STUDENTS’ RESOURCES"}
               points={[
                 "Chapter PDFs",
@@ -164,28 +164,28 @@ const English_Tree = () => {
             />
           </div>
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center py-6 md:p-4">
-            <CardSecond
+            <Card
               image={img8}
               headLine={"Digital Content"}
               para={
                 "It includes e-books, animations, interactive e-worksheets, and e-activities."
               }
             />
-            <CardSecond
+            <Card
               image={img1}
               headLine={"Benefits"}
               para={
                 "Language-Learning Solutions with ‘Listen’ ‘Practice’ ‘Learn’ methodology to build pronunciation."
               }
             />
-            <CardSecond
+            <Card
               image={img2}
               headLine={"TEST FOR AGES 8+"}
               para={
                 "The tests are designed to: assess the general English-language proficiency of young students"
               }
             />
-            <CardSecond
+            <Card
               image={img3}
               headLine={"TEST FOR AGES 11+"}
               para={

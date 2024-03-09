@@ -1,32 +1,20 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { ArrowBackIosNew } from "@mui/icons-material";
 import Navbar from "../../Components/Navbar";
 import GoToTop from "../../Components/Top";
 import grayBg from "../../assets/grayBg.png";
 import Footer from "../../Components/Footer";
-// import { useNavigate } from "react-router-dom";
-import Nector from "../../Components/Curriculum/stateBoard/Nector";
 import Concord from "../../Components/Curriculum/stateBoard/Concord";
 import OtherBooks from "../../Components/Curriculum/stateBoard/OtherBooks";
 
 // icons
 import concordIcon from "../../assets/curriculum/zoom/concord14.png";
 import otherbooks from "../../assets/curriculum/stateBoard/otherbooks.png";
-// import balalIcon from "../../assets/curriculum/stateBoard/balalIcon.png";
-// import iniyalIcon from "../../assets/curriculum/stateBoard/iniyalIcon.png";
-// import kalikaIcon from "../../assets/curriculum/stateBoard/kalikaIcon.png";
-// import kampuIcon from "../../assets/curriculum/stateBoard/kampuIcon.png";
-// import kannadaIcon from "../../assets/curriculum/stateBoard/kannadaIcon.png";
-// import rachnaIcon from "../../assets/curriculum/stateBoard/rachnaIcon.png";
-// import RkannadaIcon from "../../assets/curriculum/stateBoard/RkannadaIcon.png";
-// import sumadhuraIcon from "../../assets/curriculum/stateBoard/sumadhuraIcon.png";
-// import telaguIcon from "../../assets/curriculum/stateBoard/telaguIcon.png";
-// import telegucopyIcon from "../../assets/curriculum/stateBoard/telegucopyIcon.png";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import BackButton from "../../Components/Solutions/BackButton";
 const StateBoard = () => {
   const [page, setPage] = useState("default");
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   useEffect(() => {
     document.title = "Solutions - Eupheus";
   }, []);
@@ -64,101 +52,6 @@ const StateBoard = () => {
                 Click Here
               </div>
             </div>
-            {/* <div>
-              <span
-                onClick={() => setPage("nector2")}
-                className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={nector2Icon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("nector2")}
-              >
-                Click Here
-              </div>
-            </div> */}
-            {/* <span
-              onClick={() => setPage("dot_dash")}
-              className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-            >
-              <img
-                src={balalIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
-            </span>
-            <span className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold">
-              <img
-                src={iniyalIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
-            </span>
-            <span className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold">
-              <img
-                src={kalikaIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
-            </span>
-            <span className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold">
-              <img
-                src={kampuIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
-            </span>
-            <span className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold">
-              <img
-                src={kannadaIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
-            </span>
-            <span className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold">
-              <img
-                src={rachnaIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
-            </span>
-            <span className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold">
-              <img
-                src={RkannadaIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
-            </span>
-            <span className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold">
-              <img
-                src={sumadhuraIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
-            </span>
-            <span className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold">
-              <img
-                src={telaguIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
-            </span>
-            <span className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold">
-              <img
-                src={telegucopyIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
-            </span> */}
-          </div>
-        );
-        break;
-      case "nector1":
-        return (
-          <div className="sm:mt-4">
-            <Nector />
-            <GoToTop />
           </div>
         );
         break;
@@ -169,7 +62,6 @@ const StateBoard = () => {
             <GoToTop />
           </div>
         );
-        break;
         break;
       case "OtherBooks":
         return (

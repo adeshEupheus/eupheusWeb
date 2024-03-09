@@ -6,7 +6,7 @@ import BasicButton from "../../Material/Button";
 import Banner from "../../BookTemplate/Banner";
 import MainContent from "../../BookTemplate/MainContent";
 import img4 from "../../../assets/curriculum/zoom/oslite.png";
-import CardOne from "../../BookTemplate/CardOne";
+import ResourceCard from "../../BookTemplate/ResourceCard";
 
 const Surbhika = () => {
   const UniqueAdvantages = useRef(null);
@@ -15,7 +15,7 @@ const Surbhika = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200  ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner image={book1} bgColor={"#3299d1"} />
+      <Banner image={book1} bgColor={"#3299d1"} Ncficon={true} />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
         {/* <div
           onClick={() => {
@@ -79,9 +79,9 @@ const Surbhika = () => {
           id="keyFeature"
           className="flex flex-col justify-center items-center w-[60%]"
         >
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 headLine={"प्रमुख विशेषताऐं"}
                 points={[
                   "वल्लरी को नया रूप-रंग दिया गया है।",
@@ -115,11 +115,11 @@ const Surbhika = () => {
             </span>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 px-10 sm:px-4 justify-center items-center p-4">
-            <CardOne
+            <ResourceCard
               headLine={"TEACHERS’ RESOURCES"}
               points={["E-book", "Answer Keys", "Lesson Plans", "Worksheets"]}
             />
-            <CardOne
+            <ResourceCard
               headLine={"STUDENTS’ RESOURCES"}
               points={["Chapter PDFs"]}
             />

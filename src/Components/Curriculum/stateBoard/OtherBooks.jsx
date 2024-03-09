@@ -13,7 +13,7 @@ import logo10 from "../../../assets/curriculum/stateBoard/kannadasiri.png";
 
 import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
 import BasicButton from "../../Material/Button";
-import Banner2 from "../../BookTemplate/Banner2";
+import Banner from "../../BookTemplate/Banner";
 import img1 from "../../../assets/curriculum/stateBoard/1.png";
 import img2 from "../../../assets/curriculum/stateBoard/2.png";
 import img3 from "../../../assets/curriculum/stateBoard/3.png";
@@ -35,7 +35,12 @@ const OtherBooks = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200  ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner2 image={book1} bgColor={"#1e9c9e"} />
+      <Banner
+        image={book1}
+        bgColor={"#1e9c9e"}
+        Ncficon={false}
+        flexprop={"flex flex-col justify-center items-center pt-3"}
+      />
       <div className="flex flex-col justify-center px-4 bg-[#8784e0]">
         <OtherBookContent
           image={logo1}

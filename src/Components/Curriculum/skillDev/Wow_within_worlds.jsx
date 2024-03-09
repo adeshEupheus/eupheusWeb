@@ -6,9 +6,9 @@ import BasicButton from "../../Material/Button";
 import Banner from "../../BookTemplate/Banner";
 import MainContent from "../../BookTemplate/MainContent";
 import img4 from "../../../assets/curriculum/zoom/oslite.png";
-import CardOne from "../../BookTemplate/CardOne";
-import SectionTwo from "../../BookTemplate/SectionTwo";
-import Content from "../../BookTemplate/Content";
+import ResourceCard from "../../BookTemplate/ResourceCard";
+import Section from "../../BookTemplate/Section";
+import KeyPoints from "../../BookTemplate/KeyPoints";
 import img6 from "../../../assets/curriculum/zoom/key features.png";
 
 const Wow_within_worlds = () => {
@@ -19,7 +19,7 @@ const Wow_within_worlds = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200  ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner image={book1} bgColor={"#ed008c"} />
+      <Banner image={book1} bgColor={"#ed008c"} Ncficon={true} />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -81,9 +81,9 @@ const Wow_within_worlds = () => {
           id="keyFeature"
           className="flex flex-col justify-center items-center w-[60%]"
         >
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 headLine={"Key Features"}
                 points={[
                   "The series has the latest and up-to-date information.",
@@ -126,11 +126,11 @@ const Wow_within_worlds = () => {
             </span>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 px-10 sm:px-4 justify-center items-center p-4">
-            <CardOne
+            <ResourceCard
               headLine={"TEACHERS’ RESOURCES"}
               points={["E-book", "Answer Keys", "Animations", "Worksheets"]}
             />
-            <CardOne
+            <ResourceCard
               headLine={"STUDENTS’ RESOURCES"}
               points={["Chapter PDFs", "Animations"]}
             />

@@ -5,11 +5,11 @@ import img6 from "../../../assets/curriculum/zoom/key features.png";
 import img4 from "../../../assets/curriculum/zoom/oslite.png";
 import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
 import BasicButton from "../../Material/Button";
-import Banner2 from "../../BookTemplate/Banner2";
-import SectionTwo from "../../BookTemplate/SectionTwo";
+import Banner from "../../BookTemplate/Banner";
+import Section from "../../BookTemplate/Section";
 import MainContent from "../../BookTemplate/MainContent";
-import Content from "../../BookTemplate/Content";
-import OsLite2 from "../../BookTemplate/OsLite2";
+import KeyPoints from "../../BookTemplate/KeyPoints";
+import ResourceCard from "../../BookTemplate/ResourceCard";
 import Circle from "../../BookTemplate/Circle";
 
 const Chemistry10QuestionBank = () => {
@@ -20,7 +20,12 @@ const Chemistry10QuestionBank = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200 ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner2 image={book1} bgColor={"#4464c4"} />
+      <Banner
+        image={book1}
+        bgColor={"#4464c4"}
+        Ncficon={false}
+        flexprop={"flex flex-col justify-center items-center pt-3"}
+      />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -82,9 +87,9 @@ const Chemistry10QuestionBank = () => {
           id="keyFeature"
           className="flex flex-col justify-center items-center w-[60%]"
         >
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 headLine={"Key Features"}
                 points={[
                   "Text has been written as per the syllabus in and after March 2024",
@@ -114,7 +119,16 @@ const Chemistry10QuestionBank = () => {
               Digital Platform
             </span>
           </div>
-          <OsLite2 />
+          <div className="flex flex-col sm:flex-row gap-4 px-10 sm:px-4 justify-center items-center p-4">
+            <ResourceCard
+              headLine={"TEACHERS’ RESOURCES"}
+              points={["E-book"]}
+            />
+            <ResourceCard
+              headLine={"STUDENTS’ RESOURCES"}
+              points={["Chapter PDFs"]}
+            />
+          </div>
         </div>
       </div>
       <div className="flex items-center justify-center m-3">

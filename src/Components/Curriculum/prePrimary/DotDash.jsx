@@ -4,11 +4,11 @@ import logo from "../../../assets/curriculum/dotDash/dotdashIcon.png";
 import img6 from "../../../assets/curriculum/zoom/key features.png";
 import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
 import BasicButton from "../../Material/Button";
-import Banner2 from "../../BookTemplate/Banner2";
-import SectionTwo from "../../BookTemplate/SectionTwo";
+import Banner from "../../BookTemplate/Banner";
+import Section from "../../BookTemplate/Section";
 import MainContent from "../../BookTemplate/MainContent";
-import Content from "../../BookTemplate/Content";
-import CardThree from "../../BookTemplate/CardThree";
+import KeyPoints from "../../BookTemplate/KeyPoints";
+import AgeCard from "../../BookTemplate/AgeCard";
 
 const DotDash = () => {
   const keyFeatures = useRef(null);
@@ -18,7 +18,12 @@ const DotDash = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200  ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner2 image={book1} bgColor={"#fcaa53"} />
+      <Banner
+        image={book1}
+        bgColor={"#fcaa53"}
+        Ncficon={false}
+        flexprop={"flex flex-col justify-center items-center pt-3"}
+      />
       <div className="flex flex-col sm:flex-row bg-o justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -77,9 +82,9 @@ const DotDash = () => {
           id="keyFeature"
           className="flex flex-col justify-center items-center w-[60%]"
         >
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 bgColor={"#fcaa53"}
                 headLine={"Key Features"}
                 points={[
@@ -96,7 +101,7 @@ const DotDash = () => {
         </div>
       </div>
       <div className="flex flex-row justify-center items-center">
-        <CardThree bgColor={"#fcaa53"} bgColor1={"#fc9930"} />
+        <AgeCard bgColor={"#fcaa53"} bgColor1={"#fc9930"} />
       </div>
       <div className="flex items-center justify-center m-3">
         <a href={pdf} target="_blank" rel="noreferrer">

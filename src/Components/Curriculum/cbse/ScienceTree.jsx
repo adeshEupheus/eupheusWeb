@@ -8,7 +8,7 @@ import Banner from "../../BookTemplate/Banner";
 import MainContent from "../../BookTemplate/MainContent";
 
 import img4 from "../../../assets/curriculum/zoom/oslite.png";
-import CardOne from "../../BookTemplate/CardOne";
+import ResourceCard from "../../BookTemplate/ResourceCard";
 
 const ScienceTree = () => {
   const keyFeatures = useRef(null);
@@ -18,7 +18,7 @@ const ScienceTree = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200  ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner image={book1} bgColor={"#009b89"} />
+      <Banner image={book1} bgColor={"#009b89"} Ncficon={true} />
       <div className="flex flex-col sm:flex-row bg-o justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -86,9 +86,9 @@ const ScienceTree = () => {
           id="keyFeature"
           className="flex flex-col justify-center items-center w-[60%]"
         >
-          {/* <SectionTwo
+          {/* <Section
             content={
-              <Content
+              <KeyPoints
                 bgColor={"#009b89"}
                 headLine={"Key Features"}
                 subHead={
@@ -126,7 +126,7 @@ const ScienceTree = () => {
           <br />
 
           <div className="flex flex-col sm:flex-row gap-4 p-5 justify-center items-center">
-            <CardOne
+            <ResourceCard
               headLine={"TEACHERS’ RESOURCES"}
               points={[
                 "E-book",
@@ -138,7 +138,7 @@ const ScienceTree = () => {
                 "Test Generator",
               ]}
             />
-            <CardOne
+            <ResourceCard
               headLine={"STUDENTS’ RESOURCES"}
               points={["Chapter PDFs", "Animations for Grades 3-5"]}
             />

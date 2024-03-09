@@ -1,6 +1,6 @@
 import React from "react";
 
-const SectionTwo = ({ content, content2, img, bgColor }) => {
+const Section = ({ content, content2, img, bgColor }) => {
   return (
     <div
       className="flex justify-center w-full items-center px-8 py-3 flex-col lg:flex-col xl:flex-row-reverse gap-6 md:w-full"
@@ -17,4 +17,4 @@ const SectionTwo = ({ content, content2, img, bgColor }) => {
   );
 };
 
-export default SectionTwo;
+export default Section;

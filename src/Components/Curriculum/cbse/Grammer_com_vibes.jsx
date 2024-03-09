@@ -5,26 +5,26 @@ import img6 from "../../../assets/curriculum/zoom/key features.png";
 import img8 from "../../../assets/curriculum/cbse/english_weaves/digital content.png";
 import img2 from "../../../assets/curriculum/cbse/english_weaves/toeflprimary.png";
 import img3 from "../../../assets/curriculum/cbse/english_weaves/toefljunior.png";
-import CardSecond from "../../BookTemplate/CardSecond";
+import Card from "../../BookTemplate/Card";
 import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
 import BasicButton from "../../Material/Button";
 import img4 from "../../../assets/curriculum/zoom/oslite.png";
 import Banner from "../../BookTemplate/Banner";
-import SectionTwo from "../../BookTemplate/SectionTwo";
+import Section from "../../BookTemplate/Section";
 import MainContent from "../../BookTemplate/MainContent";
-import CardOne from "../../BookTemplate/CardOne";
-import Content from "../../BookTemplate/Content";
+import ResourceCard from "../../BookTemplate/ResourceCard";
+import KeyPoints from "../../BookTemplate/KeyPoints";
 
 const Grammar_com_vibes = () => {
   const keyFeatures = useRef(null);
-  const Advantages = useRef(null);
+  // const Advantages = useRef(null);
   const UniqueAdvantages = useRef(null);
 
   return (
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200 ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner image={book1} bgColor={"rgb(238, 77, 155)"} />
+      <Banner image={book1} bgColor={"rgb(238, 77, 155)"} Ncficon={true} />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -100,9 +100,9 @@ const Grammar_com_vibes = () => {
       </div>
       <div className="flex flex-col justify-center items-center bg-[#ee4d9b]">
         <div ref={keyFeatures} id="keyFeature" className="w-[60%]">
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 bgColor={"rgb(238, 77, 155)"}
                 headLine={"Key features"}
                 points={[
@@ -141,7 +141,7 @@ const Grammar_com_vibes = () => {
           <br />
 
           <div className="flex flex-col sm:flex-row gap-4 px-5 justify-center items-center">
-            <CardOne
+            <ResourceCard
               headLine={"TEACHERS’ RESOURCES"}
               points={[
                 "E-book",
@@ -152,27 +152,27 @@ const Grammar_com_vibes = () => {
                 "Test Generators",
               ]}
             />
-            <CardOne
+            <ResourceCard
               headLine={"STUDENTS’ RESOURCES"}
               points={["Chapter PDFs", "Animations"]}
             />
           </div>
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center py-6 md:p-4">
-            <CardSecond
+            <Card
               image={img8}
-              headLine={"Digital Content"}
+              headLine={"Digital KeyPoints"}
               para={
                 "It includes e-books, animations, interactive e-worksheets, and e-activities."
               }
             />
-            <CardSecond
+            <Card
               image={img2}
               headLine={"TEST FOR AGES 8+"}
               para={
                 "The tests are designed to: assess the general English-language proficiency of young students"
               }
             />
-            <CardSecond
+            <Card
               image={img3}
               headLine={"TEST FOR AGES 11+"}
               para={

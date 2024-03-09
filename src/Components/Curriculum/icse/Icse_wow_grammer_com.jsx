@@ -3,17 +3,17 @@ import book1 from "../../../assets/curriculum/icse/Grammar and Com/icse grammar.
 import logo from "../../../assets/curriculum/icse/Grammar and Com/logo.png";
 import img6 from "../../../assets/curriculum/zoom/key features.png";
 import img8 from "../../../assets/curriculum/zoom/digital content.png";
-import CardSecond from "../../BookTemplate/CardSecond";
+import Card from "../../BookTemplate/Card";
 import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
 import BasicButton from "../../Material/Button";
 import img2 from "../../../assets/curriculum/cbse/english_weaves/toeflprimary.png";
 import img3 from "../../../assets/curriculum/cbse/english_weaves/toefljunior.png";
 import img4 from "../../../assets/curriculum/zoom/oslite.png";
-import Banner2 from "../../BookTemplate/Banner2";
-import SectionTwo from "../../BookTemplate/SectionTwo";
+import Banner from "../../BookTemplate/Banner";
+import Section from "../../BookTemplate/Section";
 import MainContent from "../../BookTemplate/MainContent";
-import CardOne from "../../BookTemplate/CardOne";
-import Content from "../../BookTemplate/Content";
+import ResourceCard from "../../BookTemplate/ResourceCard";
+import KeyPoints from "../../BookTemplate/KeyPoints";
 
 const Icse_wow_grammer_com = () => {
   const keyFeatures = useRef(null);
@@ -24,7 +24,12 @@ const Icse_wow_grammer_com = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200 ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner2 image={book1} bgColor={"rgb(37, 148, 207)"} />
+      <Banner
+        image={book1}
+        bgColor={"rgb(37, 148, 207)"}
+        Ncficon={false}
+        flexprop={"flex flex-col justify-center items-center pt-3"}
+      />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -108,9 +113,9 @@ const Icse_wow_grammer_com = () => {
       </div>
       <div className="flex flex-col justify-center items-center bg-[#2594cf]">
         <div ref={keyFeatures} id="keyFeature" className="w-[60%]">
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 headLine={"Key features"}
                 points={[
                   "Spiralling curriculum design",
@@ -146,7 +151,7 @@ const Icse_wow_grammer_com = () => {
           <br />
 
           <div className="flex flex-col sm:flex-row gap-4 px-5 justify-center items-center">
-            <CardOne
+            <ResourceCard
               headLine={"TEACHERS’ RESOURCES"}
               points={[
                 "E-book",
@@ -157,27 +162,27 @@ const Icse_wow_grammer_com = () => {
                 "Test Generators",
               ]}
             />
-            <CardOne
+            <ResourceCard
               headLine={"STUDENTS’ RESOURCES"}
               points={["Chapter PDFs", "Animations"]}
             />
           </div>
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center py-6 md:p-4">
-            <CardSecond
+            <Card
               image={img8}
-              headLine={"Digital Content"}
+              headLine={"Digital KeyPoints"}
               para={
                 "It includes e-books, animations, interactive e-worksheets, and e-activities."
               }
             />
-            <CardSecond
+            <Card
               image={img2}
               headLine={"TEST FOR AGES 8+"}
               para={
                 "The tests are designed to: assess the general English-language proficiency of young students"
               }
             />
-            <CardSecond
+            <Card
               image={img3}
               headLine={"TEST FOR AGES 11+"}
               para={

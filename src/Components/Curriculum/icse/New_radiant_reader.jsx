@@ -5,11 +5,11 @@ import img6 from "../../../assets/curriculum/zoom/key features.png";
 import img4 from "../../../assets/curriculum/zoom/oslite.png";
 import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
 import BasicButton from "../../Material/Button";
-import Banner2 from "../../BookTemplate/Banner2";
-import SectionTwo from "../../BookTemplate/SectionTwo";
+import Banner from "../../BookTemplate/Banner";
+import Section from "../../BookTemplate/Section";
 import MainContent from "../../BookTemplate/MainContent";
-import Content from "../../BookTemplate/Content";
-import CardOne from "../../BookTemplate/CardOne";
+import KeyPoints from "../../BookTemplate/KeyPoints";
+import ResourceCard from "../../BookTemplate/ResourceCard";
 
 const New_radiant_reader = () => {
   const keyFeatures = useRef(null);
@@ -19,7 +19,12 @@ const New_radiant_reader = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200 ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner2 image={book1} bgColor={"#f3a34e"} />
+      <Banner
+        image={book1}
+        bgColor={"#f3a34e"}
+        Ncficon={false}
+        flexprop={"flex flex-col justify-center items-center pt-3"}
+      />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -85,9 +90,9 @@ const New_radiant_reader = () => {
           id="keyFeature"
           className="flex flex-col justify-center items-center w-[60%]"
         >
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 headLine={"Key Features"}
                 points={[
                   "The Readers carry stories, folktales, and biographies based on the phonic pattern and poems of action and rhythm. Comprehension exercises practise usage of language. Vocabulary and Grammar drills are graded to match students’ mental abilities while giving opportunities for sustained creative writing practice.",
@@ -116,11 +121,14 @@ const New_radiant_reader = () => {
             </span>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 p-5 justify-center items-center">
-            <CardOne
+            <ResourceCard
               headLine={"TEACHERS’ RESOURCES"}
               points={["E-book", "Answer keys", "Test Generators"]}
             />
-            <CardOne headLine={"STUDENTS’ RESOURCES"} points={["E-book"]} />
+            <ResourceCard
+              headLine={"STUDENTS’ RESOURCES"}
+              points={["E-book"]}
+            />
           </div>
         </div>
       </div>

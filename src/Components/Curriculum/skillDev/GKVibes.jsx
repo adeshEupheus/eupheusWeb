@@ -6,10 +6,10 @@ import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
 import BasicButton from "../../Material/Button";
 import img4 from "../../../assets/curriculum/zoom/oslite.png";
 import Banner from "../../BookTemplate/Banner";
-import SectionTwo from "../../BookTemplate/SectionTwo";
+import Section from "../../BookTemplate/Section";
 import MainContent from "../../BookTemplate/MainContent";
-import CardOne from "../../BookTemplate/CardOne";
-import Content from "../../BookTemplate/Content";
+import ResourceCard from "../../BookTemplate/ResourceCard";
+import KeyPoints from "../../BookTemplate/KeyPoints";
 
 const GKVibes = () => {
   const keyFeatures = useRef(null);
@@ -20,7 +20,7 @@ const GKVibes = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200 ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner image={book1} bgColor={"rgb(212, 89, 105)"} />
+      <Banner image={book1} bgColor={"rgb(212, 89, 105)"} Ncficon={true} />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -96,9 +96,9 @@ const GKVibes = () => {
       </div>
       <div className="flex flex-col justify-center items-center bg-[#d45969]">
         <div ref={keyFeatures} id="keyFeature" className="w-[60%]">
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 headLine={"Key features"}
                 points={[
                   "Content is carefully graded to the curricula taught in class and thoroughly updated.",
@@ -127,9 +127,9 @@ const GKVibes = () => {
       </div>
       <div className="flex flex-col justify-center items-center bg-gray-200">
         <div ref={Advantages} id="Advantages" className="w-[60%]">
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 headLine={"QUIZMASTER VINAY MUDALIAR BIO"}
                 para={[
                   "Mr Vinay Mudaliar is a well-renowned quizmaster in India and abroad. He is also a television quiz show host. He has conducted numerous national level quizzes. He has conducted over 2500+ quizzes, across 75+ cities in all zones of India and abroad reaching out to lakhs of students. He is currently one of the leading quizmasters in the education industry. He is associated with all the major national education boards like the CBSE, ICSE, etc for conducting quizzes and imparting knowledge across the country. Mr Vinay Mudaliar’s quizzes are hugely popular across the country for their content, innovative formats, and engagement levels. Children, principals, and parents alike eagerly look forward to his quizzes. A crowd favourite quizmaster, his distinct style of connecting with the audience through his questions is his hallmark. He has received various awards and gained nation-wide recognition for his immense contributions.",
@@ -158,11 +158,11 @@ const GKVibes = () => {
           <br />
 
           <div className="flex flex-col sm:flex-row gap-4 p-5 justify-center items-center ">
-            <CardOne
+            <ResourceCard
               headLine={"TEACHERS’ RESOURCES"}
               points={["E-book", "Animations**", "Worksheets", "Answer Keys"]}
             />
-            <CardOne
+            <ResourceCard
               headLine={"STUDENTS’ RESOURCES"}
               points={["Chapter PDFs", "Answer Keys"]}
             />

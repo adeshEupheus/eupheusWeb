@@ -5,10 +5,10 @@ import img6 from "../../../assets/curriculum/zoom/key features.png";
 // import img4 from "../../../assets/curriculum/zoom/oslite.png";
 import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
 import BasicButton from "../../Material/Button";
-import Banner2 from "../../BookTemplate/Banner2";
-import SectionTwo from "../../BookTemplate/SectionTwo";
+import Banner from "../../BookTemplate/Banner";
+import Section from "../../BookTemplate/Section";
 import MainContent from "../../BookTemplate/MainContent";
-import Content from "../../BookTemplate/Content";
+import KeyPoints from "../../BookTemplate/KeyPoints";
 // import OsLite2 from "../../BookTemplate/OsLite2";
 import Circle from "../../BookTemplate/Circle";
 
@@ -20,7 +20,12 @@ const Chemisrty9_10Lab = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200 ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner2 image={book1} bgColor={"#4464c4"} />
+      <Banner
+        image={book1}
+        bgColor={"#4464c4"}
+        Ncficon={false}
+        flexprop={"flex flex-col justify-center items-center pt-3"}
+      />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -82,9 +87,9 @@ const Chemisrty9_10Lab = () => {
           id="keyFeature"
           className="flex flex-col justify-center items-center w-[60%]"
         >
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 headLine={"Key Features"}
                 points={[
                   "Detailed and comprehensive observation and inference table",

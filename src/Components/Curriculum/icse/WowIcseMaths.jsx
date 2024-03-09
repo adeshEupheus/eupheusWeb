@@ -4,15 +4,15 @@ import logo from "../../../assets/curriculum/icse/Wow Maths/logo.png";
 import img6 from "../../../assets/curriculum/zoom/key features.png";
 import img2 from "../../../assets/curriculum/cbse/Maths_weaves/mathbuddy.png";
 import img8 from "../../../assets/curriculum/zoom/digital content.png";
-import CardSecond from "../../BookTemplate/CardSecond";
+import Card from "../../BookTemplate/Card";
 import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
 import BasicButton from "../../Material/Button";
 import img4 from "../../../assets/curriculum/zoom/oslite.png";
-import Banner2 from "../../BookTemplate/Banner2";
-import SectionTwo from "../../BookTemplate/SectionTwo";
+import Banner from "../../BookTemplate/Banner";
+import Section from "../../BookTemplate/Section";
 import MainContent from "../../BookTemplate/MainContent";
-import CardOne from "../../BookTemplate/CardOne";
-import Content from "../../BookTemplate/Content";
+import ResourceCard from "../../BookTemplate/ResourceCard";
+import KeyPoints from "../../BookTemplate/KeyPoints";
 
 const WowIcseMaths = () => {
   const keyFeatures = useRef(null);
@@ -23,7 +23,12 @@ const WowIcseMaths = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200 ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner2 image={book1} bgColor={"rgb(227, 123, 48)"} />
+      <Banner
+        image={book1}
+        bgColor={"rgb(227, 123, 48)"}
+        Ncficon={false}
+        flexprop={"flex flex-col justify-center items-center pt-3"}
+      />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -96,9 +101,9 @@ const WowIcseMaths = () => {
       </div>
       <div className="flex flex-col justify-center items-center bg-[#e37b30]">
         <div ref={keyFeatures} id="keyFeature" className="w-[60%]">
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 bgColor={"rgb(227, 123, 48)"}
                 headLine={"Key features"}
                 subHead={"Coursebooks:"}
@@ -114,9 +119,9 @@ const WowIcseMaths = () => {
       </div>
       <div className="flex flex-col justify-center items-center bg-gray-200">
         <div ref={Advantages} id="Advantages" className="w-[60%]">
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 headLine={"TEACHER SUPPORT"}
                 points={[
                   "Teacher Manuals: Provide teachers with a one-step solution for delivering effective curriculum. Include suggested hands-on classroom and Maths lab activities, lesson plans and extensions to develop lateral thinking of concepts.",
@@ -146,7 +151,7 @@ const WowIcseMaths = () => {
           <br />
 
           <div className="flex flex-col sm:flex-row gap-4 px-5 justify-center items-center">
-            <CardOne
+            <ResourceCard
               headLine={"TEACHERS’ RESOURCES"}
               points={[
                 "E-book",
@@ -156,20 +161,20 @@ const WowIcseMaths = () => {
                 "Test Generators",
               ]}
             />
-            <CardOne
+            <ResourceCard
               headLine={"STUDENTS’ RESOURCES"}
               points={["Chapter PDFs", "Animations**"]}
             />
           </div>
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center py-6 md:p-4 text-sm">
-            <CardSecond
+            <Card
               image={img8}
               headLine={"Digital Content"}
               para={
                 "It includes e-books, animations, interactive e-worksheets, and e-activities."
               }
             />
-            <CardSecond
+            <Card
               image={img2}
               headLine={"MathBuddy"}
               para={

@@ -1,7 +1,7 @@
 import React from "react";
 import flower from "../../assets/curriculum/splash/flower.png";
 
-function CardThree({ bgColor, bgColor1 }) {
+function AgeCard({ bgColor, bgColor1 }) {
   return (
     <div className="flex sm:flex-row flex-col px-4 sm:px-0 gap-4 items-center w-full">
       <div className="flex flex-col items-center sm:w-1/2 w-full p-3">
@@ -48,4 +48,4 @@ function CardThree({ bgColor, bgColor1 }) {
   );
 }
 
-export default CardThree;
+export default AgeCard;

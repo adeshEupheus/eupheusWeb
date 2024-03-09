@@ -3,12 +3,12 @@ import book1 from "../../../assets/curriculum/skillDev/value_first/valuefirst.pn
 import logo from "../../../assets/curriculum/skillDev/value_first/logo.png";
 import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
 import BasicButton from "../../Material/Button";
-import Banner2 from "../../BookTemplate/Banner2";
+import Banner from "../../BookTemplate/Banner";
 import MainContent from "../../BookTemplate/MainContent";
 import img4 from "../../../assets/curriculum/zoom/oslite.png";
-import CardOne from "../../BookTemplate/CardOne";
-import SectionTwo from "../../BookTemplate/SectionTwo";
-import Content from "../../BookTemplate/Content";
+import ResourceCard from "../../BookTemplate/ResourceCard";
+import Section from "../../BookTemplate/Section";
+import KeyPoints from "../../BookTemplate/KeyPoints";
 import img6 from "../../../assets/curriculum/zoom/key features.png";
 
 const Value_first = () => {
@@ -19,7 +19,12 @@ const Value_first = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200  ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner2 image={book1} bgColor={"#d44455"} />
+      <Banner
+        image={book1}
+        bgColor={"#d44455"}
+        Ncficon={false}
+        flexprop={"flex flex-col justify-center items-center pt-3"}
+      />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -80,9 +85,9 @@ const Value_first = () => {
           id="keyFeature"
           className="flex flex-col justify-center items-center w-[60%]"
         >
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 headLine={"Key Features"}
                 points={[
                   "Characters introducing stories and their line of thought",
@@ -121,11 +126,11 @@ const Value_first = () => {
             </span>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 px-10 sm:px-4 justify-center items-center p-4">
-            <CardOne
+            <ResourceCard
               headLine={"TEACHERS’ RESOURCES"}
               points={["E-book", "Answer Keys"]}
             />
-            <CardOne
+            <ResourceCard
               headLine={"STUDENTS’ RESOURCES"}
               points={["Chapter PDFs", "Answer Keys"]}
             />

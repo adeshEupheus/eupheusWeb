@@ -6,12 +6,12 @@ import img4 from "../../../assets/curriculum/zoom/oslite.png";
 import img7 from "../../../assets/curriculum/splash/9.png";
 import pdf from "../../../assets/curriculum/zoom/sample page.pdf";
 import BasicButton from "../../Material/Button";
-import Banner2 from "../../BookTemplate/Banner2";
-import SectionTwo from "../../BookTemplate/SectionTwo";
+import Banner from "../../BookTemplate/Banner";
+import Section from "../../BookTemplate/Section";
 import MainContent from "../../BookTemplate/MainContent";
-import Content from "../../BookTemplate/Content";
-import OsLite2 from "../../BookTemplate/OsLite2";
-import CardThree from "../../BookTemplate/CardThree";
+import KeyPoints from "../../BookTemplate/KeyPoints";
+import ResourceCard from "../../BookTemplate/ResourceCard";
+import AgeCard from "../../BookTemplate/AgeCard";
 
 const Splash = () => {
   const keyFeatures = useRef(null);
@@ -21,7 +21,12 @@ const Splash = () => {
     <div
       className={`w-full flex flex-col bg-white transition-all duration-200 ease-linear md:mt-[4rem] mt-[10rem]`}
     >
-      <Banner2 image={book1} bgColor={"#ca76e3"} />
+      <Banner
+        image={book1}
+        bgColor={"#ca76e3"}
+        Ncficon={false}
+        flexprop={"flex flex-col justify-center items-center pt-3"}
+      />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-3 p-4">
         <div
           onClick={() => {
@@ -89,9 +94,9 @@ const Splash = () => {
           id="keyFeature"
           className="flex flex-col justify-center items-center w-[60%]"
         >
-          <SectionTwo
+          <Section
             content={
-              <Content
+              <KeyPoints
                 bgColor={"#ca76e3"}
                 headLine={"Key Features"}
                 points={[
@@ -111,7 +116,7 @@ const Splash = () => {
         <img src={img7} className="w-[60%] h-auto" alt="" />
       </div>
       <div className="flex flex-row justify-center items-center">
-        <CardThree bgColor={"#ca76e3"} bgColor1={"#ad6bc2"} />
+        <AgeCard bgColor={"#ca76e3"} bgColor1={"#ad6bc2"} />
       </div>
       <div ref={UniqueAdvantages} id="UniqueAdvantages">
         <div className="bg-gray-700">
@@ -128,7 +133,16 @@ const Splash = () => {
               Digital Platform
             </span>
           </div>
-          <OsLite2 />
+          <div className="flex flex-col sm:flex-row gap-4 px-10 sm:px-4 justify-center items-center p-4">
+            <ResourceCard
+              headLine={"TEACHERS’ RESOURCES"}
+              points={["E-book"]}
+            />
+            <ResourceCard
+              headLine={"STUDENTS’ RESOURCES"}
+              points={["Chapter PDFs"]}
+            />
+          </div>
         </div>
       </div>
       <div className="flex items-center justify-center m-3">
