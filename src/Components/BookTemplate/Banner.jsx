@@ -1,14 +1,24 @@
 import React from "react";
-import img5 from "../../assets/curriculum/zoom/ncf.png"
-const Banner = ({image, bgColor}) => {
-return (
-        <div className="w-full flex flex-row pt-7 object-fill" style={{backgroundColor: bgColor,
-        }}>
-       <img src={image} className="w-full h-56 relative left-14" alt="" />
-        <img src={img5} className="w-24 h-20 pb-4 pr-7" alt="" />
+import img5 from "../../assets/curriculum/zoom/ncf.png";
+const Banner = ({ image, bgColor, flexprop, Ncficon }) => {
+  return (
+    <div
+      className={`w-full object-fill ${flexprop}`}
+      style={{ backgroundColor: bgColor }}
+    >
+      {Ncficon ? (
+        <div className="grid flex-col justify-start items-start">
+          <img src={img5} alt="" className="w-16 h-16 place-content-start" />
         </div>
-    
-   )
- }
-
- export default Banner
+      ) : null}
+      <div className="flex flex-col justify-center items-center">
+        <img
+          src={image}
+          className="w-fit h-auto sm:pt-6 place-content-center"
+          alt=""
+        />
+      </div>
+    </div>
+  );
+};
+export default Banner;

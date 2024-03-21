@@ -1,8 +1,7 @@
 import React from "react";
 import img1 from "../assets/TeachTech/banner@3x.png";
-import Content2 from "../Components/BookTemplate/Content2";
 import img2 from "../assets/TeachTech/Asset 8@3x.png";
-import Content from "../Components/BookTemplate/Content";
+import KeyPoints from "../Components/BookTemplate/KeyPoints";
 import Footer from "../Components/Footer";
 
 function TeachTech() {
@@ -13,7 +12,7 @@ function TeachTech() {
       <div>
         <img src={img1} alt="" className="w-full" />
         <div>
-          <Content2
+          <KeyPoints
             para={
               "Welcome to Teach-Tech, an initiative of Eupheus Learning and powered by Google Workspace, to empower Schools through pedagogy and innovations. A series of seminars being organized under this initiative to decode NCF more carefully and discover tools and techniques to implement its key mandates."
             }
@@ -129,7 +128,7 @@ function TeachTech() {
               and innovations.
             </span>
             <div className="flex flex-col sm:w-[60%] sm:text-base text-sm p-4 m-2 font-normal px-1">
-              <Content
+              <KeyPoints
                 headLine={"Q1. What is Teach-Tech?"}
                 para={
                   "A1. Teach-Tech is a series of seminars under the joint initiative of Eupheus Learning and is powered by Google to offer the following solutions to Schools:"
@@ -142,7 +141,7 @@ function TeachTech() {
                   "Immersion on Google Workspace, a productivity suite that makes a business environment safe and secure and integrates the most needed tech to enable business efficiency",
                 ]}
               />
-              <Content
+              <KeyPoints
                 headLine={
                   "Q2. Who is the target audience of Teach-Tech and what do I expect from this session?"
                 }
@@ -150,7 +149,7 @@ function TeachTech() {
                   "A2. Teach-Tech series is relevant for School Principals and Teachers. In our very first session under this initiative of Teach-Tech, we are covering “Decoding NCF” and taking the audience through the details about NCF and focusing more on the ‘Foundational Stage’. We are also taking an opportunity to launch our ‘ZoomPlus’ series which is a transformational series for this foundational stage. Hence, the co-ordinators of pre-primary section will benefit greatly through this seminar."
                 }
               />
-              <Content
+              <KeyPoints
                 headLine={
                   "Q3. When and where is the second session of Teach-Tech?"
                 }
@@ -158,7 +157,7 @@ function TeachTech() {
                   "A3. The second session is happening on January 23rd at the conference hall of Google Workspace office in Gurgaon. The details about the same are covered in our invite for this session."
                 }
               />
-              <Content
+              <KeyPoints
                 headLine={"Q4. What is Google Workspace?"}
                 para={
                   "A4. Google Workspace is designed to enhance productivity and streamline collaboration by providing a suite of interconnected, cloud-based tools that can be accessed from any device with internet connectivity."
@@ -170,7 +169,7 @@ function TeachTech() {
                   "Detailed description about Google Workspace shall be provided during this session on December 19",
                 ]}
               />
-              <Content
+              <KeyPoints
                 headLine={"Q5. What is the tie-up with Google Workspace?"}
                 para={
                   "A5. Eupheus has tied up with Google to become their technology partner in this Teach-Tech Initiative."
@@ -182,7 +181,7 @@ function TeachTech() {
                   "During this second session on January 23rd, Google Workspace will showcase their capabilities for a School to enhance their productivity",
                 ]}
               />
-              <Content
+              <KeyPoints
                 headLine={"Q6. How do I attend this Teach-Tech session?"}
                 para={
                   "A6. The invite carries details about the Teach-Tech session and a link to register. It’s a google form which captures key details about the attendant. It also captures whether the attendant requires parking. We would encourage the attendant to fill in that form and registers themselves and allow us to host them well."

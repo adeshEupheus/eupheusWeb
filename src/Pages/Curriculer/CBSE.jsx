@@ -5,61 +5,57 @@ import GoToTop from "../../Components/Top";
 import grayBg from "../../assets/grayBg.png";
 import Footer from "../../Components/Footer";
 // import { useNavigate } from "react-router-dom";
-import { Compu_app } from "../../Components/Curriculum/cbse/Compu_app";
-import English_vibes from "../../Components/Curriculum/cbse/English_vibes";
+// import { Compu_app } from "../../Components/Curriculum/cbse/Compu_app";
+// import English_vibes from "../../Components/Curriculum/cbse/English_vibes";
 import Grammer_com_vibes from "../../Components/Curriculum/cbse/Grammer_com_vibes";
 import My_world_my_earth from "../../Components/Curriculum/cbse/My_world_my_earth";
 import New_radiant_literature from "../../Components/Curriculum/cbse/New_radiant_literature";
-import { Silver_bells } from "../../Components/Curriculum/cbse/Silver_bells";
-import { Surbhika_hindi } from "../../Components/Curriculum/cbse/Surbhika_hindi";
+import Silver_bells from "../../Components/Curriculum/cbse/Silver_bells";
 import The_radiant_way from "../../Components/Curriculum/cbse/The_radiant_way";
-import { Vallari_hindi } from "../../Components/Curriculum/cbse/Vallari_hindi";
-import { Wow_compu_bytes } from "../../Components/Curriculum/cbse/Wow_compu_bytes";
+import Vallari from "../../Components/Curriculum/cbse/Vallari";
+import Wow_compu_bytes from "../../Components/Curriculum/cbse/Wow_compu_bytes";
 import Wow_english from "../../Components/Curriculum/cbse/Wow_english";
 import Wow_grammer_com from "../../Components/Curriculum/cbse/Wow_grammer_com";
 import Wow_maths from "../../Components/Curriculum/cbse/Wow_maths";
 import Wow_menta_maths from "../../Components/Curriculum/cbse/Wow_menta_maths";
 import Wow_science from "../../Components/Curriculum/cbse/Wow_science";
+import English_weaves from "../../Components/Curriculum/cbse/English_weaves";
+import English_Tree from "../../Components/Curriculum/cbse/English_Tree";
+import Chit_chat from "../../Components/Curriculum/cbse/Chit_chat";
+import EnvConnect from "../../Components/Curriculum/cbse/EnvConnect";
+import Maths_weaves from "../../Components/Curriculum/cbse/Maths_weaves";
+import Maths_Tree from "../../Components/Curriculum/cbse/Maths_Tree";
+import Wow_Maths_Lab from "../../Components/Curriculum/cbse/Wow_Maths_Lab";
+import ScienceTree from "../../Components/Curriculum/cbse/ScienceTree";
+import Wow_Science_Lab from "../../Components/Curriculum/cbse/Wow_Science_Lab";
+import Surbhika from "../../Components/Curriculum/cbse/Surbhika";
 
 // icons
-// import wowEnglishIcon from "../../assets/curriculum/cbse/wowEnglish/Icon.png";
-// import EnglishVibesIcon from "../../assets/curriculum/cbse/englishVibes/Icon.png";
-// import GComIcon from "../../assets/curriculum/cbse/G&Com/Icon.png";
 import GComIcon from "../../assets/curriculum/zoom/wowGram&Comm.png";
-// import GComVibesIcom from "../../assets/curriculum/cbse/G&comVibes/Icon.png";
-// import newRLRIcon from "../../assets/curriculum/cbse/newRLR/Icon.png";
 import newRLRIcon from "../../assets/curriculum/zoom/TheRadiantReader.png";
-// import newRwayIcon from "../../assets/curriculum/cbse/radiantWay2/Icon.png";
 import newRwayIcon from "../../assets/curriculum/zoom/TheRadiantWay-firstStep.png";
-// import myWorldMyEarthIcon from "../../assets/curriculum/cbse/myWorldMyEarth/Icon.png";\
 import myWorldMyEarthIcon from "../../assets/curriculum/zoom/EnvStudies.png";
-// import WMIcon from "../../assets/curriculum/cbse/wowMath/Icon.png";
 import WMIcon from "../../assets/curriculum/zoom/MathsWeave.png";
-// import WowMMIcon from "../../assets/curriculum/cbse/wowMM/Icon.png";
 import WowMMIcon from "../../assets/curriculum/zoom/MathTree.png";
-// import WowScienceIcon from "../../assets/curriculum/cbse/wowScience/Icon.png";
 import WowScienceIcon from "../../assets/curriculum/zoom/wowScience678.png";
 import WowComBytesIcon from "../../assets/curriculum/cbse/wowComBytes/Icon.png";
-import ComAppIcon from "../../assets/curriculum/cbse/comApplication/Icon.png";
-// import vallariIcon from "../../assets/curriculum/cbse/vallari/Icon.png";
-import vallariIcon from "../../assets/curriculum/zoom/vallariHindi123.png";
-import subhrikaIcon from "../../assets/curriculum/cbse/surbhika/Icon.png";
-// import SilverbellIcon from "../../assets/curriculum/cbse/silverbell/Icon.png";
 import SilverbellIcon from "../../assets/curriculum/zoom/silverbells123.png";
 import { useNavigate } from "react-router-dom";
-import EnglishWeaves from "../../assets/curriculum/zoom/englishWeaves.png";
+import EnglishWeaves from "../../assets/curriculum/cbse/english_weaves/englishWeaves.png";
 import EnglishTree from "../../assets/curriculum/zoom/englishTree.png";
-// import WowEnglish from "../../assets/curriculum/zoom/wowEnglish.png";
 import wowEnglish from "../../assets/curriculum/zoom/wowEnglish1.png";
-import ChitChat from "../../assets/curriculum/zoom/chitChat.png";
+import ChitChat from "../../assets/curriculum/cbse/ChitChat/ChitChat.png";
 import gram from "../../assets/curriculum/zoom/gram&comp.png";
 import wowMaths from "../../assets/curriculum/zoom/wowMaths.png";
 import WowMentalMathsIcon from "../../assets/curriculum/zoom/WowMentalMaths.png";
 import WMathsLabIcon from "../../assets/curriculum/zoom/WowMathLab.png";
-import ScienceTree from "../../assets/curriculum/zoom/sciencetree123.png";
+import Science_Tree from "../../assets/curriculum/zoom/sciencetree123.png";
 import WowScienceLabIcon from "../../assets/curriculum/zoom/wowScienceLab678.png";
 import envConnectIcon from "../../assets/curriculum/zoom/EnvConenct.png";
 import socialStudiesIcon from "../../assets/curriculum/zoom/socialStudiesVibes.png";
+import vallariIcon from "../../assets/curriculum/cbse/vallari/Icon.png";
+import SurbhikaIcon from "../../assets/curriculum/cbse/surbhika/Icon.png";
+import VibesSocial from "../../Components/Curriculum/cbse/VibesSocial";
 import BackButton from "../../Components/Solutions/BackButton";
 
 const Cbse = () => {
@@ -77,30 +73,28 @@ const Cbse = () => {
           <div className="w-full grid sm:grid-rows-5 grid-rows-7 sm:grid-cols-3 grid-cols-2 sm:gap-[4rem] gap-[2rem] sm:px-[3rem] px-4 pb-8 sm:pt-8 pt-[12rem] lg:mt-[19vh] md:mt-[21vh] sm:mt-[33vh]">
             <div>
               <span
-                onClick={() => setPage("english")}
+                onClick={() => setPage("English_weaves")}
                 className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                {/* <img src={wowEnglishIcon} className="w-[90%] h-auto" alt="" /> */}
                 <img src={EnglishWeaves} className="w-[90%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("english")}
+                onClick={() => setPage("English_weaves")}
               >
                 Click Here
               </div>
             </div>
             <div>
               <span
-                onClick={() => setPage("english_vibes")}
+                onClick={() => setPage("English_Tree")}
                 className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                {/* <img src={EnglishVibesIcon} className="w-[90%] h-auto" alt="" /> */}
                 <img src={EnglishTree} className="w-[90%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("english_vibes")}
+                onClick={() => setPage("English_Tree")}
               >
                 Click Here
               </div>
@@ -111,68 +105,10 @@ const Cbse = () => {
                 className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
                 <img src={wowEnglish} className="w-[90%] h-auto" alt="" />
-                {/* <img src={EnglishWeaves} className="w-[90%] h-auto" alt="" /> */}
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
                 onClick={() => setPage("english")}
-              >
-                Click Here
-              </div>
-            </div>
-            <div>
-              <span
-                onClick={() => setPage("english")}
-                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={ChitChat} className="w-[90%] h-auto" alt="" />
-                {/* <img src={EnglishWeaves} className="w-[90%] h-auto" alt="" /> */}
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("english")}
-              >
-                Click Here
-              </div>
-            </div>
-            <div>
-              <span
-                onClick={() => setPage("silver_bells")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={SilverbellIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("silver_bells")}
-              >
-                Click Here
-              </div>
-            </div>
-            <div>
-              <span
-                onClick={() => setPage("new_radiant_literature")}
-                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={newRLRIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("new_radiant_literature")}
-              >
-                Click Here
-              </div>
-            </div>
-            <div>
-              <span
-                onClick={() => setPage("new_radiant_literature")}
-                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={gram} className="w-[100%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("new_radiant_literature")}
               >
                 Click Here
               </div>
@@ -182,7 +118,6 @@ const Cbse = () => {
                 onClick={() => setPage("grammer_com")}
                 className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                {/* <img src={GComIcon} className="w-[90%] h-auto" alt="" /> */}
                 <img src={GComIcon} className="w-[90%] h-auto" alt="" />
               </span>
               <div
@@ -194,33 +129,19 @@ const Cbse = () => {
             </div>
             <div>
               <span
-                onClick={() => setPage("the_radiant_way")}
-                className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+                onClick={() => setPage("Grammer_com_vibes")}
+                className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={newRwayIcon} className="w-[90%] h-auto" alt="" />
+                <img src={gram} className="w-[100%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("the_radiant_way")}
+                onClick={() => setPage("Grammer_com_vibes")}
               >
                 Click Here
               </div>
             </div>
-            {/* <div>
-              <span
-                onClick={() => setPage("grammer_com_vibes")}
-                className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={GComVibesIcom} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("grammer_com_vibes")}
-              >
-                Click Here
-              </div>
-            </div> */}
-            {/* <div>
+            <div>
               <span
                 onClick={() => setPage("new_radiant_literature")}
                 className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
@@ -233,8 +154,8 @@ const Cbse = () => {
               >
                 Click Here
               </div>
-            </div> */}
-            {/* <div>
+            </div>
+            <div>
               <span
                 onClick={() => setPage("the_radiant_way")}
                 className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
@@ -247,221 +168,31 @@ const Cbse = () => {
               >
                 Click Here
               </div>
-            </div> */}
+            </div>
             <div>
               <span
-                onClick={() => setPage("maths")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+                onClick={() => setPage("Chit_chat")}
+                className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
-                <img src={WMIcon} className="w-[90%] h-auto" alt="" />
+                <img src={ChitChat} className="w-[90%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("maths")}
+                onClick={() => setPage("Chit_chat")}
               >
                 Click Here
               </div>
             </div>
             <div>
               <span
-                onClick={() => setPage("maths")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={WowMMIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("maths")}
-              >
-                Click Here
-              </div>
-            </div>
-            <div>
-              <span
-                onClick={() => setPage("maths")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={wowMaths} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("maths")}
-              >
-                Click Here
-              </div>
-            </div>
-            <div>
-              <span
-                onClick={() => setPage("mental_maths")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img
-                  src={WowMentalMathsIcon}
-                  className="w-[90%] h-auto"
-                  alt=""
-                />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("mental_maths")}
-              >
-                Click Here
-              </div>
-            </div>
-            <div>
-              <span
-                onClick={() => setPage("maths")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={WMathsLabIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("maths")}
-              >
-                Click Here
-              </div>
-            </div>
-            {/* <div>
-              <span
-                onClick={() => setPage("mental_maths")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={WowMMIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("mental_maths")}
-              >
-                Click Here
-              </div>
-            </div> */}
-            <div>
-              <span
-                onClick={() => setPage("science")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={ScienceTree} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("science")}
-              >
-                Click Here
-              </div>
-            </div>{" "}
-            <div>
-              <span
-                onClick={() => setPage("science")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={WowScienceIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("science")}
-              >
-                Click Here
-              </div>
-            </div>{" "}
-            <div>
-              <span
-                onClick={() => setPage("science")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img
-                  src={WowScienceLabIcon}
-                  className="w-[90%] h-auto"
-                  alt=""
-                />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("science")}
-              >
-                Click Here
-              </div>
-            </div>{" "}
-            <div>
-              <span
-                onClick={() => setPage("compu_bytes")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={WowComBytesIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("compu_bytes")}
-              >
-                Click Here
-              </div>
-            </div>
-            {/* <div>
-              <span
-                onClick={() => setPage("compu_app")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={ComAppIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("compu_bytes")}
-              >
-                // Click Here
-              </div>
-            </div> */}
-            {/* <div>
-              <span
-                onClick={() => setPage("vallari_hindi")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={vallariIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("vallari_hindi")}
-              >
-                Click Here
-              </div>
-            </div> */}
-            {/* <div>
-              <span
-                onClick={() => setPage("surbhika")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={subhrikaIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("surbhika")}
-              >
-                Click Here
-              </div>
-            </div> */}
-            {/* <div>
-              <span
-                onClick={() => setPage("silver_bells")}
-                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
-              >
-                <img src={SilverbellIcon} className="w-[90%] h-auto" alt="" />
-              </span>
-              <div
-                className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("silver_bells")}
-              >
-                Click Here
-              </div>
-            </div> */}
-            <div>
-              <span
-                onClick={() => setPage("my_world_my_earth")}
+                onClick={() => setPage("EnvConnect")}
                 className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
                 <img src={envConnectIcon} className="w-[90%] h-auto" alt="" />
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("my_world_my_earth")}
+                onClick={() => setPage("EnvConnect")}
               >
                 Click Here
               </div>
@@ -486,7 +217,183 @@ const Cbse = () => {
             </div>
             <div>
               <span
-                onClick={() => setPage("my_world_my_earth")}
+                onClick={() => setPage("Maths_weaves")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={WMIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("Maths_weaves")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("maths")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={wowMaths} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("maths")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("Maths_Tree")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={WowMMIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("Maths_Tree")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("mental_maths")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img
+                  src={WowMentalMathsIcon}
+                  className="w-[90%] h-auto"
+                  alt=""
+                />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("mental_maths")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("Wow_Maths_Lab")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={WMathsLabIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("Wow_Maths_Lab")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("science")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={WowScienceIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("science")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("ScienceTree")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={Science_Tree} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("ScienceTree")}
+              >
+                Click Here
+              </div>
+            </div>{" "}
+            <div>
+              <span
+                onClick={() => setPage("Wow_Science_Lab")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img
+                  src={WowScienceLabIcon}
+                  className="w-[90%] h-auto"
+                  alt=""
+                />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("Wow_Science_Lab")}
+              >
+                Click Here
+              </div>
+            </div>{" "}
+            <div>
+              <span
+                onClick={() => setPage("Wow_compu_bytes")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={WowComBytesIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("Wow_compu_bytes")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("Vallari")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={vallariIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("Vallari")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("Surbhika")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={SurbhikaIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("Surbhika")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("Silver_bells")}
+                className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              >
+                <img src={SilverbellIcon} className="w-[90%] h-auto" alt="" />
+              </span>
+              <div
+                className="text-red-500 cursor-pointer font-bold flex justify-center"
+                onClick={() => setPage("Silver_bells")}
+              >
+                Click Here
+              </div>
+            </div>
+            <div>
+              <span
+                onClick={() => setPage("VibesSocial")}
                 className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
               >
                 <img
@@ -497,7 +404,7 @@ const Cbse = () => {
               </span>
               <div
                 className="text-red-500 cursor-pointer font-bold flex justify-center"
-                onClick={() => setPage("my_world_my_earth")}
+                onClick={() => setPage("VibesSocial")}
               >
                 Click Here
               </div>
@@ -505,23 +412,79 @@ const Cbse = () => {
           </div>
         );
         break;
-      case "compu_app":
+      case "Chit_chat":
         return (
           <div className="sm:mt-4">
-            <Compu_app />
+            <Chit_chat />
             <GoToTop />
           </div>
         );
         break;
-      case "english_vibes":
+      case "EnvConnect":
         return (
           <div className="sm:mt-4">
-            <English_vibes />
+            <EnvConnect />
             <GoToTop />
           </div>
         );
         break;
-      case "grammer_com_vibes":
+      case "ScienceTree":
+        return (
+          <div className="sm:mt-4">
+            <ScienceTree />
+            <GoToTop />
+          </div>
+        );
+        break;
+      case "Maths_weaves":
+        return (
+          <div className="sm:mt-4">
+            <Maths_weaves />
+            <GoToTop />
+          </div>
+        );
+        break;
+      case "Surbhika":
+        return (
+          <div className="sm:mt-4">
+            <Surbhika />
+            <GoToTop />
+          </div>
+        );
+        break;
+      case "Maths_Tree":
+        return (
+          <div className="sm:mt-4">
+            <Maths_Tree />
+            <GoToTop />
+          </div>
+        );
+        break;
+      case "Wow_Maths_Lab":
+        return (
+          <div className="sm:mt-4">
+            <Wow_Maths_Lab />
+            <GoToTop />
+          </div>
+        );
+        break;
+      case "Wow_Science_Lab":
+        return (
+          <div className="sm:mt-4">
+            <Wow_Science_Lab />
+            <GoToTop />
+          </div>
+        );
+        break;
+      case "VibesSocial":
+        return (
+          <div className="sm:mt-4">
+            <VibesSocial />
+            <GoToTop />
+          </div>
+        );
+        break;
+      case "Grammer_com_vibes":
         return (
           <div className="sm:mt-4">
             <Grammer_com_vibes />
@@ -545,7 +508,7 @@ const Cbse = () => {
           </div>
         );
         break;
-      case "silver_bells":
+      case "Silver_bells":
         return (
           <div className="sm:mt-4">
             <Silver_bells />
@@ -553,10 +516,27 @@ const Cbse = () => {
           </div>
         );
         break;
-      case "surbhika":
+      case "English_weaves":
         return (
           <div className="sm:mt-4">
-            <Surbhika_hindi />
+            <English_weaves />
+            <GoToTop />
+          </div>
+        );
+        break;
+      case "English_Tree":
+        return (
+          <div className="sm:mt-4">
+            <English_Tree />
+            <GoToTop />
+          </div>
+        );
+        break;
+
+      case "grammer_com":
+        return (
+          <div className="sm:mt-4">
+            <Wow_grammer_com />
             <GoToTop />
           </div>
         );
@@ -569,15 +549,15 @@ const Cbse = () => {
           </div>
         );
         break;
-      case "vallari_hindi":
+      case "Vallari":
         return (
           <div className="sm:mt-4">
-            <Vallari_hindi />
+            <Vallari />
             <GoToTop />
           </div>
         );
         break;
-      case "compu_bytes":
+      case "Wow_compu_bytes":
         return (
           <div className="sm:mt-4">
             <Wow_compu_bytes />
@@ -589,14 +569,6 @@ const Cbse = () => {
         return (
           <div className="sm:mt-4">
             <Wow_english />
-            <GoToTop />
-          </div>
-        );
-        break;
-      case "grammer_com":
-        return (
-          <div className="sm:mt-4">
-            <Wow_grammer_com />
             <GoToTop />
           </div>
         );
